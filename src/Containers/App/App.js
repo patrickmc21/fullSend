@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import getToken from '../../api/api-calls/getToken';
 import { redirectLogin } from '../../api/api-calls/getAthlete';
 import { getAthleteActivities } from '../../api/api-calls/getAthleteActivities';
+import { getTrails } from '../../api/api-calls/getTrails';
 import './App.css';
 
 class App extends Component {
@@ -12,12 +13,15 @@ class App extends Component {
 
   handleClickFetch = async () => {
     const data = await getToken();
-    console.log(data);
-    const {athlete, access_token} = data;
-    console.log(athlete);
+    console.log(data)
+    const parsed = JSON.parse(data);
+    console.log(parsed);
+    const {athlete, access_token} = parsed;
     const start = 1519862401;
     const end = 1522540741;
-    getAthleteActivities(access_token, athlete.id, start, end)
+    const activities = await getAthleteActivities(access_token, athlete.id, start, end);
+    const [lat, long] = activities[2].start_latlng;
+    getTrails(lat, long);
   }
 
   render() {

@@ -1,7 +1,9 @@
+import { clientId, clientSecret } from '../apiKeys/strava-keys';
+
 const getToken = async (temporaryToken) => {
     const history = window.location.href;
     const token = history.substr(history.length - 40);
-    const url = 'http://localhost:3100/tokenexchange';
+    const url = '/tokenexchange';
     const options = {
         method: 'POST',
         headers: {
@@ -11,7 +13,9 @@ const getToken = async (temporaryToken) => {
         mode: 'cors',
         cache: 'no-cache',
         body: JSON.stringify({
-            token: token
+            token: token,
+            clientId: clientId,
+            clientSecret: clientSecret
         })
     }
 

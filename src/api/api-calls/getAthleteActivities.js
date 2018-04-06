@@ -12,4 +12,5 @@ export const getAthleteActivities = async (token, athleteId, start, end) => {
   console.log(response);
   const data = await response.json();
   console.log(data);
+  return data;
 }
