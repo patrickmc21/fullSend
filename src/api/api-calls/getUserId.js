@@ -14,11 +14,14 @@ export const getUserId = async (user) => {
 
   const response = await fetch(url, options);
   console.log(response);
-  if (response.ok) {
-    const id = await response.json();
-    return id.id; 
+  let id = await response.json();
+  console.log(id);
+  if (id.length < 1) {
+    console.log('bad')
+    id = null
+    console.log(id);
   } else {
-    console.log(response.error)
-    return null;
-  }
+    id = id[0]
+  } 
+  return id;
 }

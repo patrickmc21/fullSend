@@ -44,6 +44,7 @@ export class Login extends Component {
     console.log(athlete);
     console.log(signInInfo);
     let userId = await getUserId(signInInfo);
+    console.log(userId);
     if (!userId) {
       const newUser = {name: athlete.firstname, ...signInInfo};
       try {
