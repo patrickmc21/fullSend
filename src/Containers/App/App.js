@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
+import { Route, Link, NavLink, withRouter } from 'react-router-dom';
 import getToken from '../../api/api-calls/getToken';
-import { redirectLogin } from '../../api/api-calls/getAthlete';
 import { getAthleteActivities } from '../../api/api-calls/getAthleteActivities';
 import { getTrails } from '../../api/api-calls/getTrails';
+import Login from '../Login/Login';
 import './App.css';
 
-class App extends Component {
 
-  handleClickAuthorize = () => {
-    redirectLogin();
-  }
+class App extends Component {
 
   handleClickFetch = async () => {
     const data = await getToken();
@@ -29,12 +27,15 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Welcome to React</h1>
+            <p className="App-intro">
+              To get started, edit <code>src/App.js</code> and save to reload.
+            </p>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <button onClick={this.handleClickAuthorize}>Authorize</button>
-        <button onClick={this.handleClickFetch}>Fetch</button>
+        <Route exact path='/' render={() => {
+          return (
+            <Login />
+          )
+        }} />
       </div>
     );
   }

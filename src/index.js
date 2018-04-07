@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import createSageMiddleWare from 'redux-sage';
+import createSageMiddleWare from 'redux-saga';
 
 import rootReducer from './Reducers';
 import App from './Containers/App/App';
@@ -16,7 +16,7 @@ const devTools =
 const store = createStore(
   rootReducer,
   devTools,
-  applyMiddleware(sageMiddleware);  
+  applyMiddleware(sageMiddleware)
 )
 
 const fullSend = (
