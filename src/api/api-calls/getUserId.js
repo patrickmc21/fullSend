@@ -13,13 +13,9 @@ export const getUserId = async (user) => {
   };
 
   const response = await fetch(url, options);
-  console.log(response);
   let id = await response.json();
-  console.log(id);
   if (id.length < 1) {
-    console.log('bad')
     id = null
-    console.log(id);
   } else {
     id = id[0]
   } 

@@ -41,10 +41,7 @@ export class Login extends Component {
     const athleteInfo = await getToken(this.state.tempToken);
     const { access_token, athlete } = athleteInfo;
     const signInInfo = { email: athlete.email, password: athlete.id};
-    console.log(athlete);
-    console.log(signInInfo);
     let userId = await getUserId(signInInfo);
-    console.log(userId);
     if (!userId) {
       const newUser = {name: athlete.firstname, ...signInInfo};
       try {
