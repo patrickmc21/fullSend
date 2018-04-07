@@ -16,7 +16,7 @@ const devTools =
 const store = createStore(
   rootReducer,
   devTools,
-  applyMiddleware(sageMiddleware);
+  applyMiddleware(sageMiddleware);  
 )
 
 const fullSend = (
