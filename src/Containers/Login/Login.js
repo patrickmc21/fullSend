@@ -4,10 +4,11 @@ import { dispatch } from 'redux';
 import { NavLink, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import { redirectLogin } from '../../api/api-calls/getAthlete';
-import getToken from '../../api/api-calls/getToken';
-import { getUserId } from '../../api/api-calls/getUserId';
-import { createUserId } from '../../api/api-calls/createUserId';
+import { redirectLogin } from '../../api/external-api-calls/getAthlete';
+import getToken from '../../api/external-api-calls/getToken';
+import { getUserId } from '../../api/internal-api-calls/getUserId';
+import { createUserId } from '../../api/internal-api-calls/createUserId';
+import getRides from '../../api/internal-api-calls/getUserRides';
 import * as actions from '../../Actions';
 import './Login.css';
 
@@ -35,7 +36,12 @@ export class Login extends Component {
 
   handleClickAuthorize = () => {
     redirectLogin();
-  }
+  };
+
+  handleClickEnter = async () => {
+    const userId = await this.loginUser();
+    this.getUserRides(userId);
+  };
 
   loginUser = async () => {
     const athleteInfo = await getToken(this.state.tempToken);
@@ -56,6 +62,12 @@ export class Login extends Component {
       id: userId.id
     };
     this.props.addUser(user);
+    return userId.id;
+  };
+
+  getUserRides = async (userId) => {
+    const userRides = await getRides(userId);
+    this.props.addRides(userRides);
   }
 
 
@@ -65,7 +77,7 @@ export class Login extends Component {
     return (
       <div>
         {!redirected && <button className='authorize-strava' onClick={this.handleClickAuthorize}></button>}
-        {redirected && <NavLink to='/main' onClick={this.loginUser}>Enter</NavLink>}
+        {redirected && <NavLink to='/main' onClick={this.handleClickEnter}>Enter</NavLink>}
         { errorStatus && <p>{errorStatus}</p>}
       </div>
     )
@@ -77,7 +89,8 @@ Login.propTypes = {
 };
 
 export const mapDispatchToProps = dispatch => ({
-  addUser: user => dispatch(actions.signInUser(user))
+  addUser: user => dispatch(actions.signInUser(user)),
+  addRides: favs => dispatch(actions.addUserRides(favs))
 })
 
 export default withRouter(connect(null, mapDispatchToProps)(Login))

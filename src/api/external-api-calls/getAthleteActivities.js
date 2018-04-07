@@ -12,8 +12,6 @@ export const getAthleteActivities = async (token, athleteId, start, end = Date.n
     }
   }
   const response = await fetch(`${rootUrl}${urlOptions}`, optionsObject);
-  console.log(response);
   const data = await response.json();
-  console.log(data);
   return data;
 }
