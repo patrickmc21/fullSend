@@ -4,6 +4,7 @@ import getToken from '../../api/api-calls/getToken';
 import { getAthleteActivities } from '../../api/api-calls/getAthleteActivities';
 import { getTrails } from '../../api/api-calls/getTrails';
 import Login from '../Login/Login';
+import Main from '../../Components/Main/Main';
 import './App.css';
 
 
@@ -35,6 +36,9 @@ class App extends Component {
           return (
             <Login />
           )
+        }} />
+        <Route path='/main' render={() => {
+          return <Main />
         }} />
       </div>
     );

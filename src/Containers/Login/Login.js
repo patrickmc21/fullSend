@@ -47,7 +47,7 @@ export class Login extends Component {
       try {
         userId = await createUserId(newUser);
       } catch (error) {
-        console.log(error.message);
+        this.setState({errorStatus: error.message});
       }
     }
     const user = {
@@ -61,18 +61,19 @@ export class Login extends Component {
 
 
   render() {
-    const { user, redirected, tempToken } = this.state
+    const { redirected, tempToken, errorStatus } = this.state
     return (
       <div>
         {!redirected && <button className='authorize-strava' onClick={this.handleClickAuthorize}></button>}
         {redirected && <NavLink to='/main' onClick={this.loginUser}>Enter</NavLink>}
+        { errorStatus && <p>{errorStatus}</p>}
       </div>
     )
   }
 }
 
 Login.propTypes = {
-
+  addUser: PropTypes.func
 };
 
 export const mapDispatchToProps = dispatch => ({
