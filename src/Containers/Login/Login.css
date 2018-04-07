@@ -1,0 +1,7 @@
+.authorize-strava {
+  border: none;
+  height: 40px;
+  width: 160px;
+  background-image: url('../../strava-brand-images/connect-with-strava/btn_strava_connectwith_orange/btn_strava_connectwith_orange.svg');
+  background-size: cover;
+}
