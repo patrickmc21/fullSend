@@ -11,19 +11,21 @@ import './Header.css';
 export class Header extends Component {
 
   render() {
-
+    const { user } = this.props 
     return(
       <header>
         <h1 className='logo'>fullSend</h1>
-        <aside></aside>
-        
+        <aside>
+          <h4 className='user-name'>{user.name}</h4>
+        </aside>
       </header>
     )
   }
 };
 
 Header.propTypes = {
-
+  user: PropTypes.object,
+  logoutUser: PropTypes.func
 }
 
 export const mapStateToProps = state => ({

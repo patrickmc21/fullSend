@@ -1,4 +1,7 @@
-export const getAthleteActivities = async (token, athleteId, start, end) => {
+import moment from 'moment';
+const startTime = moment().startOf('year');
+
+export const getAthleteActivities = async (token, athleteId, start, end = Date.now()) => {
   const rootUrl = 'https://www.strava.com/api/v3/athlete/activities'
   const urlOptions = `?before=${end}&after=${start}&page=1`
   const optionsObject = {
