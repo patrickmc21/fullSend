@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 
 import RideCard from '../../Components/RideCard/RideCard';
 
-import getAthleteActivities from '../../api/api-calls/getAthleteActivities';
-import getTrails from '../../api/api-calls/getTrails';
+import getAthleteActivities from '../../api/external-api-calls/getAthleteActivities';
+import getTrails from '../../api/external-api-calls/getTrails';
 
 export class RideContainer extends Component {
 
@@ -18,6 +18,11 @@ export class RideContainer extends Component {
     })
     return(
       <section>
+        <button 
+          className='update-rides'
+          onClick={this.handleClick}>
+            Update Rides
+        </button>
         {rides.length > 1 && rideCards}
         {rides.length < 1 && <h6>No Rides to Show!</h6>}
       </section>

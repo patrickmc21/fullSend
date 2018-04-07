@@ -90,7 +90,7 @@ Login.propTypes = {
 
 export const mapDispatchToProps = dispatch => ({
   addUser: user => dispatch(actions.signInUser(user)),
-  addRides: favs => dispatch(actions.addUserRides(favs))
+  addRides: rides => dispatch(actions.addRides(rides))
 })
 
 export default withRouter(connect(null, mapDispatchToProps)(Login))
