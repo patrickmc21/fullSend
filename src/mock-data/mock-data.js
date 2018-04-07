@@ -1,6 +1,17 @@
 /* eslint-disable */
 
-export const mockUser = {
+export const mockReturnUser = {
+  email: 'pat@askjeeves.com',
+  password: 'password'
+}
+
+export const mockNewUser = {
+  name: 'Pat',
+  email: 'pat@askjeeves.com',
+  password: 'password'
+}
+
+export const mockStravaUser = {
   "id" : 1234567890987654321,
   "username" : "marianne_v",
   "resource_state" : 3,
