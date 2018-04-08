@@ -4,10 +4,11 @@ import { dispatch } from 'redux';
 import { NavLink, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import { redirectLogin } from '../../api/api-calls/getAthlete';
-import getToken from '../../api/api-calls/getToken';
-import { getUserId } from '../../api/api-calls/getUserId';
-import { createUserId } from '../../api/api-calls/createUserId';
+import { redirectLogin } from '../../api/external-api-calls/getAthlete';
+import getToken from '../../api/external-api-calls/getToken';
+import { getUserId } from '../../api/internal-api-calls/getUserId';
+import { createUserId } from '../../api/internal-api-calls/createUserId';
+import getRides from '../../api/internal-api-calls/getUserRides';
 import * as actions from '../../Actions';
 import './Login.css';
 
@@ -15,6 +16,7 @@ export class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      name: '',
       redirected: false,
       tempToken: ''
     }
@@ -35,7 +37,12 @@ export class Login extends Component {
 
   handleClickAuthorize = () => {
     redirectLogin();
-  }
+  };
+
+  handleClickEnter = async () => {
+    const userId = await this.loginUser();
+    this.getUserRides(userId);
+  };
 
   loginUser = async () => {
     const athleteInfo = await getToken(this.state.tempToken);
@@ -47,7 +54,7 @@ export class Login extends Component {
       try {
         userId = await createUserId(newUser);
       } catch (error) {
-        console.log(error.message);
+        this.setState({errorStatus: error.message});
       }
     }
     const user = {
@@ -56,27 +63,47 @@ export class Login extends Component {
       id: userId.id
     };
     this.props.addUser(user);
+    return userId.id;
+  };
+
+  getUserRides = async (userId) => {
+    const userRides = await getRides(userId);
+    this.props.addRides(userRides);
   }
 
 
 
   render() {
-    const { user, redirected, tempToken } = this.state
+    const { redirected, tempToken, errorStatus } = this.state
     return (
-      <div>
-        {!redirected && <button className='authorize-strava' onClick={this.handleClickAuthorize}></button>}
-        {redirected && <NavLink to='/main' onClick={this.loginUser}>Enter</NavLink>}
+      <div className='login-page'>
+        <div className='login-container'>
+          <h1 className='login-logo'>fullSend</h1>
+          {!redirected && <button className='authorize-strava' onClick={this.handleClickAuthorize}></button>}
+          {redirected && 
+            <div className='enter-container'>
+              <NavLink 
+                to='/main' 
+                onClick={this.handleClickEnter}
+                className='enter-site'>
+                  Send It
+              </NavLink>
+            </div>
+            }
+          { errorStatus && <p className='error-status'>{errorStatus}</p>}
+        </div>
       </div>
     )
   }
 }
 
 Login.propTypes = {
-
+  addUser: PropTypes.func
 };
 
 export const mapDispatchToProps = dispatch => ({
-  addUser: user => dispatch(actions.signInUser(user))
+  addUser: user => dispatch(actions.signInUser(user)),
+  addRides: rides => dispatch(actions.addRides(rides))
 })
 
 export default withRouter(connect(null, mapDispatchToProps)(Login))

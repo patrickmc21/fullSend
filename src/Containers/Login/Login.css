@@ -1,7 +1,59 @@
+.login-page {
+  padding-top: 50px;
+  height: 100vh;
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.login-container {
+  padding-top: 30px;
+  border: 1px solid #727167;
+  border-radius: 15px;
+  margin: auto;
+  height: 200px;
+  width: 30vw;
+  background-color: rgba(81, 92, 40, 0.5);
+  box-sizing: border-box;
+  box-shadow: 1px 1px 5px 1px #727167;
+}
+
+.login-logo {
+  margin-bottom: 40px;
+  color: #F9F8F2;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 56px;
+}
+
 .authorize-strava {
   border: none;
   height: 40px;
   width: 160px;
+  background-color: transparent;
   background-image: url('../../strava-brand-images/connect-with-strava/btn_strava_connectwith_orange/btn_strava_connectwith_orange.svg');
   background-size: cover;
+  box-sizing: content-box;
 }
+
+.authorize-strava:hover {
+  border: 2px solid #CECCC1;
+}
+
+.enter-site {
+  height: 40px;
+  width: 160px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 48px;
+  color: #F9F8F2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.enter-site:hover {
+  color: #6b5849;
+}
+
+
+
+
