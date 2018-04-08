@@ -5,13 +5,13 @@ section {
 .update-rides {
   display: block;
   padding-top: 5px;
-  border: 2px solid white;
+  border: 2px solid #49403c;
   margin: 0 auto 30px auto;
   height: 30px;
   width: 150px;
   background-color: transparent;
   box-sizing: border-box;
-  color: #FFFFFE;
+  color: #49403c;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   text-align: center;
@@ -19,8 +19,7 @@ section {
 }
 
 .update-rides:hover {
-  border: 2px solid #273006;
-  color: #273006;
+  box-shadow: 0px 0px 5px 2px #49403c;
 }
 
 .card-container {

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 import Header from '../../Containers/Header/Header';
 import Nav from '../Nav/Nav';
+import MainContent from '../MainContent/MainContent';
 import RideContainer from '../../Containers/RideContainer/RideContainer';
 import Footer from '../Footer/Footer';
 
@@ -17,7 +18,7 @@ const Main = (props) => {
       <main>
         <Nav />
         <Route exact path='/main' render={() => {
-          return <RideContainer />
+          return <MainContent />
         }} />
         <Route exact path='/main/rides' render={() => {
           return <RideContainer />
