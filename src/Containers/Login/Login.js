@@ -74,7 +74,7 @@ export class Login extends Component {
 
 
   render() {
-    const { redirected, tempToken, errorStatus } = this.state
+    const { redirected, errorStatus } = this.state
     return (
       <div className='login-page'>
         <div className='login-container'>

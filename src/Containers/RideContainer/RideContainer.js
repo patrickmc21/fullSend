@@ -19,12 +19,11 @@ export class RideContainer extends Component {
 
   handleClick = async () => {
     const { user, rides } = this.props;
-    console.log(user)
     const afterTime = moment().startOf('year');
     const afterEpoch = Date.parse(afterTime);
-    const beforeTime = moment().startOf('isoweek');
+    const beforeTime = moment().startOf('day');
     const before = Date.parse(beforeTime)/1000;
-    const after = rides.length > 0 ? Date.parse(rides[rides.length-1].epoch) : afterEpoch/1000;
+    const after = rides.length > 0 ? Date.parse(rides[0].epoch)/1000 : afterEpoch/1000;
     try {
       const userActivities = await getAthleteActivities(user.token, after, before);
       const ridesOnly = userActivities.filter(activity => activity.type === 'Ride');
