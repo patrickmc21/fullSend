@@ -26,15 +26,13 @@ export class RideContainer extends Component {
     const before = Date.parse(beforeTime)/1000;
     const after = rides.length > 0 ? Date.parse(rides[rides.length-1].epoch) : afterEpoch/1000;
     console.log('after ', after);
-    console.log('start ', 1519862401);
     console.log('before ', before);
-    console.log('end    ', 1522540741);
     // try {
       const userActivities = await getAthleteActivities(user.token, after, before);
-      console.log(userActivities);
-      // const ridesWithTrails = userRides.map( async (ride) => {
-      //   return {...ride, ...getTrails(ride.latLng[0], ride.latLng[1])}
-      // });
+      const ridesOnly = userActivities.filter(activity => activity.type === 'Ride');
+      console.log(ridesOnly);
+      const ridesWithTrails = await this.getTrails(ridesOnly);
+      console.log(ridesWithTrails);
       // const cleanRides = rideCleaner(ridesWithTrails);
       // this.props.updateRides(cleanRides);
       // cleanRides.forEach(ride => updateUserRides(ride, user.id))
@@ -42,6 +40,16 @@ export class RideContainer extends Component {
     //   console.log(error)
     // }
   };
+
+  getTrails = (rides) => {
+    const ridesWithTrails = rides.map( async (ride) => {
+        const response = await getTrails(ride.start_latlng[0], ride.start_latlng[1])
+        const trail = response.trails[0];
+        console.log(trail);
+        return Object.assign({}, ride, trail);
+      });
+    return Promise.all(ridesWithTrails);
+  }
 
   render() {
     const { rides } = this.props
