@@ -15,7 +15,7 @@ const Main = (props) => {
     <main>
       <Header />
       <Nav />
-      <Route to='/main/rides' render={() => {
+      <Route exact path='/main/rides' render={() => {
         return <RideContainer />
       }} />
       <Footer />

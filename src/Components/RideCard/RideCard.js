@@ -30,8 +30,8 @@ const RideCard = ({ride}) => {
         <p className='ride-summary'>{summary}</p>
       </div>
       <div className='ride-stats'>
-        <h4 className='ride-distance'>{distance}</h4>
-        <h4 className='ride-time'>{elapsedTime}</h4>
+        <h4 className='ride-distance'>Distance: {distance}</h4>
+        <h4 className='ride-time'>Duration: {elapsedTime}</h4>
       </div>
     </article>
   )

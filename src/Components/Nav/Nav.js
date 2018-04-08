@@ -6,7 +6,13 @@ const Nav = () => {
 
   return (
     <nav>
-      <NavLink to='/main/rides' className='nav-btn' activeClassName='active-nav'/>
+      <NavLink 
+        to='/main/rides' 
+        className='nav-btn' 
+        activeClassName='active-nav'
+      >
+        Rides
+      </NavLink>
     </nav>
   )
 };

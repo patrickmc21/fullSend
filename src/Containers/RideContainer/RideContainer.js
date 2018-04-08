@@ -25,27 +25,22 @@ export class RideContainer extends Component {
     const beforeTime = moment().startOf('isoweek');
     const before = Date.parse(beforeTime)/1000;
     const after = rides.length > 0 ? Date.parse(rides[rides.length-1].epoch) : afterEpoch/1000;
-    console.log('after ', after);
-    console.log('before ', before);
-    // try {
+    try {
       const userActivities = await getAthleteActivities(user.token, after, before);
       const ridesOnly = userActivities.filter(activity => activity.type === 'Ride');
-      console.log(ridesOnly);
       const ridesWithTrails = await this.getTrails(ridesOnly);
-      console.log(ridesWithTrails);
-      // const cleanRides = rideCleaner(ridesWithTrails);
-      // this.props.updateRides(cleanRides);
-      // cleanRides.forEach(ride => updateUserRides(ride, user.id))
-    // } catch (error) {
-    //   console.log(error)
-    // }
+      const cleanRides = rideCleaner(ridesWithTrails);
+      this.props.updateRides(cleanRides);
+      cleanRides.forEach(ride => updateUserRides(ride, user.id))
+    } catch (error) {
+      console.log(error)
+    }
   };
 
   getTrails = (rides) => {
     const ridesWithTrails = rides.map( async (ride) => {
         const response = await getTrails(ride.start_latlng[0], ride.start_latlng[1])
         const trail = response.trails[0];
-        console.log(trail);
         return Object.assign({}, ride, trail);
       });
     return Promise.all(ridesWithTrails);
@@ -80,4 +75,4 @@ export const mapDispatchToProps = dispatch => ({
 });
 
 
-export default withRouter(connect(mapStateToProps, null)(RideContainer))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(RideContainer))

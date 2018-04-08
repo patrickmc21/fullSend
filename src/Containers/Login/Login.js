@@ -16,6 +16,7 @@ export class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      name: '',
       redirected: false,
       tempToken: ''
     }
@@ -67,7 +68,6 @@ export class Login extends Component {
 
   getUserRides = async (userId) => {
     const userRides = await getRides(userId);
-    console.log(userRides);
     this.props.addRides(userRides);
   }
 
@@ -76,10 +76,22 @@ export class Login extends Component {
   render() {
     const { redirected, tempToken, errorStatus } = this.state
     return (
-      <div>
-        {!redirected && <button className='authorize-strava' onClick={this.handleClickAuthorize}></button>}
-        {redirected && <NavLink to='/main' onClick={this.handleClickEnter}>Enter</NavLink>}
-        { errorStatus && <p>{errorStatus}</p>}
+      <div className='login-page'>
+        <div className='login-container'>
+          <h1 className='login-logo'>fullSend</h1>
+          {!redirected && <button className='authorize-strava' onClick={this.handleClickAuthorize}></button>}
+          {redirected && 
+            <div className='enter-container'>
+              <NavLink 
+                to='/main' 
+                onClick={this.handleClickEnter}
+                className='enter-site'>
+                  Send It
+              </NavLink>
+            </div>
+            }
+          { errorStatus && <p className='error-status'>{errorStatus}</p>}
+        </div>
       </div>
     )
   }

@@ -8,21 +8,31 @@ export const cleanDate = (date) => {
 
 export const convertMetersToMiles = (meters) => {
   const miles = meters * 0.000621371;
-  return miles;
+  return `${miles.toFixed(0)} miles`;
 };
 
 export const convertSecondsToHoursMins = (seconds) => {
   const allMinutes = seconds / 60;
   const hours = (allMinutes / 60).toFixed(0);
-  const minutes = allMinutes % 60;
-  return `${hours}hrs ${minutes}min(s)`
+  const minutes = (allMinutes % 60).toFixed(0);
+  return `${hours} hr(s) ${minutes} min(s)`
 };
 
-const rideCleaner = (ride) => { 
-  const cleanRide = {
-    epoch: new Date(ride.start_date),
-    date: cleanDate(ride.start_date),
-    distance: convertMetersToMiles(ride.distance),
-    elapsedTime: convertSecondsToHoursMins(ride.elapsed_time);
-  }
+const rideCleaner = (rides) => { 
+  const cleanRides = rides.map(ride => {
+    return {
+      epoch: Date.parse(ride.start_date)/1000,
+      date: cleanDate(ride.start_date),
+      distance: convertMetersToMiles(ride.distance),
+      elapsedTime: convertSecondsToHoursMins(ride.elapsed_time),
+      trailName: ride.name,
+      location: ride.location,
+      difficulty: ride.difficulty,
+      img: ride.imgSmallMed,
+      summary: ride.summary
+    };
+  });
+  return cleanRides;
 }
+
+export default rideCleaner;
