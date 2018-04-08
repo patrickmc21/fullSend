@@ -10,8 +10,14 @@ const Footer = () => {
   return (
     <footer>
       <div className='api-logos'>
-        <img src={stravaImg} alt='Strava Logo' />
-        <img src={mtbImg} alt='MTB Project logo' />
+        <img 
+          src={stravaImg} 
+          alt='Strava Logo'
+          className='strava-logo' />
+        <img 
+          src={mtbImg} 
+          alt='MTB Project logo'
+          className='mtb-logo' />
       </div>
     </footer>
   )

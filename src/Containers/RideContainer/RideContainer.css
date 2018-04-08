@@ -1,0 +1,31 @@
+section {
+  height: 560px;
+}
+
+.update-rides {
+  display: block;
+  padding-top: 5px;
+  border: 2px solid #49403c;
+  margin: 0 auto 30px auto;
+  height: 30px;
+  width: 150px;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #49403c;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.update-rides:hover {
+  box-shadow: 0px 0px 5px 2px #49403c;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 500px;
+  overflow: scroll;
+}

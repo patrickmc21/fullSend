@@ -1,0 +1,48 @@
+.app-header {
+  border-bottom: 1px solid #292727;
+  height: 100px;
+  background-color: #515c28;
+}
+
+.logo-link {
+  outline: none;
+}
+
+.logo {
+  float: left;
+  margin: 20px 20px;
+  background-image: url('./images/logo-img.png');
+  background-size: 64px 100px;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  color: #FFFFFE;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 64px;
+}
+
+.user-info {
+  float: right;
+  border-radius: 25px;
+  margin: 10px 10px;
+  height: 80px;
+  width: 250px;
+  background-color: rgba(114,113,103, 0.4);
+}
+
+.user-profile-picture {
+  float: right;
+  margin: 10px 10px;
+  width: 65px;
+  border-radius: 30px;
+}
+
+.user-name,
+.user-location {
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+  color: #FFFFFE;
+}
+
+.user-name {
+  margin: 25px 0 3px 0;
+}

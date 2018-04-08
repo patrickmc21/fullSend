@@ -19,12 +19,15 @@ const RideCard = ({ride}) => {
     <article className='ride-card'>
       <div className='ride-header'>
         <h6 className='ride-date'>{date}</h6>
-        <img src={img} alt={trailName} />
+        <img 
+          src={img} 
+          alt={trailName}
+          className='ride-image' />
       </div>
       <div className='ride-trail'>
         <h2 className='ride-trail-name'>
           {trailName}
-          <span className={difficulty}></span>
+          <div className={difficulty}></div>
         </h2>
         <h3 className='ride-location'>{location}</h3>
         <p className='ride-summary'>{summary}</p>
