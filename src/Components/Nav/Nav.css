@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-left;
   padding-top: 10px;
+  margin: auto;
   height: 60px;
-  background-color: #727167;
+  width: 90vw;
   box-sizing: border-box;
 }
 

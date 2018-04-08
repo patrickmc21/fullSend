@@ -12,14 +12,19 @@ import './Main.css';
 const Main = (props) => {
 
   return (
-    <main>
+    <div>
       <Header />
-      <Nav />
-      <Route exact path='/main/rides' render={() => {
-        return <RideContainer />
-      }} />
+      <main>
+        <Nav />
+        <Route exact path='/main' render={() => {
+          return <RideContainer />
+        }} />
+        <Route exact path='/main/rides' render={() => {
+          return <RideContainer />
+        }} />
+      </main>
       <Footer />
-    </main>
+    </div>
   )
 };
 
