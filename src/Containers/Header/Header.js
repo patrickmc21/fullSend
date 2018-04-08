@@ -19,21 +19,24 @@ export class Header extends Component {
     }
   }
 
-  componentDidMount = async () => {
+  componentDidUpdate = async () => {
     const { token } = this.props.user;
-    console.log(this.props.user);
-    console.log(token);
-    const user = await getAthleteInfo(token);
-    console.log(user);
-    this.setState({
-      name: `${user.firstname} ${user.lastname}`,
-      location: `${user.city}, ${user.state}`,
-      img: user.profile_medium
-    })
+    if (!this.state.name && token) {
+      console.log(this.props.user);
+      console.log(token);
+      const user = await getAthleteInfo(token);
+      console.log(user);
+      this.setState({
+        name: `${user.firstname} ${user.lastname}`,
+        location: `${user.city}, ${user.state}`,
+        img: user.profile_medium
+      })
+    }
   }
 
   render() {
-    const { user } = this.props;
+
+    const { name, location, img } = this.state;
     return(
       <header className='app-header'>
         <NavLink 
@@ -43,7 +46,12 @@ export class Header extends Component {
           <h1 className='logo'>fullSend</h1>
         </NavLink>
         <aside className='user-info'>
-          <h4 className='user-name'>{user.name}</h4>
+          <img 
+            src={img} 
+            alt='user profile picture'
+            className='user-profile-picture' />
+          <h4 className='user-name'>{name}</h4>
+          <h5 className='user-location'>{location}</h5>
         </aside>
       </header>
     )
