@@ -1,0 +1,31 @@
+.app-nav {
+  display: flex;
+  justify-content: space-left;
+  padding-top: 10px;
+  height: 60px;
+  background-color: #727167;
+  box-sizing: border-box;
+}
+
+.nav-btn {
+  padding-top: 5px;
+  border: 2px solid white;
+  height: 40px;
+  width: 150px;
+  box-sizing: border-box;
+  color: #FFFFFE;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  border: 2px solid #273006;
+  color: #273006;
+}
+
+.active-nav {
+  border: 2px solid #292727;
+  color: #292727;
+}
