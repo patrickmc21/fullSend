@@ -1,0 +1,26 @@
+section {
+  height: 560px;
+  background-color: #727167;
+  overflow: scroll;
+}
+
+.update-rides {
+  display: block;
+  padding-top: 5px;
+  border: 2px solid white;
+  margin: 20px auto 30px auto;
+  height: 30px;
+  width: 150px;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #FFFFFE;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.update-rides:hover {
+  border: 2px solid #273006;
+  color: #273006;
+}

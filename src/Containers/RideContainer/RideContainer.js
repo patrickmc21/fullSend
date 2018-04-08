@@ -15,6 +15,8 @@ import rideCleaner from '../../api/helpers/rideCleaner';
 
 import * as actions from '../../Actions';
 
+import './RideContainer.css';
+
 export class RideContainer extends Component {
 
   handleClick = async () => {
