@@ -3,13 +3,13 @@ import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import Header from '../../Containers/Header/Header';
-import Nav from '../../Containers/Nav/Nav';
+import Nav from '../Nav/Nav';
 import RideContainer from '../../Containers/RideContainer/RideContainer';
 import Footer from '../Footer/Footer';
 
 import './Main.css';
 
-export const Main = (props) => {
+const Main = (props) => {
 
   return (
     <main>
@@ -23,4 +23,4 @@ export const Main = (props) => {
   )
 };
 
-export 
+export default Main;

@@ -1,9 +1,10 @@
 import { combineReducers } from 'redux';
-import users from './usersReducer';
+import user from './usersReducer';
 import rides from './rideReducer.js';
 
 const rootReducer = combineReducers({
-  users
+  user,
+  rides
 });
 
 export default rootReducer;

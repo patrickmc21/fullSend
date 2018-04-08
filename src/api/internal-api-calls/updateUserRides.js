@@ -20,4 +20,4 @@ const updateUserRides = async (ride, userId) => {
   } 
 }
 
-export default updateUserFavorites
+export default updateUserRides;

@@ -11,7 +11,7 @@ import './Header.css';
 export class Header extends Component {
 
   render() {
-    const { user } = this.props 
+    const { user } = this.props;
     return(
       <header>
         <h1 className='logo'>fullSend</h1>

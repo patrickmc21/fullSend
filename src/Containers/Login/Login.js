@@ -67,6 +67,7 @@ export class Login extends Component {
 
   getUserRides = async (userId) => {
     const userRides = await getRides(userId);
+    console.log(userRides);
     this.props.addRides(userRides);
   }
 

@@ -1,4 +1,4 @@
-const getUserFavorites = (userId) => {
+const getUserRides = async (userId) => {
   const url = `fullsend/users/rides/${userId}`;
   const options = {
     method: 'GET',
@@ -17,4 +17,4 @@ const getUserFavorites = (userId) => {
 
 };
 
-export default getUserFavorites;
+export default getUserRides;
