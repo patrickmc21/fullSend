@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Nav = () => {
 
   return (
-    <nav>
+    <nav className='app-nav'>
       <NavLink 
         to='/main/rides' 
         className='nav-btn' 

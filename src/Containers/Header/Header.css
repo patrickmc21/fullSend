@@ -1,0 +1,25 @@
+.app-header {
+  height: 100px;
+  background-color: #515c28;
+}
+
+.logo-link {
+  outline: none;
+}
+
+.logo {
+  float: left;
+  margin: 20px 20px;
+  color: #FFFFFE;
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 56px;
+}
+
+.user-info {
+  float: right;
+  border-radius: 25px;
+  margin: 10px 10px;
+  height: 80px;
+  width: 200px;
+  background-color: rgba(114,113,103, 0.4);
+}
