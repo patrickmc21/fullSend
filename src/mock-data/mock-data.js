@@ -17,6 +17,19 @@ export const mockNewUser = {
   password: 'password'
 }
 
+export const mockRide = {
+  "epoch": "776232323",
+  "distance": "2",
+  "elapsedTime": "120",
+  "date": "May 8th, 2017",
+  "trailName": "lame",
+  "location": "park",
+  "difficulty": "green",
+  "img": "someurlthing",
+  "summary": "not sendy",
+  "userId": "9"
+}
+
 export const mockStravaUser = {
   "id" : 1234567890987654321,
   "username" : "marianne_v",

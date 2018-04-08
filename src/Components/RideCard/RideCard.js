@@ -40,4 +40,8 @@ const RideCard = ({ride}) => {
   )
 };
 
+RideCard.propTypes = {
+  ride: PropTypes.object
+};
+
 export default RideCard;
