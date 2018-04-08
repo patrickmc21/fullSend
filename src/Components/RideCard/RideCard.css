@@ -1,0 +1,102 @@
+.ride-card {
+  border: 1px solid #292727;
+  margin-bottom: 50px;
+  height: 400px;
+  width: 300px;
+  background-color: #CECCC1;
+  box-shadow: 1px 1px 3px 1px #292727;
+}
+
+.ride-date,
+.ride-trail-name,
+.ride-location,
+.ride-summary,
+.ride-stats,
+.ride-distance,
+.ride-time {
+  color: #292727;
+}
+
+.ride-date,
+.ride-trail-name {
+  font-family: 'Raleway', sans-serif;
+}
+
+.ride-location,
+.ride-summary,
+.ride-stats,
+.ride-distance,
+.ride-time {
+  font-family: 'Lato', sans-serif;
+}
+
+.ride-date {
+  margin: 5px 5px 5px 0;
+  text-align: right;
+}
+
+.ride-image {
+  display: block;
+  border: 1px solid #49403c;
+  margin: auto;
+  width: 250px;
+}
+
+.ride-trail {
+  margin: 10px auto;
+  width: 90%;
+  text-align: center;
+}
+
+.ride-trail-name {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.ride-trail-name div {
+  display: inline-block;
+  margin-left: 5px;
+  height: 15px;
+  width: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: bottom;
+}
+
+.greenBlue {
+  background-color: #266695;
+  background-image: url('images/green.png');
+}
+
+.blueBlack {
+  background-image: url('./images/blue-black.png');
+}
+
+.blue {
+  background-image: url('images/blue.png');
+}
+
+.black {
+  background-image: url('./images/black.png');
+}
+
+.green {
+  background-image: url('./images/green.png');
+}
+
+.ride-location {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.ride-stats {
+  margin: auto;
+  width: 90%;
+}
+
+.ride-distance {
+  margin-bottom: 5px;
+}
+
+
+

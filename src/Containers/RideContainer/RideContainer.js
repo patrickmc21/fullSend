@@ -59,8 +59,10 @@ export class RideContainer extends Component {
           onClick={this.handleClick}>
             Update Rides
         </button>
-        {rides.length > 1 && rideCards}
-        {rides.length < 1 && <h6>No Rides to Show!</h6>}
+        <div className='card-container'>
+          {rides.length > 1 && rideCards}
+          {rides.length < 1 && <h6>No Rides to Show!</h6>}
+        </div>
       </section>
     )
   }

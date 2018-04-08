@@ -1,14 +1,13 @@
 section {
   height: 560px;
   background-color: #727167;
-  overflow: scroll;
 }
 
 .update-rides {
   display: block;
   padding-top: 5px;
   border: 2px solid white;
-  margin: 20px auto 30px auto;
+  margin: 0 auto 30px auto;
   height: 30px;
   width: 150px;
   background-color: transparent;
@@ -23,4 +22,12 @@ section {
 .update-rides:hover {
   border: 2px solid #273006;
   color: #273006;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 500px;
+  overflow: scroll;
 }
