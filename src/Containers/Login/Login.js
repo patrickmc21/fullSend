@@ -23,8 +23,12 @@ export class Login extends Component {
   }
 
   componentDidMount() {
-    if (window.location.search.includes('code')) {
-      const history = window.location.href;
+    this.handleRedirection(window.location);
+  }
+
+  handleRedirection = (location) => {
+      if (location.search.includes('code')) {
+      const history = location.href;
       const tempToken = history.substr(history.length - 40);
       this.setState(
         {
@@ -33,7 +37,7 @@ export class Login extends Component {
         }
       );
     }
-  }
+  };
 
   handleClickAuthorize = () => {
     redirectLogin();

@@ -1,0 +1,1 @@
+export const redirectLogin = jest.fn();
