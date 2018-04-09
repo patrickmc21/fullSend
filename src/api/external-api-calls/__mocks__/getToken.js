@@ -4,18 +4,27 @@ const getToken = jest.fn()
       return {
         access_token: 1,
         athlete: {
-          name: 'Bob',
+          firstname: 'Bob',
           email: 'cool@msn.com',
-          password: 123
+          id: 123
+        }
+      }
+    } else if (token === 2) {
+      return {
+        access_token: 2,
+        athlete: {
+          firstname: 'Tim',
+          email: 'lame@aol.com',
+          id: 321
         }
       }
     } else {
       return {
         access_token: 2,
         athlete: {
-          name: 'Time',
-          email: 'lame@aol.com',
-          password: 321
+          firstname: 'Al',
+          email: 'whatevs@aol.com',
+          id: 321
         }
       }
     }

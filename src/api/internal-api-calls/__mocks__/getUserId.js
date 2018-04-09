@@ -1,8 +1,8 @@
 export const getUserId = jest.fn()
   .mockImplementation((user) => {
-    if (user.email === 'lame@aol.com') {
+    if (user.email !== 'cool@msn.com') {
       return null
     } else {
-      return 1
+      return {id: 1}
     }
   });

@@ -32,6 +32,7 @@ ShallowWrapper {
                 className="authorize-strava"
                 onClick={[Function]}
         />
+        
 </div>,
       "className": "login-page",
     },
@@ -52,7 +53,7 @@ ShallowWrapper {
             onClick={[Function]}
 />,
           false,
-          undefined,
+          "",
         ],
         "className": "login-container",
       },
@@ -83,7 +84,7 @@ ShallowWrapper {
           "type": "button",
         },
         false,
-        undefined,
+        "",
       ],
       "type": "div",
     },
@@ -107,6 +108,7 @@ ShallowWrapper {
                     className="authorize-strava"
                     onClick={[Function]}
           />
+          
 </div>,
         "className": "login-page",
       },
@@ -127,7 +129,7 @@ ShallowWrapper {
               onClick={[Function]}
 />,
             false,
-            undefined,
+            "",
           ],
           "className": "login-container",
         },
@@ -158,7 +160,7 @@ ShallowWrapper {
             "type": "button",
           },
           false,
-          undefined,
+          "",
         ],
         "type": "div",
       },
@@ -216,6 +218,7 @@ ShallowWrapper {
                         Send It
                 </NavLink>
         </div>
+        
 </div>,
       "className": "login-page",
     },
@@ -245,7 +248,7 @@ ShallowWrapper {
                         Send It
             </NavLink>
 </div>,
-          undefined,
+          "",
         ],
         "className": "login-container",
       },
@@ -299,7 +302,7 @@ ShallowWrapper {
           },
           "type": "div",
         },
-        undefined,
+        "",
       ],
       "type": "div",
     },
@@ -332,6 +335,7 @@ ShallowWrapper {
                               Send It
                     </NavLink>
           </div>
+          
 </div>,
         "className": "login-page",
       },
@@ -361,7 +365,7 @@ ShallowWrapper {
                             Send It
               </NavLink>
 </div>,
-            undefined,
+            "",
           ],
           "className": "login-container",
         },
@@ -415,7 +419,7 @@ ShallowWrapper {
             },
             "type": "div",
           },
-          undefined,
+          "",
         ],
         "type": "div",
       },

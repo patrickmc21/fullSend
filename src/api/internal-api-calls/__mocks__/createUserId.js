@@ -1,4 +1,8 @@
 export const createUserId = jest.fn()
-  .mockImplementation(() => {
-    return 1
+  .mockImplementation((user) => {
+    if (user.name === 'Tim') {
+      return {id: 1}
+    } else {
+      throw {message: 'Bad'}
+    }
   });

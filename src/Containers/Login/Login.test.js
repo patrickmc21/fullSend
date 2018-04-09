@@ -84,9 +84,22 @@ describe('Login', () => {
     expect(wrapper.state().tempToken).toEqual(expected);
   });
 
-  it('should run redirectLogin on handleClickAuthorize', () => {
+  it('should run redirectLogin on handleClickAuthorize', () => {    
     wrapper.instance().handleClickAuthorize();
     expect(redirectLogin).toHaveBeenCalled();
+  });
+
+  it('should call loginUser on handleClickEnter', async () => {
+    const spy = jest.spyOn(wrapper.instance(), 'loginUser');
+    await wrapper.instance().handleClickEnter();
+    expect(spy).toHaveBeenCalled();
+  });
+
+  it('should call getUserRides on handleClickEnter', async () => {
+    wrapper.setState({tempToken: 2});
+    const spy = jest.spyOn(wrapper.instance(), 'getUserRides');
+    await wrapper.instance().handleClickEnter();
+    expect(spy).toHaveBeenCalledWith(1);
   });
 
   it('should run getToken on running loginUser', async () => {
@@ -96,8 +109,97 @@ describe('Login', () => {
     expect(getToken).toHaveBeenCalledWith(expected);
   });  
 
+  it('should run getUserId on running loginUser', async () => {
+    wrapper.setState({tempToken: 1});
+    const expected = {
+      email: 'cool@msn.com',
+      password: 123
+    };
+    await wrapper.instance().loginUser();
+    expect(getUserId).toHaveBeenCalledWith(expected);
+  });
+
+  it('should run createUserId if a user does not exist', async () => {
+    wrapper.setState({tempToken: 2});
+    const expected = {
+      name: 'Tim',
+      email: 'lame@aol.com',
+      password: 321
+    };
+    await wrapper.instance().loginUser();
+    expect(createUserId).toHaveBeenCalledWith(expected);
+  });
+
+  it('should throw an error if createUserId fails', async () => {
+    wrapper.setState({tempToken: 3});
+    const expected = 'Bad'
+    await wrapper.instance().loginUser();
+    expect(wrapper.state().errorStatus).toEqual(expected)
+  });
+
+  it('should run addUser on loginUser', async () => {
+    const expected = {
+      name: 'Tim',
+      token: 2,
+      id: 1
+    };
+    wrapper.setState({tempToken: 2});
+    await wrapper.instance().loginUser();
+    expect(mockAddUser).toHaveBeenCalledWith(expected);
+  });
+
+  it('should return the user id on loginUser', async () => {
+    const expected = 1
+    wrapper.setState({tempToken: 2});
+    const results = await wrapper.instance().loginUser();
+    expect(results).toEqual(1)
+  });
+
+  it('should call getRides on getUserRides', async () => {
+    const expected = 1
+    await wrapper.instance().getUserRides(1);
+    expect(getRides).toHaveBeenCalledWith(expected);
+  });
+
+  it('should call addRides on running getUserRides', async () => {
+    const expected = await getRides(1);
+    await wrapper.instance().getUserRides(1);
+    expect(mockAddRides).toHaveBeenCalledWith(expected);
+  })
+
 });
 
 describe('mapDispatchToProps', () => {
 
+  let mapped;
+  let mockDispatch;
+
+  beforeEach(() => {
+    mockDispatch = jest.fn();
+    mapped = mapDispatchToProps(mockDispatch);
+  });
+
+  it('should map addUser to props', () => {
+    const mockUser =  {
+        name: 'Tim',
+        token: 2,
+        id: 1
+      }
+    const expected = {
+      type: 'SIGN_IN_USER',
+      user: mockUser
+    };
+    mapped.addUser(mockUser);
+    expect(mockDispatch).toHaveBeenCalledWith(expected);
+  });
+
+  it('should map addRides to props', async () => {
+    const mockRides = await getRides();
+    const expected = {
+      type: 'ADD_RIDES',
+      rides: mockRides
+    };
+    mapped.addRides(mockRides);
+    expect(mockDispatch).toHaveBeenCalledWith(expected);
+  });
 });

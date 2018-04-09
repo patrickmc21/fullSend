@@ -18,7 +18,8 @@ export class Login extends Component {
     this.state = {
       name: '',
       redirected: false,
-      tempToken: ''
+      tempToken: '',
+      errorStatus: ''
     }
   }
 
@@ -57,17 +58,17 @@ export class Login extends Component {
       const newUser = {name: athlete.firstname, ...signInInfo};
       try {
         userId = await createUserId(newUser);
+        const user = {
+          name: athlete.firstname,
+          token: access_token,
+          id: userId.id
+        };
+        this.props.addUser(user);
+        return userId.id;
       } catch (error) {
         this.setState({errorStatus: error.message});
       }
     }
-    const user = {
-      name: athlete.firstname,
-      token: access_token,
-      id: userId.id
-    };
-    this.props.addUser(user);
-    return userId.id;
   };
 
   getUserRides = async (userId) => {
