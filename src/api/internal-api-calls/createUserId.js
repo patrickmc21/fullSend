@@ -18,6 +18,6 @@ export const createUserId = async (user) => {
     const id = await response.json();
     return id; 
   } catch (error) {
-    throw new Error({message: 'Oops, Something Went Wrong!'})
+    throw error.message;
   }
 }
