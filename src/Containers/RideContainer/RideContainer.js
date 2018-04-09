@@ -48,11 +48,12 @@ export class RideContainer extends Component {
   };
 
   getRidesTimeSpan = (rides) => {
+    console.log(rides)
     const afterTime = moment().startOf('year');
     const afterEpoch = Date.parse(afterTime);
     const beforeTime = moment().startOf('day');
     const before = Date.parse(beforeTime)/1000;
-    const after = rides.length > 0 ? Date.parse(rides[0].epoch)/1000 : afterEpoch/1000;
+    const after = rides.length > 0 ? rides[0].epoch : afterEpoch/1000;
     return {before, after};
   };
 
