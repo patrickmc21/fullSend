@@ -1,18 +1,6 @@
 import * as Actions from './index';
 import * as mock from '../mock-data/mock-data';
 
-describe('addNewUser', () => {
-  it('should return a type of ADD_NEW_USER', () => {
-    const newUser = mock.mockNewUser;
-    const expected = {
-      type: 'ADD_NEW_USER',
-      user: newUser
-    }
-    const results = Actions.addNewUser(newUser);
-    expect(results).toEqual(expected);
-  });
-});
-
 describe('signInUser', () => {
   it('should return a type of SIGN_IN_USER', () => {
     const user = mock.mockReturnUser;
@@ -33,6 +21,30 @@ describe('logoutUser', () => {
       id: userId
     };
     const results = Actions.logoutUser(userId);
+    expect(results).toEqual(expected);
+  });
+});
+
+describe('addRides', () => {
+  it('should return a type of ADD_RIDES', () => {
+    const mockRides = mock.mockRides;
+    const expected = {
+      type: 'ADD_RIDES',
+      rides: mockRides
+    };
+    const results = Actions.addRides(mockRides);
+    expect(results).toEqual(expected);
+  });
+});
+
+describe('updateRides', () => {
+  it('should return a type of UPDATE_RIDES', () => {
+    const mockRides = mock.mockRides;
+    const expected = {
+      type: 'UPDATE_RIDES',
+      rides: mockRides
+    };
+    const results = Actions.updateRides(mockRides);
     expect(results).toEqual(expected);
   });
 });
