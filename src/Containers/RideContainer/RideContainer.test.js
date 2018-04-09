@@ -42,3 +42,44 @@ describe('RideContainer', () => {
   });
 
 });
+
+describe('mapStateToProps', () => {
+
+  let mapped;
+  let mockedUser;
+  let mockedRides;
+  let mockedState;
+
+  beforeEach(() => {
+    mockedUser = mocks.mockUser;
+    mockedRides = [mocks.mockRide];
+    mockedState = {user: mockedUser, rides: mockedRides};
+    mapped = mapStateToProps(mockedState);
+  });
+
+
+  it('should map user to props', () => {
+    const expected = mockedUser;
+    expect(mapped.user).toEqual(expected);
+  });
+
+  it('should map rides to props', () => {
+    const expected = mockedRides;
+    expect(mapped.rides).toEqual(expected);
+  });
+});
+
+describe('mapDispatchToProps', () => {
+
+  it('should map updateRides to props', () => {
+    const mockedRides = [mocks.mockRide];
+    const expected = {
+      type: 'UPDATE_RIDES',
+      rides: mockedRides
+    };
+    const mockDispatch = jest.fn();
+    const mapped = mapDispatchToProps(mockDispatch);
+    mapped.updateRides(mockedRides);
+    expect(mockDispatch).toHaveBeenCalledWith(expected);
+  });
+});

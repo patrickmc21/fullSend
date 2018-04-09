@@ -48,7 +48,6 @@ export class RideContainer extends Component {
   };
 
   getRidesTimeSpan = (rides) => {
-    console.log(rides)
     const afterTime = moment().startOf('year');
     const afterEpoch = Date.parse(afterTime);
     const beforeTime = moment().startOf('day');
@@ -63,7 +62,7 @@ export class RideContainer extends Component {
 
   render() {
     const { rides } = this.props
-    const rideCards = rides.map(ride => {
+    const rideCards = rides.reverse().map(ride => {
       return <RideCard key={ride.epoch} ride={ride}/>
     })
     return(
