@@ -6,6 +6,14 @@ export const mockUser = {
   token:"2y589wyhgfiouqehr8to8"
 }
 
+export const mockUserInfo = {
+  firstname: 'Pat',
+  lastname: 'McLaughlin',
+  city: 'Denver',
+  state: 'Colorado',
+  profile_medium: 'image url'
+}
+
 export const mockReturnUser = {
   email: 'pat@askjeeves.com',
   password: 'password'
