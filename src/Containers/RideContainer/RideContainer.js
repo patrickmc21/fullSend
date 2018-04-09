@@ -18,6 +18,12 @@ import * as actions from '../../Actions';
 import './RideContainer.css';
 
 export class RideContainer extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      errorStatus: ''
+    }
+  }
 
   handleClick = async () => {
     const { user, rides } = this.props;
@@ -30,7 +36,7 @@ export class RideContainer extends Component {
       this.props.updateRides(cleanRides);
       this.addRidesToLocalServer(cleanRides, user.id);
     } catch (error) {
-      console.log(error)
+      this.setState({errorStatus: error.message})
     }
   };
 

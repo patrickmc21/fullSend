@@ -1,8 +1,8 @@
-import { mockRide } from '../../../mock-data/mock-data';
+import { mockRides } from '../../../mock-data/mock-data';
 
 const rideCleaner = jest.fn()
   .mockImplementation(() => {
-    return mockRide
+    return mockRides
   });
 
   export default rideCleaner;

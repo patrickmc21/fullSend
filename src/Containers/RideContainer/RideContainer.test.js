@@ -24,10 +24,12 @@ describe('RideContainer', () => {
   let mockedRides;
   let mockedUpdateRides;
   let wrapper;
+  let mockedRideActivity;
 
   beforeEach(() => {
     mockedUser = mocks.mockUser;
-    mockedRides = [];
+    mockedRides = mocks.mockRides;
+    mockedRideActivity = [mocks.mockUserActivityLog[0]];
     mockedUpdateRides = jest.fn();
     wrapper = shallow(
       <RideContainer
@@ -39,6 +41,120 @@ describe('RideContainer', () => {
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should match the snapshot if no rides present', () => {
+    mockedRides = [];
+    wrapper = shallow(
+      <RideContainer
+        user={mockedUser}
+        rides={mockedRides}
+        updateRides={mockedUpdateRides} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  })
+
+  it('could call getRidesTimeSpan on click', () => {
+    const spy = jest.spyOn(wrapper.instance(), 'getRidesTimeSpan');
+    wrapper.instance().handleClick();
+    expect(spy).toHaveBeenCalledWith(mockedRides);
+  });
+
+  it('could call getAthleteActivities on click', () => {
+    wrapper.instance().handleClick();
+    expect(getAthleteActivities).toHaveBeenCalled();
+  });
+
+  it('should call filterActivities on click', async () => {
+    const spy = jest.spyOn(wrapper.instance(), 'filterActivities');
+    await wrapper.instance().handleClick();
+    expect(spy).toHaveBeenCalled();
+  });
+
+  it('could call getTrails on click', async () => {
+    const spy = jest.spyOn(wrapper.instance(), 'getTrails');
+    await wrapper.instance().handleClick();
+    expect(spy).toHaveBeenCalled();
+  });
+
+  it('should call rideCleaner on click', async () => {
+    await wrapper.instance().handleClick();
+    expect(rideCleaner).toHaveBeenCalled();
+  });
+
+  it('should call updateRides on click', async () => {
+    await wrapper.instance().handleClick();
+    expect(mockedUpdateRides).toHaveBeenCalled();
+  });
+
+  it('should call addRidesToLocalServer on click', async () => {
+    const spy = jest.spyOn(wrapper.instance(), 'addRidesToLocalServer');
+    await wrapper.instance().handleClick();
+    expect(spy).toHaveBeenCalled();
+  });
+
+  it('should throw an error on bad click', async () => {
+    mockedUpdateRides = jest.fn()
+      .mockImplementation(() => {
+        throw {message: 'BAD!'}
+      });
+    wrapper = shallow(
+      <RideContainer
+        user={mockedUser}
+        rides={mockedRides}
+        updateRides={mockedUpdateRides} />
+    );
+    const expected = 'BAD!';
+    await wrapper.instance().handleClick();
+    expect(wrapper.state().errorStatus).toEqual(expected);
+  })
+
+  it('should filter activities by type', () => {
+    const activities = mocks.mockUserActivityLog;
+    const expected = [activities[0]];
+    const results = wrapper.instance().filterActivities(activities);
+    expect(results).toEqual(expected);
+  });
+
+  it('should call getTrails api call', async () => {
+    const expected = mockedRideActivity[0].start_latlng;
+    await wrapper.instance().getTrails(mockedRideActivity);
+    expect(getTrails).toHaveBeenCalledWith(...expected);
+  });
+
+  it('should return an object of ride and trail stats', async () => {
+    const expected = mocks.mockActivityAndTrail;
+    const results = await wrapper.instance().getTrails(mockedRideActivity);
+    expect(results).toEqual([expected])
+  });
+
+  it('should return the before and after epoch', () => {
+    const mockBefore = Date.parse(moment().startOf('day'))/1000;
+    const mockAfter = mockedRides[0].epoch;
+    const expected = {
+      before: mockBefore,
+      after: mockAfter
+    };
+    const results = wrapper.instance().getRidesTimeSpan(mockedRides);
+    expect(results).toEqual(expected);
+  });
+
+  it('should return a default after if no rides present', () => {
+    mockedRides = [];
+    wrapper = shallow(
+      <RideContainer
+        user={mockedUser}
+        rides={mockedRides}
+        updateRides={mockedUpdateRides} />
+    );
+    const expected = Date.parse(moment().startOf('year'))/1000;
+    const results = wrapper.instance().getRidesTimeSpan(mockedRides).after;
+    expect(results).toEqual(expected);
+  });
+
+  it('should add rides to local server', () => {
+    wrapper.instance().addRidesToLocalServer(mockedRides, mockedUser.id);
+    expect(updateUserRides).toHaveBeenCalled();
   });
 
 });
