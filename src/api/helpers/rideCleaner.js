@@ -13,8 +13,8 @@ export const convertMetersToMiles = (meters) => {
 
 export const convertSecondsToHoursMins = (seconds) => {
   const allMinutes = seconds / 60;
-  const hours = (allMinutes / 60).toFixed(0);
-  const minutes = (allMinutes % 60).toFixed(0);
+  const hours = parseInt(allMinutes / 60);
+  const minutes = parseInt(allMinutes % 60);
   return `${hours} hr(s) ${minutes} min(s)`
 };
 

@@ -539,4 +539,18 @@ export const mockUserActivityLog = [{
 export const mockActivityAndTrail = {
   ...mockUserActivityLog[0],
   ...mockTrail.trails[0]
-}
+};
+
+export const mockRideCleanerReturn = [
+  {
+    "date": "Fri Feb 16 2018", 
+    "difficulty": "greenBlue", 
+    "distance": "17 miles", 
+    "elapsedTime": "1 hr(s) 13 min(s)", 
+    "epoch": 1518792774, 
+    "img": "https://cdn-files.apstatic.com/mtb/7002944_smallMed_1433864122.jpg", 
+    "location": "Boulder, Colorado", 
+    "summary": "A solid ride close to Boulder that is often ridden from town.", 
+    "trailName": "Betasso Preserve"
+  }
+];
