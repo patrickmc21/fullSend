@@ -12,7 +12,7 @@ const getUserRides = async (userId) => {
     const data = await response.json();
     return data
   } catch (error) {
-    throw new Error({error: error.message, message: 'Favorites not found!'})
+    throw {error: error.message, message: 'Favorites not found!'};
   }
 
 };
