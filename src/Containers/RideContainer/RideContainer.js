@@ -21,22 +21,22 @@ export class RideContainer extends Component {
 
   handleClick = async () => {
     const { user, rides } = this.props;
-    const afterTime = moment().startOf('year');
-    const afterEpoch = Date.parse(afterTime);
-    const beforeTime = moment().startOf('day');
-    const before = Date.parse(beforeTime)/1000;
-    const after = rides.length > 0 ? Date.parse(rides[0].epoch)/1000 : afterEpoch/1000;
+    const { before, after } = this.getRidesTimeSpan(rides);
     try {
       const userActivities = await getAthleteActivities(user.token, after, before);
-      const ridesOnly = userActivities.filter(activity => activity.type === 'Ride');
+      const ridesOnly = this.filterActivities(userActivities);
       const ridesWithTrails = await this.getTrails(ridesOnly);
       const cleanRides = rideCleaner(ridesWithTrails);
       this.props.updateRides(cleanRides);
-      cleanRides.forEach(ride => updateUserRides(ride, user.id))
+      this.addRidesToLocalServer(cleanRides, user.id);
     } catch (error) {
       console.log(error)
     }
   };
+
+  filterActivities = (activities) => {
+    return activities.filter(activity => activity.type === 'Ride');
+  }
 
   getTrails = (rides) => {
     const ridesWithTrails = rides.map( async (ride) => {
@@ -45,6 +45,19 @@ export class RideContainer extends Component {
         return Object.assign({}, ride, trail);
       });
     return Promise.all(ridesWithTrails);
+  };
+
+  getRidesTimeSpan = (rides) => {
+    const afterTime = moment().startOf('year');
+    const afterEpoch = Date.parse(afterTime);
+    const beforeTime = moment().startOf('day');
+    const before = Date.parse(beforeTime)/1000;
+    const after = rides.length > 0 ? Date.parse(rides[0].epoch)/1000 : afterEpoch/1000;
+    return {before, after};
+  };
+
+  addRidesToLocalServer = (rides, id) => {
+    rides.forEach(ride => updateUserRides(ride, id))
   }
 
   render() {

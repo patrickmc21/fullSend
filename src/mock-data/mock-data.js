@@ -321,3 +321,9 @@ export const mockUserActivityLog = {
   "segment_leaderboard_opt_out" : false,
   "leaderboard_opt_out" : false
 };
+
+
+export const mockActivityAndTrail = {
+  ...mockUserActivityLog,
+  ...mockTrail.trails[0]
+}
