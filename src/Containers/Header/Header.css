@@ -11,10 +11,11 @@
 .logo {
   float: left;
   margin: 20px 20px;
+  width: 300px;
   background-image: url('./images/logo-img.png');
-  background-size: 64px 100px;
+  background-size: 64px 60px;
   background-repeat: no-repeat;
-  background-position: 10px 10px;
+  background-position: 210px 0px;
   color: #FFFFFE;
   font-family: 'Sedgwick Ave Display', cursive;
   font-size: 64px;

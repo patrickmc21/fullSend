@@ -8,10 +8,13 @@ const getAthleteInfo = async (token) => {
     }
   };
 
-  const response = await fetch(rootUrl, optionsObject);
-  console.log(response);
-  const data = await response.json();
-  return data;
-}
+  try {
+    const response = await fetch(rootUrl, optionsObject);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw error.message;
+  }
+};
 
 export default getAthleteInfo

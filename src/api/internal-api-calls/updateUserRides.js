@@ -1,6 +1,6 @@
 const updateUserRides = async (ride, userId) => {
-  const url = 'fullsend/users/rides';
-  const body = {...ride, userId: userId};
+  const url = '/fullsend/users/rides';
+  const body = Object.assign(ride, {userId: userId});
   const options = {
     method: 'POST',
     body: JSON.stringify(body),
@@ -14,7 +14,7 @@ const updateUserRides = async (ride, userId) => {
     const data = await response.json();
     return data;
   } catch (error) {
-    throw new Error({error: error.message, message: 'Error adding ride'})
+    throw {error: error.message, message: 'Error adding ride'};
   } 
 }
 

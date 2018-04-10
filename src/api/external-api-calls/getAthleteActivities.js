@@ -9,8 +9,11 @@ export const getAthleteActivities = async (token, after, before) => {
     }
   };
 
-  const response = await fetch(`${rootUrl}${urlOptions}`, optionsObject);
-  console.log(response);
-  const data = await response.json();
-  return data;
+  try {
+    const response = await fetch(`${rootUrl}${urlOptions}`, optionsObject);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw error.message;
+  }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
 import Header from '../../Containers/Header/Header';
 import Nav from '../Nav/Nav';

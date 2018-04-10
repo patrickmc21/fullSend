@@ -1,0 +1,566 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RideCard should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RideCard
+    ride={
+        Object {
+            "date": "May 8th, 2017",
+            "difficulty": "green",
+            "distance": "2",
+            "elapsedTime": "120",
+            "epoch": "776232323",
+            "img": "someurlthing",
+            "location": "park",
+            "summary": "not sendy",
+            "trailName": "lame",
+            "userId": "9",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="ride-header"
+>
+          <h6
+                    className="ride-date"
+          >
+                    May 8th, 2017
+          </h6>
+          <img
+                    alt="lame"
+                    className="ride-image"
+                    src="someurlthing"
+          />
+</div>,
+        <div
+          className="ride-trail"
+>
+          <h2
+                    className="ride-trail-name"
+          >
+                    lame
+                    <div
+                              className="green"
+                    />
+          </h2>
+          <h3
+                    className="ride-location"
+          >
+                    park
+          </h3>
+          <p
+                    className="ride-summary"
+          >
+                    not sendy
+          </p>
+</div>,
+        <div
+          className="ride-stats"
+>
+          <h4
+                    className="ride-distance"
+          >
+                    Distance: 
+                    2
+          </h4>
+          <h4
+                    className="ride-time"
+          >
+                    Duration: 
+                    120
+          </h4>
+</div>,
+      ],
+      "className": "ride-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h6
+              className="ride-date"
+>
+              May 8th, 2017
+</h6>,
+            <img
+              alt="lame"
+              className="ride-image"
+              src="someurlthing"
+/>,
+          ],
+          "className": "ride-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "May 8th, 2017",
+              "className": "ride-date",
+            },
+            "ref": null,
+            "rendered": "May 8th, 2017",
+            "type": "h6",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "lame",
+              "className": "ride-image",
+              "src": "someurlthing",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="ride-trail-name"
+>
+              lame
+              <div
+                            className="green"
+              />
+</h2>,
+            <h3
+              className="ride-location"
+>
+              park
+</h3>,
+            <p
+              className="ride-summary"
+>
+              not sendy
+</p>,
+          ],
+          "className": "ride-trail",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "lame",
+                <div
+                  className="green"
+/>,
+              ],
+              "className": "ride-trail-name",
+            },
+            "ref": null,
+            "rendered": Array [
+              "lame",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "green",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+            ],
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "park",
+              "className": "ride-location",
+            },
+            "ref": null,
+            "rendered": "park",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "not sendy",
+              "className": "ride-summary",
+            },
+            "ref": null,
+            "rendered": "not sendy",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4
+              className="ride-distance"
+>
+              Distance: 
+              2
+</h4>,
+            <h4
+              className="ride-time"
+>
+              Duration: 
+              120
+</h4>,
+          ],
+          "className": "ride-stats",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Distance: ",
+                "2",
+              ],
+              "className": "ride-distance",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Distance: ",
+              "2",
+            ],
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Duration: ",
+                "120",
+              ],
+              "className": "ride-time",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Duration: ",
+              "120",
+            ],
+            "type": "h4",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="ride-header"
+>
+            <h6
+                        className="ride-date"
+            >
+                        May 8th, 2017
+            </h6>
+            <img
+                        alt="lame"
+                        className="ride-image"
+                        src="someurlthing"
+            />
+</div>,
+          <div
+            className="ride-trail"
+>
+            <h2
+                        className="ride-trail-name"
+            >
+                        lame
+                        <div
+                                    className="green"
+                        />
+            </h2>
+            <h3
+                        className="ride-location"
+            >
+                        park
+            </h3>
+            <p
+                        className="ride-summary"
+            >
+                        not sendy
+            </p>
+</div>,
+          <div
+            className="ride-stats"
+>
+            <h4
+                        className="ride-distance"
+            >
+                        Distance: 
+                        2
+            </h4>
+            <h4
+                        className="ride-time"
+            >
+                        Duration: 
+                        120
+            </h4>
+</div>,
+        ],
+        "className": "ride-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h6
+                className="ride-date"
+>
+                May 8th, 2017
+</h6>,
+              <img
+                alt="lame"
+                className="ride-image"
+                src="someurlthing"
+/>,
+            ],
+            "className": "ride-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "May 8th, 2017",
+                "className": "ride-date",
+              },
+              "ref": null,
+              "rendered": "May 8th, 2017",
+              "type": "h6",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "lame",
+                "className": "ride-image",
+                "src": "someurlthing",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="ride-trail-name"
+>
+                lame
+                <div
+                                className="green"
+                />
+</h2>,
+              <h3
+                className="ride-location"
+>
+                park
+</h3>,
+              <p
+                className="ride-summary"
+>
+                not sendy
+</p>,
+            ],
+            "className": "ride-trail",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "lame",
+                  <div
+                    className="green"
+/>,
+                ],
+                "className": "ride-trail-name",
+              },
+              "ref": null,
+              "rendered": Array [
+                "lame",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "green",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "div",
+                },
+              ],
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "park",
+                "className": "ride-location",
+              },
+              "ref": null,
+              "rendered": "park",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "not sendy",
+                "className": "ride-summary",
+              },
+              "ref": null,
+              "rendered": "not sendy",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4
+                className="ride-distance"
+>
+                Distance: 
+                2
+</h4>,
+              <h4
+                className="ride-time"
+>
+                Duration: 
+                120
+</h4>,
+            ],
+            "className": "ride-stats",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Distance: ",
+                  "2",
+                ],
+                "className": "ride-distance",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Distance: ",
+                "2",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Duration: ",
+                  "120",
+                ],
+                "className": "ride-time",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Duration: ",
+                "120",
+              ],
+              "type": "h4",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
