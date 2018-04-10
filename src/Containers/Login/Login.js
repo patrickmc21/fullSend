@@ -21,14 +21,14 @@ export class Login extends Component {
       tempToken: '',
       errorStatus: ''
     }
-  }
+  };
 
   componentDidMount() {
     this.handleRedirection(window.location);
-  }
+  };
 
   handleRedirection = (location) => {
-      if (location.search.includes('code')) {
+    if (location.search.includes('code')) {
       const history = location.href;
       const tempToken = history.substr(history.length - 40);
       this.setState(
@@ -58,17 +58,17 @@ export class Login extends Component {
       const newUser = {name: athlete.firstname, ...signInInfo};
       try {
         userId = await createUserId(newUser);
-        const user = {
-          name: athlete.firstname,
-          token: access_token,
-          id: userId.id
-        };
-        this.props.addUser(user);
-        return userId.id;
       } catch (error) {
         this.setState({errorStatus: error.message});
       }
     }
+    const user = {
+      name: athlete.firstname,
+      token: access_token,
+      id: userId.id
+    };
+    this.props.addUser(user);
+    return userId.id;
   };
 
   getUserRides = async (userId) => {
