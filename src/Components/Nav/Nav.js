@@ -15,7 +15,7 @@ const Nav = () => {
         Rides
       </NavLink>
     </nav>
-  )
+  );
 };
 
 export default Nav;
