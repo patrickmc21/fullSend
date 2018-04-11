@@ -1,6 +1,6 @@
 export const getAthleteActivities = async (token, after, before) => {
-  const rootUrl = 'https://www.strava.com/api/v3/athlete/activities'
-  const urlOptions = `?before=${before}&after=${after}&page=1`
+  const rootUrl = 'https://www.strava.com/api/v3/athlete/activities';
+  const urlOptions = `?before=${before}&after=${after}&page=1`;
   const optionsObject = {
     method: 'GET',
     headers: {
@@ -16,4 +16,4 @@ export const getAthleteActivities = async (token, after, before) => {
   } catch (error) {
     throw error.message;
   }
-}
+};

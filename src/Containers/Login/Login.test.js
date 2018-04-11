@@ -18,7 +18,7 @@ describe('Login', () => {
 
   let wrapper;
   let mockAddUser;
-  let mockAddRides;
+  let mockUpdateRides;
   let mockToken;
   let mockLocation;
 
@@ -27,13 +27,13 @@ describe('Login', () => {
     mockLocation = {
       search: 'main',
       href: mockToken
-    }
+    };
     mockAddUser = jest.fn();
-    mockAddRides = jest.fn();
+    mockUpdateRides = jest.fn();
     wrapper = shallow(
       <Login
         addUser={mockAddUser}
-        addRides={mockAddRides} />
+        updateRides={mockUpdateRides} />
     );
   });
 
@@ -50,7 +50,7 @@ describe('Login', () => {
     wrapper = shallow(
       <Login
         addUser={mockAddUser}
-        addRides={mockAddRides} />,
+        updateRides={mockUpdateRides} />,
       {disableLifecycleMethods: true}
     );
     const spy = jest.spyOn(wrapper.instance(), 'handleRedirection');
@@ -62,7 +62,7 @@ describe('Login', () => {
     wrapper = shallow(
       <Login
         addUser={mockAddUser}
-        addRides={mockAddRides} />,
+        updateRides={mockUpdateRides} />,
       {disableLifecycleMethods: true}
     );
     mockLocation.search = 'code';
@@ -75,7 +75,7 @@ describe('Login', () => {
     wrapper = shallow(
       <Login
         addUser={mockAddUser}
-        addRides={mockAddRides} />,
+        updateRides={mockUpdateRides} />,
       {disableLifecycleMethods: true}
     );
     mockLocation.search = 'code';
@@ -132,9 +132,9 @@ describe('Login', () => {
 
   it('should throw an error if createUserId fails', async () => {
     wrapper.setState({tempToken: 3});
-    const expected = 'Bad'
+    const expected = 'Bad';
     await wrapper.instance().loginUser();
-    expect(wrapper.state().errorStatus).toEqual(expected)
+    expect(wrapper.state().errorStatus).toEqual(expected);
   });
 
   it('should run addUser on loginUser', async () => {
@@ -149,14 +149,14 @@ describe('Login', () => {
   });
 
   it('should return the user id on loginUser', async () => {
-    const expected = 1
+    const expected = 1;
     wrapper.setState({tempToken: 2});
     const results = await wrapper.instance().loginUser();
-    expect(results).toEqual(1)
+    expect(results).toEqual(expected);
   });
 
   it('should call getRides on getUserRides', async () => {
-    const expected = 1
+    const expected = 1;
     await wrapper.instance().getUserRides(1);
     expect(getRides).toHaveBeenCalledWith(expected);
   });
@@ -164,8 +164,8 @@ describe('Login', () => {
   it('should call addRides on running getUserRides', async () => {
     const expected = await getRides(1);
     await wrapper.instance().getUserRides(1);
-    expect(mockAddRides).toHaveBeenCalledWith(expected);
-  })
+    expect(mockUpdateRides).toHaveBeenCalledWith(expected);
+  });
 
 });
 
@@ -181,10 +181,10 @@ describe('mapDispatchToProps', () => {
 
   it('should map addUser to props', () => {
     const mockUser =  {
-        name: 'Tim',
-        token: 2,
-        id: 1
-      }
+      name: 'Tim',
+      token: 2,
+      id: 1
+    };
     const expected = {
       type: 'SIGN_IN_USER',
       user: mockUser
@@ -196,10 +196,10 @@ describe('mapDispatchToProps', () => {
   it('should map addRides to props', async () => {
     const mockRides = await getRides();
     const expected = {
-      type: 'ADD_RIDES',
+      type: 'UPDATE_RIDES',
       rides: mockRides
     };
-    mapped.addRides(mockRides);
+    mapped.updateRides(mockRides);
     expect(mockDispatch).toHaveBeenCalledWith(expected);
   });
 });

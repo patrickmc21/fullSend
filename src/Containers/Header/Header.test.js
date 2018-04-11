@@ -2,7 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { Header, mapStateToProps, mapDispatchToProps } from './Header';
 import getAthleteInfo from  '../../api/external-api-calls/getAthleteInfo';
-import * as actions from '../../Actions';
 jest.mock('../../api/external-api-calls/getAthleteInfo');
 
 import { mockUserInfo, mockUser } from '../../mock-data/mock-data';
@@ -57,5 +56,5 @@ describe('mapDispatchToProps', () => {
     const mapped = mapDispatchToProps(mockDispatch);
     mapped.logoutUser(mockUser.id);
     expect(mockDispatch).toHaveBeenCalledWith(expected);
-  })
-})
+  });
+});

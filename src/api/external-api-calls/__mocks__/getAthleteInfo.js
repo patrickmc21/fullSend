@@ -4,7 +4,7 @@ const getAthleteInfo = jest.fn()
   .mockImplementation(() => {
     return Promise.resolve(
       mockUserInfo
-    )
+    );
   });
 
 export default getAthleteInfo;

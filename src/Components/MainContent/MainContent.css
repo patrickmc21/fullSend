@@ -1,3 +1,9 @@
+.main-content-wrapper {
+  padding-top: 50px;
+  height: 620px;
+  background-color: #f8f7ee;
+}
+
 .main-content {
   padding-top: 200px;
   border: 1px solid #515c28;

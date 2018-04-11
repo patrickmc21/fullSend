@@ -1,5 +1,5 @@
 const getAthleteInfo = async (token) => {
-  const rootUrl = 'https://www.strava.com/api/v3/athlete'
+  const rootUrl = 'https://www.strava.com/api/v3/athlete';
   const optionsObject = {
     method: 'GET',
     headers: {
@@ -17,4 +17,4 @@ const getAthleteInfo = async (token) => {
   }
 };
 
-export default getAthleteInfo
+export default getAthleteInfo;

@@ -45,5 +45,18 @@
 }
 
 .user-name {
-  margin: 25px 0 3px 0;
+  margin: 20px 0 3px 0;
+}
+
+.logout {
+  display: block;
+  color: #FFFFFE;
+  font-family: 'Raleway', sans-serif;
+  text-align: right;
+  text-decoration: none;
+}
+
+.logout:hover {
+  color: #000000;
+  text-decoration: underline;
 }

@@ -16,6 +16,6 @@ const updateUserRides = async (ride, userId) => {
   } catch (error) {
     throw {error: error.message, message: 'Error adding ride'};
   } 
-}
+};
 
 export default updateUserRides;

@@ -23,5 +23,5 @@ describe('rideReducer', () => {
     const expected = [...state, ...newRides];
     const results = rideReducer(state, Actions.updateRides(newRides));
     expect(results).toEqual(expected);
-  })
+  });
 });

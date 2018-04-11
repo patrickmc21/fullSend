@@ -4,5 +4,5 @@ export const getTrails = jest.fn()
   .mockImplementation(() => {
     return Promise.resolve({
       trails: [mockActivityAndTrail]
-    })
+    });
   });

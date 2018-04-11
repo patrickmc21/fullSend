@@ -1,4 +1,4 @@
-import { createUserId } from '../createUserId';
+import createUserId from '../createUserId';
 import * as mock from '../../../mock-data/mock-data';
 
 describe('createUserId', () => {
@@ -29,10 +29,10 @@ describe('createUserId', () => {
         return Promise.resolve({
           status: 200,
           json: () => {
-            return Promise.resolve(mockId)
+            return Promise.resolve(mockId);
           }
-        })
-      })
+        });
+      });
   });
 
   it('should call fetch with correct params', () => {
@@ -53,8 +53,8 @@ describe('createUserId', () => {
         return Promise.reject({
           ok: false,
           message: 'Oops'
-        })
-    });
+        });
+      });
 
     const expected = 'Oops';
     const results = createUserId(mockUser);

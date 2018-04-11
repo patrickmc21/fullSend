@@ -10,7 +10,7 @@ describe('usersReducer', () => {
   });
 
   it('should add user to state', () => {
-    const user = mock.mockReturnUser
+    const user = mock.mockReturnUser;
     const expected = user;
     const results = usersReducer(undefined, Actions.signInUser(user));
     expect(results).toEqual(expected);
@@ -22,5 +22,5 @@ describe('usersReducer', () => {
     const expected = {};
     const results = usersReducer(user, Actions.logoutUser(id));
     expect(results).toEqual(expected);
-  })
+  });
 });

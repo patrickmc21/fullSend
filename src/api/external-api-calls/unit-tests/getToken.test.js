@@ -31,9 +31,9 @@ describe('getToken', () => {
       return Promise.resolve({
         status: 200,
         json: () => {
-          return Promise.resolve(JSON.stringify(mockAthleteInfo))
+          return Promise.resolve(JSON.stringify(mockAthleteInfo));
         }
-      })
+      });
     });
   });
 
@@ -54,10 +54,10 @@ describe('getToken', () => {
       return Promise.reject({
         status: 404,
         message: 'FAIL'
-      })
+      });
     });
     const expected = 'FAIL';
     const results = getToken(mockTempToken);
     expect(results).rejects.toEqual(expected);
-  })
+  });
 });

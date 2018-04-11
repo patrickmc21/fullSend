@@ -1,4 +1,4 @@
-export const createUserId = async (user) => {
+const createUserId = async (user) => {
   const { name, email, password } = user;
   const url = 'fullsend/users';
   const options = {
@@ -14,10 +14,12 @@ export const createUserId = async (user) => {
   };
 
   try {
-    const response = await fetch(url, options)
+    const response = await fetch(url, options);
     const id = await response.json();
     return id; 
   } catch (error) {
     throw error.message;
   }
-}
+};
+
+export default createUserId;

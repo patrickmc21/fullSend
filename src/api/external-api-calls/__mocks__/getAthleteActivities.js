@@ -4,5 +4,5 @@ export const getAthleteActivities = jest.fn()
   .mockImplementation(() => {
     return Promise.resolve(
       mockUserActivityLog
-    )
+    );
   });
