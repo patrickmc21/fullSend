@@ -37,7 +37,7 @@ const RideCard = ({ride}) => {
         <h4 className='ride-time'>Duration: {elapsedTime}</h4>
       </div>
     </article>
-  )
+  );
 };
 
 RideCard.propTypes = {
