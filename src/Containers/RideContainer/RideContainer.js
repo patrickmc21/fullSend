@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { dispatch } from 'redux';
 import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 
 import RideCard from '../../Components/RideCard/RideCard';
 
+/* eslint-disable max-len */
 import { getAthleteActivities } from '../../api/external-api-calls/getAthleteActivities';
+/* eslint-enable max-len */
+
 import { getTrails } from '../../api/external-api-calls/getTrails';
 import updateUserRides from '../../api/internal-api-calls/updateUserRides';
 
@@ -19,10 +21,10 @@ import './RideContainer.css';
 
 export class RideContainer extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       errorStatus: ''
-    }
+    };
   }
 
   handleClick = async () => {
@@ -36,7 +38,7 @@ export class RideContainer extends Component {
       this.props.updateRides(cleanRides);
       this.addRidesToLocalServer(cleanRides, user.id);
     } catch (error) {
-      this.setState({errorStatus: error.message})
+      this.setState({errorStatus: error.message});
     }
   };
 
@@ -46,10 +48,10 @@ export class RideContainer extends Component {
 
   getTrails = (rides) => {
     const ridesWithTrails = rides.map( async (ride) => {
-        const response = await getTrails(ride.start_latlng[0], ride.start_latlng[1])
-        const trail = response.trails[0];
-        return Object.assign({}, ride, trail);
-      });
+      const response = await getTrails(ride.start_latlng[0], ride.start_latlng[1]);
+      const trail = response.trails[0];
+      return Object.assign({}, ride, trail);
+    });
     return Promise.all(ridesWithTrails);
   };
 
@@ -63,19 +65,18 @@ export class RideContainer extends Component {
   };
 
   addRidesToLocalServer = (rides, id) => {
-    rides.forEach(ride => updateUserRides(ride, id))
+    rides.forEach(ride => updateUserRides(ride, id));
   }
 
   render() {
-    const { rides } = this.props
+    const { rides } = this.props;
     const rideCards = rides.map(ride => {
-      return <RideCard key={ride.epoch} ride={ride}/>
-    })
-    const ridesByRecent = rideCards.sort((a,b) => {
-      return b.key - a.key;
+      return <RideCard key={ride.epoch} ride={ride}/>;
     });
-    console.log(ridesByRecent);
-    return(
+    const ridesByRecent = rideCards.sort((first, second) => {
+      return second.key - first.key;
+    });
+    return (
       <section className='ride-container'>
         <button 
           className='update-rides'
@@ -87,8 +88,14 @@ export class RideContainer extends Component {
           {rides.length < 1 && <h6>No Rides to Show!</h6>}
         </div>
       </section>
-    )
+    );
   }
+}
+
+RideContainer.propTypes = {
+  user: PropTypes.object,
+  rides: PropTypes.array,
+  updateRides: PropTypes.func
 };
 
 export const mapStateToProps = state => ({
@@ -101,4 +108,4 @@ export const mapDispatchToProps = dispatch => ({
 });
 
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(RideContainer))
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(RideContainer));

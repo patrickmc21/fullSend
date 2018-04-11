@@ -1,11 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import moment from 'moment';
+/* eslint-disable max-len */
 import { getAthleteActivities } from '../../api/external-api-calls/getAthleteActivities';
+/* eslint-enable max-len */
 import { getTrails } from '../../api/external-api-calls/getTrails';
 import updateUserRides from '../../api/internal-api-calls/updateUserRides';
 import rideCleaner from '../../api/helpers/rideCleaner';
-import * as actions from '../../Actions';
 import { 
   RideContainer, 
   mapStateToProps, 
@@ -52,7 +53,7 @@ describe('RideContainer', () => {
         updateRides={mockedUpdateRides} />
     );
     expect(wrapper).toMatchSnapshot();
-  })
+  });
 
   it('could call getRidesTimeSpan on click', () => {
     const spy = jest.spyOn(wrapper.instance(), 'getRidesTimeSpan');
@@ -96,7 +97,7 @@ describe('RideContainer', () => {
   it('should throw an error on bad click', async () => {
     mockedUpdateRides = jest.fn()
       .mockImplementation(() => {
-        throw {message: 'BAD!'}
+        throw {message: 'BAD!'};
       });
     wrapper = shallow(
       <RideContainer
@@ -107,7 +108,7 @@ describe('RideContainer', () => {
     const expected = 'BAD!';
     await wrapper.instance().handleClick();
     expect(wrapper.state().errorStatus).toEqual(expected);
-  })
+  });
 
   it('should filter activities by type', () => {
     const activities = mocks.mockUserActivityLog;
@@ -125,7 +126,7 @@ describe('RideContainer', () => {
   it('should return an object of ride and trail stats', async () => {
     const expected = mocks.mockActivityAndTrail;
     const results = await wrapper.instance().getTrails(mockedRideActivity);
-    expect(results).toEqual([expected])
+    expect(results).toEqual([expected]);
   });
 
   it('should return the before and after epoch', () => {
