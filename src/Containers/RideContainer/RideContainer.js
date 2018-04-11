@@ -25,7 +25,6 @@ export class RideContainer extends Component {
     super(props);
     this.state = {
       errorStatus: '',
-      currentMonth: ''
     };
   }
 
@@ -70,24 +69,32 @@ export class RideContainer extends Component {
     rides.forEach(ride => updateUserRides(ride, id));
   }
 
-  render() {
-    const { rides, month } = this.props;
-    const rideCards = rides.map(ride => {
-      return <RideCard key={ride.epoch} ride={ride}/>;
-    });
-    const ridesByRecent = rideCards.sort((first, second) => {
-      return second.key - first.key;
-    });
-    const monthRides = rides.filter(ride => {
-      if (month !== 'All') {
+  buildRideCards = (rides, month) => {
+    let rideCards;
+    if (month !== 'All') {
+      const monthRides = rides.filter(ride => {
         const startTime = moment([2018, 0, 1]).month(month).format('x')/1000;
         const endTime = moment([2018, 0, 31]).month(month).format('x')/1000;
+        console.log(startTime, endTime)
         return ride.epoch >= startTime && ride.epoch < endTime;
-      }
+      });
+      rideCards = monthRides.map(ride => {
+        return <RideCard key={ride.epoch} ride={ride}/>;
+      });
+    } else {
+      rideCards = rides.map(ride => {
+        return <RideCard key={ride.epoch} ride={ride}/>;
+      });
+    }
+    return rideCards.sort((first, second) => {
+      return second.key - first.key;
     });
-    const monthCards = monthRides.map(ride => {
-      return <RideCard key={ride.epoch} ride={ride}/>;
-    });
+  }
+
+  render() {
+    const { rides, month } = this.props;
+    const rideCards = this.buildRideCards(rides, month);
+    console.log(rideCards)
     return (
       <section className='ride-container'>
         <DateSelector />
@@ -96,12 +103,10 @@ export class RideContainer extends Component {
           onClick={this.handleClick}>
             Update Rides
         </button>
-        <Route exact path='./main/rides' render={() => {
+        <Route exact path='/main/rides' render={() => {
           return (<div className='card-container'>
-            {rides.length > 1 && month === 'All' && ridesByRecent}
-            {month !== 'All' && monthRides.length > 1 && monthCards}
-            {month !== 'All' && monthRides.length < 1 && <h6>No Rides to Show!</h6>}
-            {rides.length < 1 && <h6>No Rides to Show!</h6>}
+            {rideCards.length >= 1 && rideCards}
+            {rideCards.length < 1 && <h6>No Rides to Show!</h6>}
           </div>)
         }}
         />

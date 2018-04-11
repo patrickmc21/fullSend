@@ -46,6 +46,7 @@ export class Header extends Component {
         <NavLink 
           to='/main'
           className='logo-link'
+          onClick={() => this.props.changeMonth('All')}
         >
           <h1 className='logo'>fullSend</h1>
         </NavLink>
@@ -83,7 +84,8 @@ export const mapStateToProps = state => ({
 
 export const mapDispatchToProps = dispatch => ({
   logoutUser: id => dispatch(actions.logoutUser(id)),
-  clearRides: id => dispatch(actions.clearRides(id))
+  clearRides: id => dispatch(actions.clearRides(id)),
+  changeMonth: month => dispatch(actions.changeMonth(month))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));
