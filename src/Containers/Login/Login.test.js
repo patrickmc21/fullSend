@@ -18,7 +18,7 @@ describe('Login', () => {
 
   let wrapper;
   let mockAddUser;
-  let mockAddRides;
+  let mockUpdateRides;
   let mockToken;
   let mockLocation;
 
@@ -29,11 +29,11 @@ describe('Login', () => {
       href: mockToken
     }
     mockAddUser = jest.fn();
-    mockAddRides = jest.fn();
+    mockUpdateRides = jest.fn();
     wrapper = shallow(
       <Login
         addUser={mockAddUser}
-        addRides={mockAddRides} />
+        updateRides={mockUpdateRides} />
     );
   });
 
@@ -50,7 +50,7 @@ describe('Login', () => {
     wrapper = shallow(
       <Login
         addUser={mockAddUser}
-        addRides={mockAddRides} />,
+        updateRides={mockUpdateRides} />,
       {disableLifecycleMethods: true}
     );
     const spy = jest.spyOn(wrapper.instance(), 'handleRedirection');
@@ -62,7 +62,7 @@ describe('Login', () => {
     wrapper = shallow(
       <Login
         addUser={mockAddUser}
-        addRides={mockAddRides} />,
+        updateRides={mockUpdateRides} />,
       {disableLifecycleMethods: true}
     );
     mockLocation.search = 'code';
@@ -75,7 +75,7 @@ describe('Login', () => {
     wrapper = shallow(
       <Login
         addUser={mockAddUser}
-        addRides={mockAddRides} />,
+        updateRides={mockUpdateRides} />,
       {disableLifecycleMethods: true}
     );
     mockLocation.search = 'code';
@@ -164,7 +164,7 @@ describe('Login', () => {
   it('should call addRides on running getUserRides', async () => {
     const expected = await getRides(1);
     await wrapper.instance().getUserRides(1);
-    expect(mockAddRides).toHaveBeenCalledWith(expected);
+    expect(mockUpdateRides).toHaveBeenCalledWith(expected);
   })
 
 });
@@ -196,10 +196,10 @@ describe('mapDispatchToProps', () => {
   it('should map addRides to props', async () => {
     const mockRides = await getRides();
     const expected = {
-      type: 'ADD_RIDES',
+      type: 'UPDATE_RIDES',
       rides: mockRides
     };
-    mapped.addRides(mockRides);
+    mapped.updateRides(mockRides);
     expect(mockDispatch).toHaveBeenCalledWith(expected);
   });
 });

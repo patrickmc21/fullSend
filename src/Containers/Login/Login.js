@@ -73,7 +73,7 @@ export class Login extends Component {
 
   getUserRides = async (userId) => {
     const userRides = await getRides(userId);
-    this.props.addRides(userRides);
+    this.props.updateRides(userRides);
   }
 
 
@@ -108,7 +108,7 @@ Login.propTypes = {
 
 export const mapDispatchToProps = dispatch => ({
   addUser: user => dispatch(actions.signInUser(user)),
-  addRides: rides => dispatch(actions.addRides(rides))
+  updateRides: rides => dispatch(actions.updateRides(rides))
 })
 
 export default withRouter(connect(null, mapDispatchToProps)(Login))

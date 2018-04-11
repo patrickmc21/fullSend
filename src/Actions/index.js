@@ -8,12 +8,12 @@ export const logoutUser = (id) => ({
   id
 });
 
-export const addRides = (rides) => ({
-  type: 'ADD_RIDES',
-  rides
-});
-
 export const updateRides = (rides) => ({
   type: 'UPDATE_RIDES',
   rides
+});
+
+export const clearRides = (id) => ({
+  type: 'CLEAR_RIDES',
+  id
 });

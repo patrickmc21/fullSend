@@ -6,7 +6,7 @@ import { createStore, applyMiddleware } from 'redux';
 import createSageMiddleWare from 'redux-saga';
 
 import rootReducer from './Reducers';
-import App from './Containers/App/App';
+import App from './Components/App/App';
 import './reset.css';
 import './index.css';
 

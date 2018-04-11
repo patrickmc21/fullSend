@@ -33,6 +33,12 @@ export class Header extends Component {
     }
   }
 
+  handleLogout = () => {
+    const { user, logoutUser, clearRides } = this.props;
+    logoutUser(user.id);
+    clearRides(user.id);
+  }
+
   render() {
 
     const { name, location, img } = this.state;
@@ -53,6 +59,13 @@ export class Header extends Component {
             className='user-profile-picture' />
           <h4 className='user-name'>{name}</h4>
           <h5 className='user-location'>{location}</h5>
+          <NavLink 
+          to='/'
+          className='logout'
+          onClick={this.handleLogout}
+        >
+          Logout
+        </NavLink>
         </aside>}
       </header>
     )
@@ -69,7 +82,8 @@ export const mapStateToProps = state => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  logoutUser: id => dispatch(actions.logoutUser(id))
+  logoutUser: id => dispatch(actions.logoutUser(id)),
+  clearRides: id => dispatch(actions.clearRides(id))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));
