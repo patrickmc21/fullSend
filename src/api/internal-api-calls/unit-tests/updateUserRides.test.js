@@ -27,7 +27,7 @@ describe('updateUserRides', () => {
         json: () => {
           return Promise.resolve(mockId);
         }
-      })
+      });
     });
   });
 
@@ -52,7 +52,7 @@ describe('updateUserRides', () => {
       return Promise.reject({
         status: 404,
         message: 'BAD'
-      })
+      });
     });
     const results = updateUserRides(mockRide, mockId);
     expect(results).rejects.toEqual(expected);

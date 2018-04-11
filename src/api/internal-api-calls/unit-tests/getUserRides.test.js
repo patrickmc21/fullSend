@@ -24,7 +24,7 @@ describe('getUserRides', () => {
         json: () => {
           return Promise.resolve(mockRides);
         }
-      })
+      });
     });
   });
 
@@ -45,7 +45,7 @@ describe('getUserRides', () => {
       return Promise.reject({
         status: 200,
         message: 'lame'
-      })
+      });
     });
     const expected = { 
       message: 'Favorites not found!',

@@ -10,7 +10,7 @@ const getUserRides = async (userId) => {
   try {
     const response = await fetch(url, options);
     const data = await response.json();
-    return data
+    return data;
   } catch (error) {
     throw {error: error.message, message: 'Favorites not found!'};
   }

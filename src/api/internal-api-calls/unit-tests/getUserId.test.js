@@ -1,4 +1,4 @@
-import { getUserId } from '../getUserId';
+import getUserId from '../getUserId';
 import * as mock from '../../../mock-data/mock-data';
 
 describe('getUserId', () => {
@@ -29,7 +29,7 @@ describe('getUserId', () => {
         json: () => {
           return Promise.resolve([mockId]);
         }
-      })
+      });
     });
   });
 
@@ -53,7 +53,7 @@ describe('getUserId', () => {
         json: () => {
           return Promise.resolve([]);
         }
-      })
+      });
     });
     const results = await getUserId(mockUser);
     expect(results).toEqual(expected);

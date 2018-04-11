@@ -6,8 +6,8 @@ import PropTypes from 'prop-types';
 
 import { redirectLogin } from '../../api/external-api-calls/getAthlete';
 import getToken from '../../api/external-api-calls/getToken';
-import { getUserId } from '../../api/internal-api-calls/getUserId';
-import { createUserId } from '../../api/internal-api-calls/createUserId';
+import getUserId from '../../api/internal-api-calls/getUserId';
+import createUserId from '../../api/internal-api-calls/createUserId';
 import getRides from '../../api/internal-api-calls/getUserRides';
 import * as actions from '../../Actions';
 import './Login.css';
