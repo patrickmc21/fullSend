@@ -75,7 +75,6 @@ export class RideContainer extends Component {
       const monthRides = rides.filter(ride => {
         const startTime = moment([2018, 0, 1]).month(month).format('x')/1000;
         const endTime = moment([2018, 0, 31]).month(month).format('x')/1000;
-        console.log(startTime, endTime)
         return ride.epoch >= startTime && ride.epoch < endTime;
       });
       rideCards = monthRides.map(ride => {
@@ -94,7 +93,6 @@ export class RideContainer extends Component {
   render() {
     const { rides, month } = this.props;
     const rideCards = this.buildRideCards(rides, month);
-    console.log(rideCards)
     return (
       <section className='ride-container'>
         <DateSelector />

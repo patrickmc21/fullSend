@@ -13,7 +13,7 @@
   width: 150px;
   background-color: transparent;
   box-sizing: border-box;
-  color: #b1b19d;
+  color: #f1f1d8;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   text-align: center;
@@ -35,7 +35,6 @@
   margin: auto;
   height: 560px;
   width: 98vw;
-  background-color: rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   overflow: scroll;
 }

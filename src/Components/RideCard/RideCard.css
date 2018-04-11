@@ -6,6 +6,7 @@
   width: 300px;
   background-color: rgba(206, 204, 193, 0.8);
   box-sizing: border-box;
+  box-shadow: 0px 0px 3px 0px #292727;
 }
 
 .ride-trail-name,
