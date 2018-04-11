@@ -101,14 +101,11 @@ export class RideContainer extends Component {
           onClick={this.handleClick}>
             Update Rides
         </button>
-        <Route exact path='/main/rides' render={() => {
-          return (<div className='card-container'>
-            {rideCards.length >= 1 && rideCards}
-            {rideCards.length < 1 && 
-              <h6 className='none-found'>No Rides to Show!</h6>}
-          </div>)
-        }}
-        />
+        <div className='card-container'>
+          {rideCards.length >= 1 && rideCards}
+          {rideCards.length < 1 && 
+            <h6 className='none-found'>No Rides to Show!</h6>}
+        </div>)
       </section>
     );
   }
