@@ -1,7 +1,7 @@
 const rideReducer = (state = [], action) => {
   switch (action.type) {
   case 'UPDATE_RIDES':
-    return [...state, ...action.rides];
+    return [...action.rides, ...state];
   case 'CLEAR_RIDES':
     return [];
   default:
