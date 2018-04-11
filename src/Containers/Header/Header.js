@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { dispatch } from 'redux';
 import { NavLink, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Nav from '../../Components/Nav/Nav';
@@ -13,12 +12,12 @@ import './Header.css';
 
 export class Header extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       name: '',
       location: '',
       img: ''
-    }
+    };
   }
 
   componentDidUpdate = async () => {
@@ -29,7 +28,7 @@ export class Header extends Component {
         name: `${user.firstname} ${user.lastname}`,
         location: `${user.city}, ${user.state}`,
         img: user.profile_medium
-      })
+      });
     }
   }
 
@@ -42,7 +41,7 @@ export class Header extends Component {
   render() {
 
     const { name, location, img } = this.state;
-    return(
+    return (
       <header className='app-header'>
         <NavLink 
           to='/main'
@@ -60,22 +59,23 @@ export class Header extends Component {
           <h4 className='user-name'>{name}</h4>
           <h5 className='user-location'>{location}</h5>
           <NavLink 
-          to='/'
-          className='logout'
-          onClick={this.handleLogout}
-        >
+            to='/'
+            className='logout'
+            onClick={this.handleLogout}
+          >
           Logout
-        </NavLink>
+          </NavLink>
         </aside>}
       </header>
-    )
+    );
   }
-};
+}
 
 Header.propTypes = {
   user: PropTypes.object,
-  logoutUser: PropTypes.func
-}
+  logoutUser: PropTypes.func,
+  clearRides: PropTypes.func
+};
 
 export const mapStateToProps = state => ({
   user: state.user
