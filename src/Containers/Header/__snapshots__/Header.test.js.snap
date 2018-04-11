@@ -5,6 +5,8 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
+    changeMonth={[Function]}
+    clearRides={[Function]}
     logoutUser={[Function]}
     user={
         Object {
@@ -178,6 +180,8 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
+    changeMonth={[Function]}
+    clearRides={[Function]}
     logoutUser={[Function]}
     user={
         Object {

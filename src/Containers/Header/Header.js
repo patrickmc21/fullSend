@@ -38,6 +38,10 @@ export class Header extends Component {
     clearRides(user.id);
   }
 
+  handleClick = () => {
+    this.props.changeMonth('All')
+  }
+
   render() {
 
     const { name, location, img } = this.state;
@@ -46,7 +50,7 @@ export class Header extends Component {
         <NavLink 
           to='/main'
           className='logo-link'
-          onClick={() => this.props.changeMonth('All')}
+          onClick={this.handleClick}
         >
           <h1 className='logo'>fullSend</h1>
         </NavLink>
