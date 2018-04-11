@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
+import { Route, Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 
 import RideCard from '../../Components/RideCard/RideCard';
+import DateSelector from '../DateSelector/DateSelector';
 
 /* eslint-disable max-len */
 import { getAthleteActivities } from '../../api/external-api-calls/getAthleteActivities';
@@ -23,7 +24,8 @@ export class RideContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      errorStatus: ''
+      errorStatus: '',
+      currentMonth: ''
     };
   }
 
@@ -69,24 +71,40 @@ export class RideContainer extends Component {
   }
 
   render() {
-    const { rides } = this.props;
+    const { rides, month } = this.props;
     const rideCards = rides.map(ride => {
       return <RideCard key={ride.epoch} ride={ride}/>;
     });
     const ridesByRecent = rideCards.sort((first, second) => {
       return second.key - first.key;
     });
+    const monthRides = rides.filter(ride => {
+      if (month !== 'All') {
+        const startTime = moment([2018, 0, 1]).month(month).format('x')/1000;
+        const endTime = moment([2018, 0, 31]).month(month).format('x')/1000;
+        return ride.epoch >= startTime && ride.epoch < endTime;
+      }
+    });
+    const monthCards = monthRides.map(ride => {
+      return <RideCard key={ride.epoch} ride={ride}/>;
+    });
     return (
       <section className='ride-container'>
+        <DateSelector />
         <button 
           className='update-rides'
           onClick={this.handleClick}>
             Update Rides
         </button>
-        <div className='card-container'>
-          {rides.length > 1 && ridesByRecent}
-          {rides.length < 1 && <h6>No Rides to Show!</h6>}
-        </div>
+        <Route exact path='./main/rides' render={() => {
+          return (<div className='card-container'>
+            {rides.length > 1 && month === 'All' && ridesByRecent}
+            {month !== 'All' && monthRides.length > 1 && monthCards}
+            {month !== 'All' && monthRides.length < 1 && <h6>No Rides to Show!</h6>}
+            {rides.length < 1 && <h6>No Rides to Show!</h6>}
+          </div>)
+        }}
+        />
       </section>
     );
   }
@@ -100,7 +118,8 @@ RideContainer.propTypes = {
 
 export const mapStateToProps = state => ({
   user: state.user,
-  rides: state.rides
+  rides: state.rides,
+  month: state.month
 });
 
 export const mapDispatchToProps = dispatch => ({
