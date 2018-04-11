@@ -31,6 +31,7 @@ ShallowWrapper {
           activeClassName="active"
           ariaCurrent="true"
           className="logo-link"
+          onClick={[Function]}
           to="/main"
 >
           <h1
@@ -39,6 +40,7 @@ ShallowWrapper {
                     fullSend
           </h1>
 </NavLink>,
+        <Nav />,
         false,
       ],
       "className": "app-header",
@@ -58,6 +60,7 @@ ShallowWrapper {
             fullSend
 </h1>,
           "className": "logo-link",
+          "onClick": [Function],
           "to": "/main",
         },
         "ref": null,
@@ -75,6 +78,15 @@ ShallowWrapper {
         },
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       false,
     ],
     "type": "header",
@@ -90,6 +102,7 @@ ShallowWrapper {
             activeClassName="active"
             ariaCurrent="true"
             className="logo-link"
+            onClick={[Function]}
             to="/main"
 >
             <h1
@@ -98,6 +111,7 @@ ShallowWrapper {
                         fullSend
             </h1>
 </NavLink>,
+          <Nav />,
           false,
         ],
         "className": "app-header",
@@ -117,6 +131,7 @@ ShallowWrapper {
               fullSend
 </h1>,
             "className": "logo-link",
+            "onClick": [Function],
             "to": "/main",
           },
           "ref": null,
@@ -132,6 +147,15 @@ ShallowWrapper {
             "rendered": "fullSend",
             "type": "h1",
           },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
           "type": [Function],
         },
         false,
@@ -180,6 +204,7 @@ ShallowWrapper {
           activeClassName="active"
           ariaCurrent="true"
           className="logo-link"
+          onClick={[Function]}
           to="/main"
 >
           <h1
@@ -188,6 +213,7 @@ ShallowWrapper {
                     fullSend
           </h1>
 </NavLink>,
+        <Nav />,
         false,
       ],
       "className": "app-header",
@@ -207,6 +233,7 @@ ShallowWrapper {
             fullSend
 </h1>,
           "className": "logo-link",
+          "onClick": [Function],
           "to": "/main",
         },
         "ref": null,
@@ -224,6 +251,15 @@ ShallowWrapper {
         },
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       false,
     ],
     "type": "header",
@@ -239,6 +275,7 @@ ShallowWrapper {
             activeClassName="active"
             ariaCurrent="true"
             className="logo-link"
+            onClick={[Function]}
             to="/main"
 >
             <h1
@@ -247,6 +284,7 @@ ShallowWrapper {
                         fullSend
             </h1>
 </NavLink>,
+          <Nav />,
           false,
         ],
         "className": "app-header",
@@ -266,6 +304,7 @@ ShallowWrapper {
               fullSend
 </h1>,
             "className": "logo-link",
+            "onClick": [Function],
             "to": "/main",
           },
           "ref": null,
@@ -281,6 +320,15 @@ ShallowWrapper {
             "rendered": "fullSend",
             "type": "h1",
           },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
           "type": [Function],
         },
         false,
@@ -328,6 +376,7 @@ ShallowWrapper {
           activeClassName="active"
           ariaCurrent="true"
           className="logo-link"
+          onClick={[Function]}
           to="/main"
 >
           <h1
@@ -336,6 +385,7 @@ ShallowWrapper {
                     fullSend
           </h1>
 </NavLink>,
+        <Nav />,
         false,
       ],
       "className": "app-header",
@@ -355,6 +405,7 @@ ShallowWrapper {
             fullSend
 </h1>,
           "className": "logo-link",
+          "onClick": [Function],
           "to": "/main",
         },
         "ref": null,
@@ -372,6 +423,15 @@ ShallowWrapper {
         },
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       false,
     ],
     "type": "header",
@@ -387,6 +447,7 @@ ShallowWrapper {
             activeClassName="active"
             ariaCurrent="true"
             className="logo-link"
+            onClick={[Function]}
             to="/main"
 >
             <h1
@@ -395,6 +456,7 @@ ShallowWrapper {
                         fullSend
             </h1>
 </NavLink>,
+          <Nav />,
           false,
         ],
         "className": "app-header",
@@ -414,6 +476,7 @@ ShallowWrapper {
               fullSend
 </h1>,
             "className": "logo-link",
+            "onClick": [Function],
             "to": "/main",
           },
           "ref": null,
@@ -429,6 +492,15 @@ ShallowWrapper {
             "rendered": "fullSend",
             "type": "h1",
           },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
           "type": [Function],
         },
         false,

@@ -18,48 +18,22 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <div
-        className="main-content-text"
+        className="main-content"
 >
-        <h1
-                className="main-tagline"
+        <div
+                className="main-content-text"
         >
-                The Rider's Best Friend
-        </h1>
+                <h1
+                        className="main-tagline"
+                >
+                        The Rider's Best Friend
+                </h1>
+        </div>
 </div>,
-      "className": "main-content",
+      "className": "main-content-wrapper",
     },
     "ref": null,
     "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <h1
-          className="main-tagline"
->
-          The Rider's Best Friend
-</h1>,
-        "className": "main-content-text",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "The Rider's Best Friend",
-          "className": "main-tagline",
-        },
-        "ref": null,
-        "rendered": "The Rider's Best Friend",
-        "type": "h1",
-      },
-      "type": "div",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -100,6 +74,78 @@ ShallowWrapper {
           "ref": null,
           "rendered": "The Rider's Best Friend",
           "type": "h1",
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="main-content"
+>
+          <div
+                    className="main-content-text"
+          >
+                    <h1
+                              className="main-tagline"
+                    >
+                              The Rider's Best Friend
+                    </h1>
+          </div>
+</div>,
+        "className": "main-content-wrapper",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="main-content-text"
+>
+            <h1
+                        className="main-tagline"
+            >
+                        The Rider's Best Friend
+            </h1>
+</div>,
+          "className": "main-content",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1
+              className="main-tagline"
+>
+              The Rider's Best Friend
+</h1>,
+            "className": "main-content-text",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "The Rider's Best Friend",
+              "className": "main-tagline",
+            },
+            "ref": null,
+            "rendered": "The Rider's Best Friend",
+            "type": "h1",
+          },
+          "type": "div",
         },
         "type": "div",
       },

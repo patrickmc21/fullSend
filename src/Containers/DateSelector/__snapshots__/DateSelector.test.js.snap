@@ -1,0 +1,781 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateSelector should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DateSelector
+    changeMonth={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <label
+          className="month-label"
+          htmlFor="month"
+>
+          Choose Month
+</label>,
+        <select
+          id="month"
+>
+          <option
+                    className="month-option"
+                    value="All"
+          >
+                    All
+          </option>
+          <option
+                    className="month-option"
+                    value="January"
+          >
+                    January
+          </option>
+          <option
+                    className="month-option"
+                    value="February"
+          >
+                    February
+          </option>
+          <option
+                    className="month-option"
+                    value="March"
+          >
+                    March
+          </option>
+          <option
+                    className="month-option"
+                    value="April"
+          >
+                    April
+          </option>
+          <option
+                    className="month-option"
+                    value="May"
+          >
+                    May
+          </option>
+          <option
+                    className="month-option"
+                    value="June"
+          >
+                    June
+          </option>
+          <option
+                    className="month-option"
+                    value="July"
+          >
+                    July
+          </option>
+          <option
+                    className="month-option"
+                    value="August"
+          >
+                    August
+          </option>
+          <option
+                    className="month-option"
+                    value="September"
+          >
+                    September
+          </option>
+          <option
+                    className="month-option"
+                    value="October"
+          >
+                    October
+          </option>
+          <option
+                    className="month-option"
+                    value="November"
+          >
+                    November
+          </option>
+          <option
+                    className="month-option"
+                    value="December"
+          >
+                    December
+          </option>
+</select>,
+      ],
+      "className": "month-form",
+      "onChange": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Choose Month",
+          "className": "month-label",
+          "htmlFor": "month",
+        },
+        "ref": null,
+        "rendered": "Choose Month",
+        "type": "label",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              className="month-option"
+              value="All"
+>
+              All
+</option>,
+            <option
+              className="month-option"
+              value="January"
+>
+              January
+</option>,
+            <option
+              className="month-option"
+              value="February"
+>
+              February
+</option>,
+            <option
+              className="month-option"
+              value="March"
+>
+              March
+</option>,
+            <option
+              className="month-option"
+              value="April"
+>
+              April
+</option>,
+            <option
+              className="month-option"
+              value="May"
+>
+              May
+</option>,
+            <option
+              className="month-option"
+              value="June"
+>
+              June
+</option>,
+            <option
+              className="month-option"
+              value="July"
+>
+              July
+</option>,
+            <option
+              className="month-option"
+              value="August"
+>
+              August
+</option>,
+            <option
+              className="month-option"
+              value="September"
+>
+              September
+</option>,
+            <option
+              className="month-option"
+              value="October"
+>
+              October
+</option>,
+            <option
+              className="month-option"
+              value="November"
+>
+              November
+</option>,
+            <option
+              className="month-option"
+              value="December"
+>
+              December
+</option>,
+          ],
+          "id": "month",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "All",
+            "nodeType": "host",
+            "props": Object {
+              "children": "All",
+              "className": "month-option",
+              "value": "All",
+            },
+            "ref": null,
+            "rendered": "All",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "January",
+            "nodeType": "host",
+            "props": Object {
+              "children": "January",
+              "className": "month-option",
+              "value": "January",
+            },
+            "ref": null,
+            "rendered": "January",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "February",
+            "nodeType": "host",
+            "props": Object {
+              "children": "February",
+              "className": "month-option",
+              "value": "February",
+            },
+            "ref": null,
+            "rendered": "February",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "March",
+            "nodeType": "host",
+            "props": Object {
+              "children": "March",
+              "className": "month-option",
+              "value": "March",
+            },
+            "ref": null,
+            "rendered": "March",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "April",
+            "nodeType": "host",
+            "props": Object {
+              "children": "April",
+              "className": "month-option",
+              "value": "April",
+            },
+            "ref": null,
+            "rendered": "April",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "May",
+            "nodeType": "host",
+            "props": Object {
+              "children": "May",
+              "className": "month-option",
+              "value": "May",
+            },
+            "ref": null,
+            "rendered": "May",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "June",
+            "nodeType": "host",
+            "props": Object {
+              "children": "June",
+              "className": "month-option",
+              "value": "June",
+            },
+            "ref": null,
+            "rendered": "June",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "July",
+            "nodeType": "host",
+            "props": Object {
+              "children": "July",
+              "className": "month-option",
+              "value": "July",
+            },
+            "ref": null,
+            "rendered": "July",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "August",
+            "nodeType": "host",
+            "props": Object {
+              "children": "August",
+              "className": "month-option",
+              "value": "August",
+            },
+            "ref": null,
+            "rendered": "August",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "September",
+            "nodeType": "host",
+            "props": Object {
+              "children": "September",
+              "className": "month-option",
+              "value": "September",
+            },
+            "ref": null,
+            "rendered": "September",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "October",
+            "nodeType": "host",
+            "props": Object {
+              "children": "October",
+              "className": "month-option",
+              "value": "October",
+            },
+            "ref": null,
+            "rendered": "October",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "November",
+            "nodeType": "host",
+            "props": Object {
+              "children": "November",
+              "className": "month-option",
+              "value": "November",
+            },
+            "ref": null,
+            "rendered": "November",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "December",
+            "nodeType": "host",
+            "props": Object {
+              "children": "December",
+              "className": "month-option",
+              "value": "December",
+            },
+            "ref": null,
+            "rendered": "December",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <label
+            className="month-label"
+            htmlFor="month"
+>
+            Choose Month
+</label>,
+          <select
+            id="month"
+>
+            <option
+                        className="month-option"
+                        value="All"
+            >
+                        All
+            </option>
+            <option
+                        className="month-option"
+                        value="January"
+            >
+                        January
+            </option>
+            <option
+                        className="month-option"
+                        value="February"
+            >
+                        February
+            </option>
+            <option
+                        className="month-option"
+                        value="March"
+            >
+                        March
+            </option>
+            <option
+                        className="month-option"
+                        value="April"
+            >
+                        April
+            </option>
+            <option
+                        className="month-option"
+                        value="May"
+            >
+                        May
+            </option>
+            <option
+                        className="month-option"
+                        value="June"
+            >
+                        June
+            </option>
+            <option
+                        className="month-option"
+                        value="July"
+            >
+                        July
+            </option>
+            <option
+                        className="month-option"
+                        value="August"
+            >
+                        August
+            </option>
+            <option
+                        className="month-option"
+                        value="September"
+            >
+                        September
+            </option>
+            <option
+                        className="month-option"
+                        value="October"
+            >
+                        October
+            </option>
+            <option
+                        className="month-option"
+                        value="November"
+            >
+                        November
+            </option>
+            <option
+                        className="month-option"
+                        value="December"
+            >
+                        December
+            </option>
+</select>,
+        ],
+        "className": "month-form",
+        "onChange": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Choose Month",
+            "className": "month-label",
+            "htmlFor": "month",
+          },
+          "ref": null,
+          "rendered": "Choose Month",
+          "type": "label",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <option
+                className="month-option"
+                value="All"
+>
+                All
+</option>,
+              <option
+                className="month-option"
+                value="January"
+>
+                January
+</option>,
+              <option
+                className="month-option"
+                value="February"
+>
+                February
+</option>,
+              <option
+                className="month-option"
+                value="March"
+>
+                March
+</option>,
+              <option
+                className="month-option"
+                value="April"
+>
+                April
+</option>,
+              <option
+                className="month-option"
+                value="May"
+>
+                May
+</option>,
+              <option
+                className="month-option"
+                value="June"
+>
+                June
+</option>,
+              <option
+                className="month-option"
+                value="July"
+>
+                July
+</option>,
+              <option
+                className="month-option"
+                value="August"
+>
+                August
+</option>,
+              <option
+                className="month-option"
+                value="September"
+>
+                September
+</option>,
+              <option
+                className="month-option"
+                value="October"
+>
+                October
+</option>,
+              <option
+                className="month-option"
+                value="November"
+>
+                November
+</option>,
+              <option
+                className="month-option"
+                value="December"
+>
+                December
+</option>,
+            ],
+            "id": "month",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "All",
+              "nodeType": "host",
+              "props": Object {
+                "children": "All",
+                "className": "month-option",
+                "value": "All",
+              },
+              "ref": null,
+              "rendered": "All",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "January",
+              "nodeType": "host",
+              "props": Object {
+                "children": "January",
+                "className": "month-option",
+                "value": "January",
+              },
+              "ref": null,
+              "rendered": "January",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "February",
+              "nodeType": "host",
+              "props": Object {
+                "children": "February",
+                "className": "month-option",
+                "value": "February",
+              },
+              "ref": null,
+              "rendered": "February",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "March",
+              "nodeType": "host",
+              "props": Object {
+                "children": "March",
+                "className": "month-option",
+                "value": "March",
+              },
+              "ref": null,
+              "rendered": "March",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "April",
+              "nodeType": "host",
+              "props": Object {
+                "children": "April",
+                "className": "month-option",
+                "value": "April",
+              },
+              "ref": null,
+              "rendered": "April",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "May",
+              "nodeType": "host",
+              "props": Object {
+                "children": "May",
+                "className": "month-option",
+                "value": "May",
+              },
+              "ref": null,
+              "rendered": "May",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "June",
+              "nodeType": "host",
+              "props": Object {
+                "children": "June",
+                "className": "month-option",
+                "value": "June",
+              },
+              "ref": null,
+              "rendered": "June",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "July",
+              "nodeType": "host",
+              "props": Object {
+                "children": "July",
+                "className": "month-option",
+                "value": "July",
+              },
+              "ref": null,
+              "rendered": "July",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "August",
+              "nodeType": "host",
+              "props": Object {
+                "children": "August",
+                "className": "month-option",
+                "value": "August",
+              },
+              "ref": null,
+              "rendered": "August",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "September",
+              "nodeType": "host",
+              "props": Object {
+                "children": "September",
+                "className": "month-option",
+                "value": "September",
+              },
+              "ref": null,
+              "rendered": "September",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "October",
+              "nodeType": "host",
+              "props": Object {
+                "children": "October",
+                "className": "month-option",
+                "value": "October",
+              },
+              "ref": null,
+              "rendered": "October",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "November",
+              "nodeType": "host",
+              "props": Object {
+                "children": "November",
+                "className": "month-option",
+                "value": "November",
+              },
+              "ref": null,
+              "rendered": "November",
+              "type": "option",
+            },
+            Object {
+              "instance": null,
+              "key": "December",
+              "nodeType": "host",
+              "props": Object {
+                "children": "December",
+                "className": "month-option",
+                "value": "December",
+              },
+              "ref": null,
+              "rendered": "December",
+              "type": "option",
+            },
+          ],
+          "type": "select",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
