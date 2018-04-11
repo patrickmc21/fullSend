@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { dispatch } from 'redux';
 import { NavLink, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -20,12 +19,12 @@ export class Login extends Component {
       redirected: false,
       tempToken: '',
       errorStatus: ''
-    }
-  };
+    };
+  }
 
   componentDidMount() {
     this.handleRedirection(window.location);
-  };
+  }
 
   handleRedirection = (location) => {
     if (location.search.includes('code')) {
@@ -51,7 +50,9 @@ export class Login extends Component {
 
   loginUser = async () => {
     const athleteInfo = await getToken(this.state.tempToken);
+    /* eslint-disable camelcase */
     const { access_token, athlete } = athleteInfo;
+    /* eslint-enable camelcase */
     const signInInfo = { email: athlete.email, password: athlete.id};
     let userId = await getUserId(signInInfo);
     if (!userId) {
@@ -64,7 +65,9 @@ export class Login extends Component {
     }
     const user = {
       name: athlete.firstname,
+      /* eslint-disable camelcase */
       token: access_token,
+      /* eslint-enable camelcase */
       id: userId.id
     };
     this.props.addUser(user);
@@ -79,12 +82,16 @@ export class Login extends Component {
 
 
   render() {
-    const { redirected, errorStatus } = this.state
+    const { redirected, errorStatus } = this.state;
     return (
       <div className='login-page'>
         <div className='login-container'>
           <h1 className='login-logo'>fullSend</h1>
-          {!redirected && <button className='authorize-strava' onClick={this.handleClickAuthorize}></button>}
+          {!redirected && 
+            <button 
+              className='authorize-strava' 
+              onClick={this.handleClickAuthorize}>
+            </button>}
           {redirected && 
             <div className='enter-container'>
               <NavLink 
@@ -94,21 +101,22 @@ export class Login extends Component {
                   Send It
               </NavLink>
             </div>
-            }
+          }
           { errorStatus && <p className='error-status'>{errorStatus}</p>}
         </div>
       </div>
-    )
+    );
   }
 }
 
 Login.propTypes = {
-  addUser: PropTypes.func
+  addUser: PropTypes.func,
+  updateRides: PropTypes.func
 };
 
 export const mapDispatchToProps = dispatch => ({
   addUser: user => dispatch(actions.signInUser(user)),
   updateRides: rides => dispatch(actions.updateRides(rides))
-})
+});
 
-export default withRouter(connect(null, mapDispatchToProps)(Login))
+export default withRouter(connect(null, mapDispatchToProps)(Login));

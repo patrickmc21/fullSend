@@ -27,7 +27,7 @@ describe('Login', () => {
     mockLocation = {
       search: 'main',
       href: mockToken
-    }
+    };
     mockAddUser = jest.fn();
     mockUpdateRides = jest.fn();
     wrapper = shallow(
@@ -132,9 +132,9 @@ describe('Login', () => {
 
   it('should throw an error if createUserId fails', async () => {
     wrapper.setState({tempToken: 3});
-    const expected = 'Bad'
+    const expected = 'Bad';
     await wrapper.instance().loginUser();
-    expect(wrapper.state().errorStatus).toEqual(expected)
+    expect(wrapper.state().errorStatus).toEqual(expected);
   });
 
   it('should run addUser on loginUser', async () => {
@@ -149,14 +149,14 @@ describe('Login', () => {
   });
 
   it('should return the user id on loginUser', async () => {
-    const expected = 1
+    const expected = 1;
     wrapper.setState({tempToken: 2});
     const results = await wrapper.instance().loginUser();
-    expect(results).toEqual(1)
+    expect(results).toEqual(expected);
   });
 
   it('should call getRides on getUserRides', async () => {
-    const expected = 1
+    const expected = 1;
     await wrapper.instance().getUserRides(1);
     expect(getRides).toHaveBeenCalledWith(expected);
   });
@@ -165,7 +165,7 @@ describe('Login', () => {
     const expected = await getRides(1);
     await wrapper.instance().getUserRides(1);
     expect(mockUpdateRides).toHaveBeenCalledWith(expected);
-  })
+  });
 
 });
 
@@ -181,10 +181,10 @@ describe('mapDispatchToProps', () => {
 
   it('should map addUser to props', () => {
     const mockUser =  {
-        name: 'Tim',
-        token: 2,
-        id: 1
-      }
+      name: 'Tim',
+      token: 2,
+      id: 1
+    };
     const expected = {
       type: 'SIGN_IN_USER',
       user: mockUser
