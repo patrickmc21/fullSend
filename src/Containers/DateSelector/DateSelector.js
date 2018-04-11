@@ -36,7 +36,8 @@ export class DateSelector extends Component {
     return this.months.map(month => {
       return (<option
         key={month} 
-        value={month}>
+        value={month}
+        className='month-option'>
             {month}
       </option>)
     })
@@ -44,8 +45,12 @@ export class DateSelector extends Component {
 
   render() {
     return (
-      <form onChange={this.handleSelection}>>
-        <label htmlFor='month'>Choose Month</label>
+      <form 
+        onChange={this.handleSelection}
+        className='month-form'>
+        <label 
+          htmlFor='month'
+          className='month-label'>Choose Month</label>
         <select id='month'>
           {this.createSelections()}    
         </select>
