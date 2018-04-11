@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+
 const getToken = jest.fn()
   .mockImplementation((token) => {
     if (token === 1) {
@@ -8,7 +10,7 @@ const getToken = jest.fn()
           email: 'cool@msn.com',
           id: 123
         }
-      }
+      };
     } else if (token === 2) {
       return {
         access_token: 2,
@@ -17,7 +19,7 @@ const getToken = jest.fn()
           email: 'lame@aol.com',
           id: 321
         }
-      }
+      };
     } else {
       return {
         access_token: 2,
@@ -26,7 +28,7 @@ const getToken = jest.fn()
           email: 'whatevs@aol.com',
           id: 321
         }
-      }
+      };
     }
   });
 

@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 import { getTrails } from '../getTrails';
 import key from '../../apiKeys/mtb-project-key.js';
 import * as mock from '../../../mock-data/mock-data';
@@ -24,7 +26,7 @@ describe('getTrails', () => {
         json: () => {
           return Promise.resolve(mockTrails);
         }
-      })
+      });
     });
   });
 
@@ -45,7 +47,7 @@ describe('getTrails', () => {
       return Promise.reject({
         status: 404,
         message: 'FAIL' 
-      })
+      });
     });
     const expected = 'FAIL';
     const results = getTrails(mockLat, mockLong);

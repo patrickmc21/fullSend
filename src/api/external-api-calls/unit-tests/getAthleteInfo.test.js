@@ -23,9 +23,9 @@ describe('getAthleteInfo', () => {
       return Promise.resolve({
         status: 200,
         json: () => {
-          return Promise.resolve(mockAthlete)
+          return Promise.resolve(mockAthlete);
         }
-      })
+      });
     });
   });
 
@@ -47,7 +47,7 @@ describe('getAthleteInfo', () => {
       return Promise.reject({
         status: 404,
         message: 'FAIL'
-      })
+      });
     });
     const results = getAthleteInfo(mockToken);
     expect(results).rejects.toEqual(expected);

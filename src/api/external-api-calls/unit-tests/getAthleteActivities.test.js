@@ -33,8 +33,8 @@ describe('getAthleteActivities', () => {
         json: () => {
           return Promise.resolve(mockActivities);
         }
-      })
-    })
+      });
+    });
   });
 
   it('should call fetch with correct params', () => {
@@ -45,8 +45,8 @@ describe('getAthleteActivities', () => {
 
   it('should return the athletes activities', async () => {
     const expected = mockActivities;
-    const results = await getAthleteActivities(mockToken, mockAfter, mockBefore);
-    expect(results).toEqual(expected);
+    const rslts = await getAthleteActivities(mockToken, mockAfter, mockBefore);
+    expect(rslts).toEqual(expected);
   });
 
   it('should throw an error on bad call', async () => {
@@ -54,8 +54,9 @@ describe('getAthleteActivities', () => {
       return Promise.reject({
         status: 404,
         message: 'FAIL'
-      })
+      });
     });
+
     const expected = 'FAIL';
     const results = getAthleteActivities(mockToken, mockAfter, mockBefore);
     expect(results).rejects.toEqual(expected);

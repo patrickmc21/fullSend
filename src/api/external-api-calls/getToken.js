@@ -15,16 +15,16 @@ const getToken = async (temporaryToken) => {
       clientId: clientId,
       clientSecret: clientSecret
     })
-  }
+  };
 
   try {
     const response = await fetch(url, options);
     const data = await response.json();
-    const athleteInfo = JSON.parse(data)
+    const athleteInfo = JSON.parse(data);
     return athleteInfo;
   } catch (error) {
     throw error.message;
   }
-}
+};
 
-export default getToken
+export default getToken;
