@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { dispatch } from 'redux';
 import { NavLink, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import Nav from '../../Components/Nav/Nav';
+
 
 import * as actions from '../../Actions';
 import getAthleteInfo from  '../../api/external-api-calls/getAthleteInfo';
@@ -42,6 +44,7 @@ export class Header extends Component {
         >
           <h1 className='logo'>fullSend</h1>
         </NavLink>
+        <Nav />
         {name.length > 0 &&
         <aside className='user-info'>
           <img 

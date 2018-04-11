@@ -68,18 +68,22 @@ export class RideContainer extends Component {
 
   render() {
     const { rides } = this.props
-    const rideCards = rides.reverse().map(ride => {
+    const rideCards = rides.map(ride => {
       return <RideCard key={ride.epoch} ride={ride}/>
     })
+    const ridesByRecent = rideCards.sort((a,b) => {
+      return b.key - a.key;
+    });
+    console.log(ridesByRecent);
     return(
-      <section>
+      <section className='ride-container'>
         <button 
           className='update-rides'
           onClick={this.handleClick}>
             Update Rides
         </button>
         <div className='card-container'>
-          {rides.length > 1 && rideCards}
+          {rides.length > 1 && ridesByRecent}
           {rides.length < 1 && <h6>No Rides to Show!</h6>}
         </div>
       </section>

@@ -15,7 +15,6 @@ const Main = (props) => {
     <div>
       <Header />
       <main>
-        <Nav />
         <Route exact path='/main' render={() => {
           return <MainContent />
         }} />

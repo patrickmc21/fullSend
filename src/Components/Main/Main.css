@@ -1,4 +1,7 @@
 main {
   height: 620px;
   background-color: #f8f7ee;
+  background-image: url('images/possible-bkgrnd.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
