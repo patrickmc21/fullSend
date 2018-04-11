@@ -8,16 +8,16 @@ import './App.css';
 const App = () => {
   return (
     <div className="App">
-    <Route exact path='/' render={() => {
-      return (
-        <Login />
-        )
-    }} />
-    <Route path='/main' render={() => {
-      return <Main />
-    }} />
+      <Route exact path='/' render={() => {
+        return (
+          <Login />
+        );
+      }} />
+      <Route path='/main' render={() => {
+        return <Main />;
+      }} />
     </div>
-    );
-}
+  );
+};
 
 export default App;
