@@ -15,7 +15,7 @@ export const convertSecondsToHoursMins = (seconds) => {
   const allMinutes = seconds / 60;
   const hours = parseInt(allMinutes / 60);
   const minutes = parseInt(allMinutes % 60);
-  return `${hours} hr(s) ${minutes} min(s)`
+  return `${hours} hr(s) ${minutes} min(s)`;
 };
 
 const rideCleaner = (rides) => { 
@@ -33,6 +33,6 @@ const rideCleaner = (rides) => {
     };
   });
   return cleanRides;
-}
+};
 
 export default rideCleaner;
