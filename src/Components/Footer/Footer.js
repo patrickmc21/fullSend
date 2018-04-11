@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import stravaImg from '../../strava-brand-images/powered_by_strava.svg';
 import mtbImg from '../../mtbProject-images/logoHex.svg';
@@ -20,7 +19,7 @@ const Footer = () => {
           className='mtb-logo' />
       </div>
     </footer>
-  )
+  );
 };
 
 export default Footer;
