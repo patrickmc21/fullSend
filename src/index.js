@@ -17,7 +17,7 @@ const store = createStore(
   rootReducer,
   devTools,
   applyMiddleware(sageMiddleware)
-)
+);
 
 const fullSend = (
   <Provider store={store}>
@@ -25,6 +25,6 @@ const fullSend = (
       <App />
     </BrowserRouter>
   </Provider>
-)
+);
 
 ReactDOM.render(fullSend, document.getElementById('root'));
