@@ -13,7 +13,7 @@ describe('rideReducer', () => {
   it('should update rides in state', () => {
     const newRides = mock.mockRides;
     const state = [mock.mockRide];
-    const expected = [...state, ...newRides];
+    const expected = [...newRides, ...state];
     const results = rideReducer(state, Actions.updateRides(newRides));
     expect(results).toEqual(expected);
   });

@@ -11,7 +11,7 @@ ShallowWrapper {
             "difficulty": "green",
             "distance": "2",
             "elapsedTime": "120",
-            "epoch": "776232323",
+            "epoch": "1523472606",
             "img": "someurlthing",
             "location": "park",
             "summary": "not sendy",
@@ -50,13 +50,13 @@ ShallowWrapper {
         <div
           className="ride-trail"
 >
+          <div
+                    className="green"
+          />
           <h2
                     className="ride-trail-name"
           >
                     lame
-                    <div
-                              className="green"
-                    />
           </h2>
           <h3
                     className="ride-location"
@@ -75,13 +75,21 @@ ShallowWrapper {
           <h4
                     className="ride-distance"
           >
-                    Distance: 
+                    <span
+                              className="type"
+                    >
+                              Distance:
+                    </span>
                     2
           </h4>
           <h4
                     className="ride-time"
           >
-                    Duration: 
+                    <span
+                              className="type"
+                    >
+                              Duration:
+                    </span>
                     120
           </h4>
 </div>,
@@ -145,13 +153,13 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <div
+              className="green"
+/>,
             <h2
               className="ride-trail-name"
 >
               lame
-              <div
-                            className="green"
-              />
 </h2>,
             <h3
               className="ride-location"
@@ -173,29 +181,22 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                "lame",
-                <div
-                  className="green"
-/>,
-              ],
+              "className": "green",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "lame",
               "className": "ride-trail-name",
             },
             "ref": null,
-            "rendered": Array [
-              "lame",
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "green",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "div",
-              },
-            ],
+            "rendered": "lame",
             "type": "h2",
           },
           Object {
@@ -234,13 +235,21 @@ ShallowWrapper {
             <h4
               className="ride-distance"
 >
-              Distance: 
+              <span
+                            className="type"
+              >
+                            Distance:
+              </span>
               2
 </h4>,
             <h4
               className="ride-time"
 >
-              Duration: 
+              <span
+                            className="type"
+              >
+                            Duration:
+              </span>
               120
 </h4>,
           ],
@@ -254,14 +263,29 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "Distance: ",
+                <span
+                  className="type"
+>
+                  Distance:
+</span>,
                 "2",
               ],
               "className": "ride-distance",
             },
             "ref": null,
             "rendered": Array [
-              "Distance: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Distance:",
+                  "className": "type",
+                },
+                "ref": null,
+                "rendered": "Distance:",
+                "type": "span",
+              },
               "2",
             ],
             "type": "h4",
@@ -272,14 +296,29 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "Duration: ",
+                <span
+                  className="type"
+>
+                  Duration:
+</span>,
                 "120",
               ],
               "className": "ride-time",
             },
             "ref": null,
             "rendered": Array [
-              "Duration: ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Duration:",
+                  "className": "type",
+                },
+                "ref": null,
+                "rendered": "Duration:",
+                "type": "span",
+              },
               "120",
             ],
             "type": "h4",
@@ -314,13 +353,13 @@ ShallowWrapper {
           <div
             className="ride-trail"
 >
+            <div
+                        className="green"
+            />
             <h2
                         className="ride-trail-name"
             >
                         lame
-                        <div
-                                    className="green"
-                        />
             </h2>
             <h3
                         className="ride-location"
@@ -339,13 +378,21 @@ ShallowWrapper {
             <h4
                         className="ride-distance"
             >
-                        Distance: 
+                        <span
+                                    className="type"
+                        >
+                                    Distance:
+                        </span>
                         2
             </h4>
             <h4
                         className="ride-time"
             >
-                        Duration: 
+                        <span
+                                    className="type"
+                        >
+                                    Duration:
+                        </span>
                         120
             </h4>
 </div>,
@@ -409,13 +456,13 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <div
+                className="green"
+/>,
               <h2
                 className="ride-trail-name"
 >
                 lame
-                <div
-                                className="green"
-                />
 </h2>,
               <h3
                 className="ride-location"
@@ -437,29 +484,22 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  "lame",
-                  <div
-                    className="green"
-/>,
-                ],
+                "className": "green",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "lame",
                 "className": "ride-trail-name",
               },
               "ref": null,
-              "rendered": Array [
-                "lame",
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "green",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "div",
-                },
-              ],
+              "rendered": "lame",
               "type": "h2",
             },
             Object {
@@ -498,13 +538,21 @@ ShallowWrapper {
               <h4
                 className="ride-distance"
 >
-                Distance: 
+                <span
+                                className="type"
+                >
+                                Distance:
+                </span>
                 2
 </h4>,
               <h4
                 className="ride-time"
 >
-                Duration: 
+                <span
+                                className="type"
+                >
+                                Duration:
+                </span>
                 120
 </h4>,
             ],
@@ -518,14 +566,29 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Distance: ",
+                  <span
+                    className="type"
+>
+                    Distance:
+</span>,
                   "2",
                 ],
                 "className": "ride-distance",
               },
               "ref": null,
               "rendered": Array [
-                "Distance: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Distance:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Distance:",
+                  "type": "span",
+                },
                 "2",
               ],
               "type": "h4",
@@ -536,14 +599,29 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Duration: ",
+                  <span
+                    className="type"
+>
+                    Duration:
+</span>,
                   "120",
                 ],
                 "className": "ride-time",
               },
               "ref": null,
               "rendered": Array [
-                "Duration: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Duration:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Duration:",
+                  "type": "span",
+                },
                 "120",
               ],
               "type": "h4",

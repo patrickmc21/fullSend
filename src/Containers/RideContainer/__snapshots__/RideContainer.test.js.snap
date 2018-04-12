@@ -56,13 +56,17 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <withRouter(Connect(DateSelector)) />,
-        <button
-          className="update-rides"
-          onClick={[Function]}
+        <div
+          className="ride-container-nav"
 >
-          Update Rides
-</button>,
+          <withRouter(Connect(DateSelector)) />
+          <button
+                    className="update-rides"
+                    onClick={[Function]}
+          >
+                    Update Rides
+          </button>
+</div>,
         <div
           className="card-container"
 >
@@ -92,24 +96,45 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Update Rides",
-          "className": "update-rides",
-          "onClick": [Function],
+          "children": Array [
+            <withRouter(Connect(DateSelector)) />,
+            <button
+              className="update-rides"
+              onClick={[Function]}
+>
+              Update Rides
+</button>,
+          ],
+          "className": "ride-container-nav",
         },
         "ref": null,
-        "rendered": "Update Rides",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Update Rides",
+              "className": "update-rides",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Update Rides",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -178,13 +203,17 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <withRouter(Connect(DateSelector)) />,
-          <button
-            className="update-rides"
-            onClick={[Function]}
+          <div
+            className="ride-container-nav"
 >
-            Update Rides
-</button>,
+            <withRouter(Connect(DateSelector)) />
+            <button
+                        className="update-rides"
+                        onClick={[Function]}
+            >
+                        Update Rides
+            </button>
+</div>,
           <div
             className="card-container"
 >
@@ -214,24 +243,45 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Update Rides",
-            "className": "update-rides",
-            "onClick": [Function],
+            "children": Array [
+              <withRouter(Connect(DateSelector)) />,
+              <button
+                className="update-rides"
+                onClick={[Function]}
+>
+                Update Rides
+</button>,
+            ],
+            "className": "ride-container-nav",
           },
           "ref": null,
-          "rendered": "Update Rides",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Update Rides",
+                "className": "update-rides",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Update Rides",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -332,13 +382,17 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <withRouter(Connect(DateSelector)) />,
-        <button
-          className="update-rides"
-          onClick={[Function]}
+        <div
+          className="ride-container-nav"
 >
-          Update Rides
-</button>,
+          <withRouter(Connect(DateSelector)) />
+          <button
+                    className="update-rides"
+                    onClick={[Function]}
+          >
+                    Update Rides
+          </button>
+</div>,
         <div
           className="card-container"
 >
@@ -357,24 +411,45 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Update Rides",
-          "className": "update-rides",
-          "onClick": [Function],
+          "children": Array [
+            <withRouter(Connect(DateSelector)) />,
+            <button
+              className="update-rides"
+              onClick={[Function]}
+>
+              Update Rides
+</button>,
+          ],
+          "className": "ride-container-nav",
         },
         "ref": null,
-        "rendered": "Update Rides",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Update Rides",
+              "className": "update-rides",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Update Rides",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -420,13 +495,17 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <withRouter(Connect(DateSelector)) />,
-          <button
-            className="update-rides"
-            onClick={[Function]}
+          <div
+            className="ride-container-nav"
 >
-            Update Rides
-</button>,
+            <withRouter(Connect(DateSelector)) />
+            <button
+                        className="update-rides"
+                        onClick={[Function]}
+            >
+                        Update Rides
+            </button>
+</div>,
           <div
             className="card-container"
 >
@@ -445,24 +524,45 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Update Rides",
-            "className": "update-rides",
-            "onClick": [Function],
+            "children": Array [
+              <withRouter(Connect(DateSelector)) />,
+              <button
+                className="update-rides"
+                onClick={[Function]}
+>
+                Update Rides
+</button>,
+            ],
+            "className": "ride-container-nav",
           },
           "ref": null,
-          "rendered": "Update Rides",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Update Rides",
+                "className": "update-rides",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Update Rides",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -568,13 +668,17 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <withRouter(Connect(DateSelector)) />,
-        <button
-          className="update-rides"
-          onClick={[Function]}
+        <div
+          className="ride-container-nav"
 >
-          Update Rides
-</button>,
+          <withRouter(Connect(DateSelector)) />
+          <button
+                    className="update-rides"
+                    onClick={[Function]}
+          >
+                    Update Rides
+          </button>
+</div>,
         <div
           className="card-container"
 >
@@ -620,24 +724,45 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Update Rides",
-          "className": "update-rides",
-          "onClick": [Function],
+          "children": Array [
+            <withRouter(Connect(DateSelector)) />,
+            <button
+              className="update-rides"
+              onClick={[Function]}
+>
+              Update Rides
+</button>,
+          ],
+          "className": "ride-container-nav",
         },
         "ref": null,
-        "rendered": "Update Rides",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Update Rides",
+              "className": "update-rides",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Update Rides",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -744,13 +869,17 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <withRouter(Connect(DateSelector)) />,
-          <button
-            className="update-rides"
-            onClick={[Function]}
+          <div
+            className="ride-container-nav"
 >
-            Update Rides
-</button>,
+            <withRouter(Connect(DateSelector)) />
+            <button
+                        className="update-rides"
+                        onClick={[Function]}
+            >
+                        Update Rides
+            </button>
+</div>,
           <div
             className="card-container"
 >
@@ -796,24 +925,45 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Update Rides",
-            "className": "update-rides",
-            "onClick": [Function],
+            "children": Array [
+              <withRouter(Connect(DateSelector)) />,
+              <button
+                className="update-rides"
+                onClick={[Function]}
+>
+                Update Rides
+</button>,
+            ],
+            "className": "ride-container-nav",
           },
           "ref": null,
-          "rendered": "Update Rides",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Update Rides",
+                "className": "update-rides",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Update Rides",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,

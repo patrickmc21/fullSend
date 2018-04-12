@@ -215,7 +215,7 @@ ShallowWrapper {
                         onClick={[Function]}
                         to="/main"
                 >
-                        Send It
+                        Enter
                 </NavLink>
         </div>
         
@@ -245,7 +245,7 @@ ShallowWrapper {
                         onClick={[Function]}
                         to="/main"
             >
-                        Send It
+                        Enter
             </NavLink>
 </div>,
           "",
@@ -279,7 +279,7 @@ ShallowWrapper {
               onClick={[Function]}
               to="/main"
 >
-              Send It
+              Enter
 </NavLink>,
             "className": "enter-container",
           },
@@ -291,13 +291,13 @@ ShallowWrapper {
             "props": Object {
               "activeClassName": "active",
               "ariaCurrent": "true",
-              "children": "Send It",
+              "children": "Enter",
               "className": "enter-site",
               "onClick": [Function],
               "to": "/main",
             },
             "ref": null,
-            "rendered": "Send It",
+            "rendered": "Enter",
             "type": [Function],
           },
           "type": "div",
@@ -332,7 +332,7 @@ ShallowWrapper {
                               onClick={[Function]}
                               to="/main"
                     >
-                              Send It
+                              Enter
                     </NavLink>
           </div>
           
@@ -362,7 +362,7 @@ ShallowWrapper {
                             onClick={[Function]}
                             to="/main"
               >
-                            Send It
+                            Enter
               </NavLink>
 </div>,
             "",
@@ -396,7 +396,7 @@ ShallowWrapper {
                 onClick={[Function]}
                 to="/main"
 >
-                Send It
+                Enter
 </NavLink>,
               "className": "enter-container",
             },
@@ -408,13 +408,13 @@ ShallowWrapper {
               "props": Object {
                 "activeClassName": "active",
                 "ariaCurrent": "true",
-                "children": "Send It",
+                "children": "Enter",
                 "className": "enter-site",
                 "onClick": [Function],
                 "to": "/main",
               },
               "ref": null,
-              "rendered": "Send It",
+              "rendered": "Enter",
               "type": [Function],
             },
             "type": "div",

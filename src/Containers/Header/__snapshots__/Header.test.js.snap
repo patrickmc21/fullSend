@@ -43,6 +43,15 @@ ShallowWrapper {
           </h1>
 </NavLink>,
         <Nav />,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="logout"
+          onClick={[Function]}
+          to="/"
+>
+          Logout
+</NavLink>,
         false,
       ],
       "className": "app-header",
@@ -89,6 +98,22 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Logout",
+          "className": "logout",
+          "onClick": [Function],
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Logout",
+        "type": [Function],
+      },
       false,
     ],
     "type": "header",
@@ -114,6 +139,15 @@ ShallowWrapper {
             </h1>
 </NavLink>,
           <Nav />,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="logout"
+            onClick={[Function]}
+            to="/"
+>
+            Logout
+</NavLink>,
           false,
         ],
         "className": "app-header",
@@ -158,6 +192,22 @@ ShallowWrapper {
           "props": Object {},
           "ref": null,
           "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Logout",
+            "className": "logout",
+            "onClick": [Function],
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Logout",
           "type": [Function],
         },
         false,
@@ -218,6 +268,15 @@ ShallowWrapper {
           </h1>
 </NavLink>,
         <Nav />,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="logout"
+          onClick={[Function]}
+          to="/"
+>
+          Logout
+</NavLink>,
         false,
       ],
       "className": "app-header",
@@ -264,6 +323,22 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Logout",
+          "className": "logout",
+          "onClick": [Function],
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Logout",
+        "type": [Function],
+      },
       false,
     ],
     "type": "header",
@@ -289,6 +364,15 @@ ShallowWrapper {
             </h1>
 </NavLink>,
           <Nav />,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="logout"
+            onClick={[Function]}
+            to="/"
+>
+            Logout
+</NavLink>,
           false,
         ],
         "className": "app-header",
@@ -333,6 +417,22 @@ ShallowWrapper {
           "props": Object {},
           "ref": null,
           "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Logout",
+            "className": "logout",
+            "onClick": [Function],
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Logout",
           "type": [Function],
         },
         false,
@@ -390,6 +490,15 @@ ShallowWrapper {
           </h1>
 </NavLink>,
         <Nav />,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="logout"
+          onClick={[Function]}
+          to="/"
+>
+          Logout
+</NavLink>,
         false,
       ],
       "className": "app-header",
@@ -436,6 +545,22 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Logout",
+          "className": "logout",
+          "onClick": [Function],
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Logout",
+        "type": [Function],
+      },
       false,
     ],
     "type": "header",
@@ -461,6 +586,15 @@ ShallowWrapper {
             </h1>
 </NavLink>,
           <Nav />,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="logout"
+            onClick={[Function]}
+            to="/"
+>
+            Logout
+</NavLink>,
           false,
         ],
         "className": "app-header",
@@ -505,6 +639,22 @@ ShallowWrapper {
           "props": Object {},
           "ref": null,
           "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Logout",
+            "className": "logout",
+            "onClick": [Function],
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Logout",
           "type": [Function],
         },
         false,
