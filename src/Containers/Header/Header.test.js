@@ -4,7 +4,7 @@ import { Header, mapStateToProps, mapDispatchToProps } from './Header';
 import getAthleteInfo from  '../../api/external-api-calls/getAthleteInfo';
 jest.mock('../../api/external-api-calls/getAthleteInfo');
 
-import { mockUserInfo, mockUser } from '../../mock-data/mock-data';
+import { mockUser } from '../../mock-data/mock-data';
 
 describe('Header', () => {
 
@@ -42,6 +42,12 @@ describe('Header', () => {
     wrapper = shallow(<Header user={mockedUser}/>);
     wrapper.instance().componentDidUpdate();
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should call getAthleteInfo on componentDidUpdate', async () => {
+    const expected = mockedUser.token;
+    await wrapper.instance().componentDidUpdate();
+    expect(getAthleteInfo).toHaveBeenCalledWith(expected);
   });
 
   it('should call logoutUser on handleLogout', () => {

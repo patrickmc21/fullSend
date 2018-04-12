@@ -3,7 +3,7 @@ const dateReducer = (state = 'All', action) => {
   case 'CHANGE_MONTH':
     return action.month;
   default :
-    return 'All';
+    return state;
   }
 };
 

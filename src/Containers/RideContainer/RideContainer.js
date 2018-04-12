@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Route, Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 
@@ -24,15 +24,16 @@ export class RideContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      errorStatus: '',
+      errorStatus: ''
     };
   }
 
   handleClick = async () => {
     const { user, rides } = this.props;
+    const { token } = user;
     const { before, after } = this.getRidesTimeSpan(rides);
     try {
-      const userActivities = await getAthleteActivities(user.token, after, before);
+      const userActivities = await getAthleteActivities(token, after, before);
       const ridesOnly = this.filterActivities(userActivities);
       const ridesWithTrails = await this.getTrails(ridesOnly);
       const cleanRides = rideCleaner(ridesWithTrails);
@@ -49,7 +50,9 @@ export class RideContainer extends Component {
 
   getTrails = (rides) => {
     const ridesWithTrails = rides.map( async (ride) => {
-      const response = await getTrails(ride.start_latlng[0], ride.start_latlng[1]);
+      const lat = ride.start_latlng[0];
+      const long = ride.start_latlng[1];
+      const response = await getTrails(lat, long);
       const trail = response.trails[0];
       return Object.assign({}, ride, trail);
     });
@@ -116,7 +119,8 @@ export class RideContainer extends Component {
 RideContainer.propTypes = {
   user: PropTypes.object,
   rides: PropTypes.array,
-  updateRides: PropTypes.func
+  updateRides: PropTypes.func,
+  month: PropTypes.string
 };
 
 export const mapStateToProps = state => ({
@@ -129,5 +133,5 @@ export const mapDispatchToProps = dispatch => ({
   updateRides: rides => dispatch(actions.updateRides(rides))
 });
 
-
+/* eslint-disable max-len */
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(RideContainer));

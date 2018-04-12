@@ -7,7 +7,7 @@ describe('dateReducer', () => {
 
   beforeEach(() => {
     mockState = {};
-  })
+  });
 
   it('should return default state', () => {
     const expected = 'All';

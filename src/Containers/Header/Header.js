@@ -39,7 +39,7 @@ export class Header extends Component {
   }
 
   handleClick = () => {
-    this.props.changeMonth('All')
+    this.props.changeMonth('All');
   }
 
   render() {
@@ -55,13 +55,13 @@ export class Header extends Component {
           <h1 className='logo'>fullSend</h1>
         </NavLink>
         <Nav />
-          <NavLink 
-            to='/'
-            className='logout'
-            onClick={this.handleLogout}
-          >
-          Logout
-          </NavLink>
+        <NavLink 
+          to='/'
+          className='logout'
+          onClick={this.handleLogout}
+        >
+        Logout
+        </NavLink>
         {name.length > 0 &&
         <aside className='user-info'>
           <img 
@@ -79,7 +79,8 @@ export class Header extends Component {
 Header.propTypes = {
   user: PropTypes.object,
   logoutUser: PropTypes.func,
-  clearRides: PropTypes.func
+  clearRides: PropTypes.func,
+  changeMonth: PropTypes.func
 };
 
 export const mapStateToProps = state => ({

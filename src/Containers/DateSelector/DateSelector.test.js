@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import * as actions from '../../Actions';
 
 import { DateSelector, mapDispatchToProps } from './DateSelector';
 

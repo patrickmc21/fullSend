@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import * as actions from '../../Actions';
 
@@ -10,20 +11,20 @@ export class DateSelector extends Component {
   constructor(props) {
     super(props);
     this.months = [
-    'All',
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-    ]
+      'All',
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December'
+    ];
   }
 
   handleSelection = (event) => {
@@ -37,9 +38,9 @@ export class DateSelector extends Component {
         key={month} 
         value={month}
         className='month-option'>
-            {month}
-      </option>)
-    })
+        {month}
+      </option>);
+    });
   }
 
   render() {
@@ -54,8 +55,12 @@ export class DateSelector extends Component {
           {this.createSelections()}    
         </select>
       </form>
-    )
+    );
   }
+}
+
+DateSelector.propTypes = {
+  changeMonth: PropTypes.func
 };
 
 export const mapDispatchToProps = dispatch => ({
