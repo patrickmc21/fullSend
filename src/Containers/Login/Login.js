@@ -98,7 +98,7 @@ export class Login extends Component {
                 to='/main' 
                 onClick={this.handleClickEnter}
                 className='enter-site'>
-                  Send It
+                  Enter
               </NavLink>
             </div>
           }

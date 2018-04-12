@@ -55,6 +55,13 @@ export class Header extends Component {
           <h1 className='logo'>fullSend</h1>
         </NavLink>
         <Nav />
+          <NavLink 
+            to='/'
+            className='logout'
+            onClick={this.handleLogout}
+          >
+          Logout
+          </NavLink>
         {name.length > 0 &&
         <aside className='user-info'>
           <img 
@@ -63,13 +70,6 @@ export class Header extends Component {
             className='user-profile-picture' />
           <h4 className='user-name'>{name}</h4>
           <h5 className='user-location'>{location}</h5>
-          <NavLink 
-            to='/'
-            className='logout'
-            onClick={this.handleLogout}
-          >
-          Logout
-          </NavLink>
         </aside>}
       </header>
     );

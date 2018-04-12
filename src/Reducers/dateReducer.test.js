@@ -17,6 +17,7 @@ describe('dateReducer', () => {
 
   it('should return a month on CHANGE_MONTH', () => {
     const expected = 'May';
-    const results = 
+    const results = dateReducer(mockState, Actions.changeMonth('May'));
+    expect(results).toEqual(expected);
   });
 });

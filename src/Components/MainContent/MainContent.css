@@ -5,9 +5,8 @@
 }
 
 .main-content {
-  padding-top: 200px;
   border: 1px solid #515c28;
-  border-radius: 20px;
+  border-radius: 15px;
   margin: auto;
   height: 500px;
   width: 80vw;
@@ -16,17 +15,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  box-shadow: 0px 0px 2px 3px #515c28;
+  box-shadow: 0px 0px 1px 1px #515c28;
 }
 
 .main-content-text {
-  padding-top: 30px;
+  padding-top: 220px;
   border: 1px solid #727167;
   border-radius: 15px;
   margin: auto;
-  height: 100px;
-  width: 60%;
-  background-color: rgba(81, 92, 40, 0.5);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   box-shadow: 0px 0px 2px 2px #727167;
 }

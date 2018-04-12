@@ -10,18 +10,18 @@ describe('rideReducer', () => {
     expect(results).toEqual(expected);
   });
 
-  it('should add rides to state', () => {
-    const mockRides = mock.mockRides;
-    const expected = mockRides;
-    const results = rideReducer([], Actions.addRides(mockRides));
-    expect(results).toEqual(expected);
-  });
-
   it('should update rides in state', () => {
     const newRides = mock.mockRides;
     const state = [mock.mockRide];
     const expected = [...state, ...newRides];
     const results = rideReducer(state, Actions.updateRides(newRides));
+    expect(results).toEqual(expected);
+  });
+
+  it('should clear rides in state', () => {
+    const state = [mock.mockRide];
+    const expected = [];
+    const results = rideReducer(state, Actions.clearRides('1'));
     expect(results).toEqual(expected);
   });
 });

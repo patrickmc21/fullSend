@@ -23,17 +23,16 @@
 
 .user-info {
   float: right;
+  clear: right;
   border-radius: 25px;
-  margin: 10px 10px;
-  height: 80px;
+  height: 70px;
   width: 250px;
-  background-color: rgba(114,113,103, 0.4);
 }
 
 .user-profile-picture {
   float: right;
   margin: 10px 10px;
-  width: 65px;
+  width: 55px;
   border-radius: 30px;
 }
 
@@ -49,14 +48,21 @@
 }
 
 .logout {
+  float: right;
   display: block;
-  color: #FFFFFE;
+  padding: 2px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  margin: 5px 10px 0 0;
+  width: 70px;
+  color: #000000;
   font-family: 'Raleway', sans-serif;
-  text-align: right;
+  text-align: center;
   text-decoration: none;
 }
 
 .logout:hover {
-  color: #000000;
+  border-color: #FFFFFE;
+  color: #FFFFFE;
   text-decoration: underline;
 }

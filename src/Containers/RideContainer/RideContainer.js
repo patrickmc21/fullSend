@@ -95,12 +95,14 @@ export class RideContainer extends Component {
     const rideCards = this.buildRideCards(rides, month);
     return (
       <section className='ride-container'>
-        <DateSelector />
-        <button 
-          className='update-rides'
-          onClick={this.handleClick}>
-            Update Rides
-        </button>
+        <div className='ride-container-nav'>
+          <DateSelector />
+          <button 
+            className='update-rides'
+            onClick={this.handleClick}>
+              Update Rides
+          </button>
+        </div>
         <div className='card-container'>
           {rideCards.length >= 1 && rideCards}
           {rideCards.length < 1 && 
