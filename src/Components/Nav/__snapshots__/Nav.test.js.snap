@@ -17,31 +17,119 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <NavLink
-        activeClassName="active-nav"
-        ariaCurrent="true"
-        className="nav-btn"
-        to="/main/rides"
+      "children": <div
+        className="nav-wrapper"
 >
-        Rides
-</NavLink>,
+        <NavLink
+                activeClassName="active-nav"
+                ariaCurrent="true"
+                className="nav-btn"
+                to="/main/rides"
+        >
+                Rides
+        </NavLink>
+        <NavLink
+                activeClassName="active-nav"
+                ariaCurrent="true"
+                className="nav-btn"
+                to="/main/bikes"
+        >
+                Bikes
+        </NavLink>
+        <NavLink
+                activeClassName="active-nav"
+                ariaCurrent="true"
+                className="nav-btn"
+                to="/main/rider"
+        >
+                Rider Stats
+        </NavLink>
+</div>,
       "className": "app-nav",
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "activeClassName": "active-nav",
-        "ariaCurrent": "true",
-        "children": "Rides",
-        "className": "nav-btn",
-        "to": "/main/rides",
+        "children": Array [
+          <NavLink
+            activeClassName="active-nav"
+            ariaCurrent="true"
+            className="nav-btn"
+            to="/main/rides"
+>
+            Rides
+</NavLink>,
+          <NavLink
+            activeClassName="active-nav"
+            ariaCurrent="true"
+            className="nav-btn"
+            to="/main/bikes"
+>
+            Bikes
+</NavLink>,
+          <NavLink
+            activeClassName="active-nav"
+            ariaCurrent="true"
+            className="nav-btn"
+            to="/main/rider"
+>
+            Rider Stats
+</NavLink>,
+        ],
+        "className": "nav-wrapper",
       },
       "ref": null,
-      "rendered": "Rides",
-      "type": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active-nav",
+            "ariaCurrent": "true",
+            "children": "Rides",
+            "className": "nav-btn",
+            "to": "/main/rides",
+          },
+          "ref": null,
+          "rendered": "Rides",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active-nav",
+            "ariaCurrent": "true",
+            "children": "Bikes",
+            "className": "nav-btn",
+            "to": "/main/bikes",
+          },
+          "ref": null,
+          "rendered": "Bikes",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active-nav",
+            "ariaCurrent": "true",
+            "children": "Rider Stats",
+            "className": "nav-btn",
+            "to": "/main/rider",
+          },
+          "ref": null,
+          "rendered": "Rider Stats",
+          "type": [Function],
+        },
+      ],
+      "type": "div",
     },
     "type": "nav",
   },
@@ -51,31 +139,119 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <NavLink
-          activeClassName="active-nav"
-          ariaCurrent="true"
-          className="nav-btn"
-          to="/main/rides"
+        "children": <div
+          className="nav-wrapper"
 >
-          Rides
-</NavLink>,
+          <NavLink
+                    activeClassName="active-nav"
+                    ariaCurrent="true"
+                    className="nav-btn"
+                    to="/main/rides"
+          >
+                    Rides
+          </NavLink>
+          <NavLink
+                    activeClassName="active-nav"
+                    ariaCurrent="true"
+                    className="nav-btn"
+                    to="/main/bikes"
+          >
+                    Bikes
+          </NavLink>
+          <NavLink
+                    activeClassName="active-nav"
+                    ariaCurrent="true"
+                    className="nav-btn"
+                    to="/main/rider"
+          >
+                    Rider Stats
+          </NavLink>
+</div>,
         "className": "app-nav",
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
         "props": Object {
-          "activeClassName": "active-nav",
-          "ariaCurrent": "true",
-          "children": "Rides",
-          "className": "nav-btn",
-          "to": "/main/rides",
+          "children": Array [
+            <NavLink
+              activeClassName="active-nav"
+              ariaCurrent="true"
+              className="nav-btn"
+              to="/main/rides"
+>
+              Rides
+</NavLink>,
+            <NavLink
+              activeClassName="active-nav"
+              ariaCurrent="true"
+              className="nav-btn"
+              to="/main/bikes"
+>
+              Bikes
+</NavLink>,
+            <NavLink
+              activeClassName="active-nav"
+              ariaCurrent="true"
+              className="nav-btn"
+              to="/main/rider"
+>
+              Rider Stats
+</NavLink>,
+          ],
+          "className": "nav-wrapper",
         },
         "ref": null,
-        "rendered": "Rides",
-        "type": [Function],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active-nav",
+              "ariaCurrent": "true",
+              "children": "Rides",
+              "className": "nav-btn",
+              "to": "/main/rides",
+            },
+            "ref": null,
+            "rendered": "Rides",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active-nav",
+              "ariaCurrent": "true",
+              "children": "Bikes",
+              "className": "nav-btn",
+              "to": "/main/bikes",
+            },
+            "ref": null,
+            "rendered": "Bikes",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active-nav",
+              "ariaCurrent": "true",
+              "children": "Rider Stats",
+              "className": "nav-btn",
+              "to": "/main/rider",
+            },
+            "ref": null,
+            "rendered": "Rider Stats",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
       },
       "type": "nav",
     },

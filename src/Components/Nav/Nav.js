@@ -7,13 +7,29 @@ const Nav = () => {
 
   return (
     <nav className='app-nav'>
-      <NavLink 
-        to='/main/rides' 
-        className='nav-btn' 
-        activeClassName='active-nav'
-      >
-        Rides
-      </NavLink>
+      <div className='nav-wrapper'>
+        <NavLink 
+          to='/main/rides' 
+          className='nav-btn' 
+          activeClassName='active-nav'
+        >
+          Rides
+        </NavLink>
+        <NavLink 
+          to='/main/bikes' 
+          className='nav-btn' 
+          activeClassName='active-nav'
+        >
+          Bikes
+        </NavLink>
+        <NavLink 
+          to='/main/rider' 
+          className='nav-btn' 
+          activeClassName='active-nav'
+        >
+          Rider Stats
+        </NavLink>
+      </div>
     </nav>
   );
 };

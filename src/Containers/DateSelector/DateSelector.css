@@ -1,0 +1,26 @@
+.month-form {
+  float: left;
+  padding-top: 7px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin: 0 0 10px 10px;
+  height: 40px;
+  width: 310px;
+  background-color: transparent;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#month {
+  border: none;
+  margin: 0 0 0 10px;
+  width: 150px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fffff3;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}

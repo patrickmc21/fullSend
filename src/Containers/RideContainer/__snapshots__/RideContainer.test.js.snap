@@ -5,8 +5,21 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <RideContainer
+    month="April"
     rides={
         Array [
+            Object {
+              "date": "May 8th, 2017",
+              "difficulty": "green",
+              "distance": "2",
+              "elapsedTime": "120",
+              "epoch": "1523472606",
+              "img": "someurlthing",
+              "location": "park",
+              "summary": "not sendy",
+              "trailName": "lame",
+              "userId": "9",
+            },
             Object {
               "date": "May 14th, 2017",
               "difficulty": "blue",
@@ -17,18 +30,6 @@ ShallowWrapper {
               "location": "hill",
               "summary": "sendy",
               "trailName": "neat",
-              "userId": "9",
-            },
-            Object {
-              "date": "May 8th, 2017",
-              "difficulty": "green",
-              "distance": "2",
-              "elapsedTime": "120",
-              "epoch": "776232323",
-              "img": "someurlthing",
-              "location": "park",
-              "summary": "not sendy",
-              "trailName": "lame",
               "userId": "9",
             },
           ]
@@ -55,31 +56,20 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <button
-          className="update-rides"
-          onClick={[Function]}
+        <div
+          className="ride-container-nav"
 >
-          Update Rides
-</button>,
+          <withRouter(Connect(DateSelector)) />
+          <button
+                    className="update-rides"
+                    onClick={[Function]}
+          >
+                    Update Rides
+          </button>
+</div>,
         <div
           className="card-container"
 >
-          <RideCard
-                    ride={
-                              Object {
-                                        "date": "May 14th, 2017",
-                                        "difficulty": "blue",
-                                        "distance": "5",
-                                        "elapsedTime": "180",
-                                        "epoch": "776232700",
-                                        "img": "someurlthing",
-                                        "location": "hill",
-                                        "summary": "sendy",
-                                        "trailName": "neat",
-                                        "userId": "9",
-                                      }
-                    }
-          />
           <RideCard
                     ride={
                               Object {
@@ -87,7 +77,7 @@ ShallowWrapper {
                                         "difficulty": "green",
                                         "distance": "2",
                                         "elapsedTime": "120",
-                                        "epoch": "776232323",
+                                        "epoch": "1523472606",
                                         "img": "someurlthing",
                                         "location": "park",
                                         "summary": "not sendy",
@@ -97,7 +87,9 @@ ShallowWrapper {
                     }
           />
 </div>,
+        ")",
       ],
+      "className": "ride-container",
     },
     "ref": null,
     "rendered": Array [
@@ -106,13 +98,43 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Update Rides",
-          "className": "update-rides",
-          "onClick": [Function],
+          "children": Array [
+            <withRouter(Connect(DateSelector)) />,
+            <button
+              className="update-rides"
+              onClick={[Function]}
+>
+              Update Rides
+</button>,
+          ],
+          "className": "ride-container-nav",
         },
         "ref": null,
-        "rendered": "Update Rides",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Update Rides",
+              "className": "update-rides",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Update Rides",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -124,27 +146,11 @@ ShallowWrapper {
               <RideCard
                 ride={
                                 Object {
-                                                "date": "May 14th, 2017",
-                                                "difficulty": "blue",
-                                                "distance": "5",
-                                                "elapsedTime": "180",
-                                                "epoch": "776232700",
-                                                "img": "someurlthing",
-                                                "location": "hill",
-                                                "summary": "sendy",
-                                                "trailName": "neat",
-                                                "userId": "9",
-                                              }
-                }
-/>,
-              <RideCard
-                ride={
-                                Object {
                                                 "date": "May 8th, 2017",
                                                 "difficulty": "green",
                                                 "distance": "2",
                                                 "elapsedTime": "120",
-                                                "epoch": "776232323",
+                                                "epoch": "1523472606",
                                                 "img": "someurlthing",
                                                 "location": "park",
                                                 "summary": "not sendy",
@@ -162,29 +168,7 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": "776232700",
-            "nodeType": "function",
-            "props": Object {
-              "ride": Object {
-                "date": "May 14th, 2017",
-                "difficulty": "blue",
-                "distance": "5",
-                "elapsedTime": "180",
-                "epoch": "776232700",
-                "img": "someurlthing",
-                "location": "hill",
-                "summary": "sendy",
-                "trailName": "neat",
-                "userId": "9",
-              },
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": "776232323",
+            "key": "1523472606",
             "nodeType": "function",
             "props": Object {
               "ride": Object {
@@ -192,7 +176,7 @@ ShallowWrapper {
                 "difficulty": "green",
                 "distance": "2",
                 "elapsedTime": "120",
-                "epoch": "776232323",
+                "epoch": "1523472606",
                 "img": "someurlthing",
                 "location": "park",
                 "summary": "not sendy",
@@ -208,6 +192,7 @@ ShallowWrapper {
         ],
         "type": "div",
       },
+      ")",
     ],
     "type": "section",
   },
@@ -218,31 +203,20 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <button
-            className="update-rides"
-            onClick={[Function]}
+          <div
+            className="ride-container-nav"
 >
-            Update Rides
-</button>,
+            <withRouter(Connect(DateSelector)) />
+            <button
+                        className="update-rides"
+                        onClick={[Function]}
+            >
+                        Update Rides
+            </button>
+</div>,
           <div
             className="card-container"
 >
-            <RideCard
-                        ride={
-                                    Object {
-                                                "date": "May 14th, 2017",
-                                                "difficulty": "blue",
-                                                "distance": "5",
-                                                "elapsedTime": "180",
-                                                "epoch": "776232700",
-                                                "img": "someurlthing",
-                                                "location": "hill",
-                                                "summary": "sendy",
-                                                "trailName": "neat",
-                                                "userId": "9",
-                                              }
-                        }
-            />
             <RideCard
                         ride={
                                     Object {
@@ -250,7 +224,7 @@ ShallowWrapper {
                                                 "difficulty": "green",
                                                 "distance": "2",
                                                 "elapsedTime": "120",
-                                                "epoch": "776232323",
+                                                "epoch": "1523472606",
                                                 "img": "someurlthing",
                                                 "location": "park",
                                                 "summary": "not sendy",
@@ -260,7 +234,9 @@ ShallowWrapper {
                         }
             />
 </div>,
+          ")",
         ],
+        "className": "ride-container",
       },
       "ref": null,
       "rendered": Array [
@@ -269,13 +245,43 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Update Rides",
-            "className": "update-rides",
-            "onClick": [Function],
+            "children": Array [
+              <withRouter(Connect(DateSelector)) />,
+              <button
+                className="update-rides"
+                onClick={[Function]}
+>
+                Update Rides
+</button>,
+            ],
+            "className": "ride-container-nav",
           },
           "ref": null,
-          "rendered": "Update Rides",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Update Rides",
+                "className": "update-rides",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Update Rides",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -287,27 +293,11 @@ ShallowWrapper {
                 <RideCard
                   ride={
                                     Object {
-                                                      "date": "May 14th, 2017",
-                                                      "difficulty": "blue",
-                                                      "distance": "5",
-                                                      "elapsedTime": "180",
-                                                      "epoch": "776232700",
-                                                      "img": "someurlthing",
-                                                      "location": "hill",
-                                                      "summary": "sendy",
-                                                      "trailName": "neat",
-                                                      "userId": "9",
-                                                    }
-                  }
-/>,
-                <RideCard
-                  ride={
-                                    Object {
                                                       "date": "May 8th, 2017",
                                                       "difficulty": "green",
                                                       "distance": "2",
                                                       "elapsedTime": "120",
-                                                      "epoch": "776232323",
+                                                      "epoch": "1523472606",
                                                       "img": "someurlthing",
                                                       "location": "park",
                                                       "summary": "not sendy",
@@ -325,29 +315,7 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": "776232700",
-              "nodeType": "function",
-              "props": Object {
-                "ride": Object {
-                  "date": "May 14th, 2017",
-                  "difficulty": "blue",
-                  "distance": "5",
-                  "elapsedTime": "180",
-                  "epoch": "776232700",
-                  "img": "someurlthing",
-                  "location": "hill",
-                  "summary": "sendy",
-                  "trailName": "neat",
-                  "userId": "9",
-                },
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "776232323",
+              "key": "1523472606",
               "nodeType": "function",
               "props": Object {
                 "ride": Object {
@@ -355,7 +323,7 @@ ShallowWrapper {
                   "difficulty": "green",
                   "distance": "2",
                   "elapsedTime": "120",
-                  "epoch": "776232323",
+                  "epoch": "1523472606",
                   "img": "someurlthing",
                   "location": "park",
                   "summary": "not sendy",
@@ -371,6 +339,7 @@ ShallowWrapper {
           ],
           "type": "div",
         },
+        ")",
       ],
       "type": "section",
     },
@@ -413,20 +382,29 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <button
-          className="update-rides"
-          onClick={[Function]}
+        <div
+          className="ride-container-nav"
 >
-          Update Rides
-</button>,
+          <withRouter(Connect(DateSelector)) />
+          <button
+                    className="update-rides"
+                    onClick={[Function]}
+          >
+                    Update Rides
+          </button>
+</div>,
         <div
           className="card-container"
 >
-          <h6>
+          <h6
+                    className="none-found"
+          >
                     No Rides to Show!
           </h6>
 </div>,
+        ")",
       ],
+      "className": "ride-container",
     },
     "ref": null,
     "rendered": Array [
@@ -435,13 +413,43 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Update Rides",
-          "className": "update-rides",
-          "onClick": [Function],
+          "children": Array [
+            <withRouter(Connect(DateSelector)) />,
+            <button
+              className="update-rides"
+              onClick={[Function]}
+>
+              Update Rides
+</button>,
+          ],
+          "className": "ride-container-nav",
         },
         "ref": null,
-        "rendered": "Update Rides",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Update Rides",
+              "className": "update-rides",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Update Rides",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -450,7 +458,9 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             false,
-            <h6>
+            <h6
+              className="none-found"
+>
               No Rides to Show!
 </h6>,
           ],
@@ -465,6 +475,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "No Rides to Show!",
+              "className": "none-found",
             },
             "ref": null,
             "rendered": "No Rides to Show!",
@@ -473,6 +484,7 @@ ShallowWrapper {
         ],
         "type": "div",
       },
+      ")",
     ],
     "type": "section",
   },
@@ -483,20 +495,29 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <button
-            className="update-rides"
-            onClick={[Function]}
+          <div
+            className="ride-container-nav"
 >
-            Update Rides
-</button>,
+            <withRouter(Connect(DateSelector)) />
+            <button
+                        className="update-rides"
+                        onClick={[Function]}
+            >
+                        Update Rides
+            </button>
+</div>,
           <div
             className="card-container"
 >
-            <h6>
+            <h6
+                        className="none-found"
+            >
                         No Rides to Show!
             </h6>
 </div>,
+          ")",
         ],
+        "className": "ride-container",
       },
       "ref": null,
       "rendered": Array [
@@ -505,13 +526,43 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Update Rides",
-            "className": "update-rides",
-            "onClick": [Function],
+            "children": Array [
+              <withRouter(Connect(DateSelector)) />,
+              <button
+                className="update-rides"
+                onClick={[Function]}
+>
+                Update Rides
+</button>,
+            ],
+            "className": "ride-container-nav",
           },
           "ref": null,
-          "rendered": "Update Rides",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Update Rides",
+                "className": "update-rides",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Update Rides",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -520,7 +571,9 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               false,
-              <h6>
+              <h6
+                className="none-found"
+>
                 No Rides to Show!
 </h6>,
             ],
@@ -535,6 +588,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "No Rides to Show!",
+                "className": "none-found",
               },
               "ref": null,
               "rendered": "No Rides to Show!",
@@ -543,6 +597,469 @@ ShallowWrapper {
           ],
           "type": "div",
         },
+        ")",
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`RideContainer should render all cards if month is All 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <RideContainer
+    month="All"
+    rides={
+        Array [
+            Object {
+              "date": "May 8th, 2017",
+              "difficulty": "green",
+              "distance": "2",
+              "elapsedTime": "120",
+              "epoch": "1523472606",
+              "img": "someurlthing",
+              "location": "park",
+              "summary": "not sendy",
+              "trailName": "lame",
+              "userId": "9",
+            },
+            Object {
+              "date": "May 14th, 2017",
+              "difficulty": "blue",
+              "distance": "5",
+              "elapsedTime": "180",
+              "epoch": "776232700",
+              "img": "someurlthing",
+              "location": "hill",
+              "summary": "sendy",
+              "trailName": "neat",
+              "userId": "9",
+            },
+          ]
+    }
+    updateRides={[Function]}
+    user={
+        Object {
+            "id": 12,
+            "name": "Pat",
+            "token": "2y589wyhgfiouqehr8to8",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="ride-container-nav"
+>
+          <withRouter(Connect(DateSelector)) />
+          <button
+                    className="update-rides"
+                    onClick={[Function]}
+          >
+                    Update Rides
+          </button>
+</div>,
+        <div
+          className="card-container"
+>
+          <RideCard
+                    ride={
+                              Object {
+                                        "date": "May 8th, 2017",
+                                        "difficulty": "green",
+                                        "distance": "2",
+                                        "elapsedTime": "120",
+                                        "epoch": "1523472606",
+                                        "img": "someurlthing",
+                                        "location": "park",
+                                        "summary": "not sendy",
+                                        "trailName": "lame",
+                                        "userId": "9",
+                                      }
+                    }
+          />
+          <RideCard
+                    ride={
+                              Object {
+                                        "date": "May 14th, 2017",
+                                        "difficulty": "blue",
+                                        "distance": "5",
+                                        "elapsedTime": "180",
+                                        "epoch": "776232700",
+                                        "img": "someurlthing",
+                                        "location": "hill",
+                                        "summary": "sendy",
+                                        "trailName": "neat",
+                                        "userId": "9",
+                                      }
+                    }
+          />
+</div>,
+        ")",
+      ],
+      "className": "ride-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <withRouter(Connect(DateSelector)) />,
+            <button
+              className="update-rides"
+              onClick={[Function]}
+>
+              Update Rides
+</button>,
+          ],
+          "className": "ride-container-nav",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Update Rides",
+              "className": "update-rides",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Update Rides",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            Array [
+              <RideCard
+                ride={
+                                Object {
+                                                "date": "May 8th, 2017",
+                                                "difficulty": "green",
+                                                "distance": "2",
+                                                "elapsedTime": "120",
+                                                "epoch": "1523472606",
+                                                "img": "someurlthing",
+                                                "location": "park",
+                                                "summary": "not sendy",
+                                                "trailName": "lame",
+                                                "userId": "9",
+                                              }
+                }
+/>,
+              <RideCard
+                ride={
+                                Object {
+                                                "date": "May 14th, 2017",
+                                                "difficulty": "blue",
+                                                "distance": "5",
+                                                "elapsedTime": "180",
+                                                "epoch": "776232700",
+                                                "img": "someurlthing",
+                                                "location": "hill",
+                                                "summary": "sendy",
+                                                "trailName": "neat",
+                                                "userId": "9",
+                                              }
+                }
+/>,
+            ],
+            false,
+          ],
+          "className": "card-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1523472606",
+            "nodeType": "function",
+            "props": Object {
+              "ride": Object {
+                "date": "May 8th, 2017",
+                "difficulty": "green",
+                "distance": "2",
+                "elapsedTime": "120",
+                "epoch": "1523472606",
+                "img": "someurlthing",
+                "location": "park",
+                "summary": "not sendy",
+                "trailName": "lame",
+                "userId": "9",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": "776232700",
+            "nodeType": "function",
+            "props": Object {
+              "ride": Object {
+                "date": "May 14th, 2017",
+                "difficulty": "blue",
+                "distance": "5",
+                "elapsedTime": "180",
+                "epoch": "776232700",
+                "img": "someurlthing",
+                "location": "hill",
+                "summary": "sendy",
+                "trailName": "neat",
+                "userId": "9",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          false,
+        ],
+        "type": "div",
+      },
+      ")",
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="ride-container-nav"
+>
+            <withRouter(Connect(DateSelector)) />
+            <button
+                        className="update-rides"
+                        onClick={[Function]}
+            >
+                        Update Rides
+            </button>
+</div>,
+          <div
+            className="card-container"
+>
+            <RideCard
+                        ride={
+                                    Object {
+                                                "date": "May 8th, 2017",
+                                                "difficulty": "green",
+                                                "distance": "2",
+                                                "elapsedTime": "120",
+                                                "epoch": "1523472606",
+                                                "img": "someurlthing",
+                                                "location": "park",
+                                                "summary": "not sendy",
+                                                "trailName": "lame",
+                                                "userId": "9",
+                                              }
+                        }
+            />
+            <RideCard
+                        ride={
+                                    Object {
+                                                "date": "May 14th, 2017",
+                                                "difficulty": "blue",
+                                                "distance": "5",
+                                                "elapsedTime": "180",
+                                                "epoch": "776232700",
+                                                "img": "someurlthing",
+                                                "location": "hill",
+                                                "summary": "sendy",
+                                                "trailName": "neat",
+                                                "userId": "9",
+                                              }
+                        }
+            />
+</div>,
+          ")",
+        ],
+        "className": "ride-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <withRouter(Connect(DateSelector)) />,
+              <button
+                className="update-rides"
+                onClick={[Function]}
+>
+                Update Rides
+</button>,
+            ],
+            "className": "ride-container-nav",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Update Rides",
+                "className": "update-rides",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Update Rides",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              Array [
+                <RideCard
+                  ride={
+                                    Object {
+                                                      "date": "May 8th, 2017",
+                                                      "difficulty": "green",
+                                                      "distance": "2",
+                                                      "elapsedTime": "120",
+                                                      "epoch": "1523472606",
+                                                      "img": "someurlthing",
+                                                      "location": "park",
+                                                      "summary": "not sendy",
+                                                      "trailName": "lame",
+                                                      "userId": "9",
+                                                    }
+                  }
+/>,
+                <RideCard
+                  ride={
+                                    Object {
+                                                      "date": "May 14th, 2017",
+                                                      "difficulty": "blue",
+                                                      "distance": "5",
+                                                      "elapsedTime": "180",
+                                                      "epoch": "776232700",
+                                                      "img": "someurlthing",
+                                                      "location": "hill",
+                                                      "summary": "sendy",
+                                                      "trailName": "neat",
+                                                      "userId": "9",
+                                                    }
+                  }
+/>,
+              ],
+              false,
+            ],
+            "className": "card-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1523472606",
+              "nodeType": "function",
+              "props": Object {
+                "ride": Object {
+                  "date": "May 8th, 2017",
+                  "difficulty": "green",
+                  "distance": "2",
+                  "elapsedTime": "120",
+                  "epoch": "1523472606",
+                  "img": "someurlthing",
+                  "location": "park",
+                  "summary": "not sendy",
+                  "trailName": "lame",
+                  "userId": "9",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "776232700",
+              "nodeType": "function",
+              "props": Object {
+                "ride": Object {
+                  "date": "May 14th, 2017",
+                  "difficulty": "blue",
+                  "distance": "5",
+                  "elapsedTime": "180",
+                  "epoch": "776232700",
+                  "img": "someurlthing",
+                  "location": "hill",
+                  "summary": "sendy",
+                  "trailName": "neat",
+                  "userId": "9",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            false,
+          ],
+          "type": "div",
+        },
+        ")",
       ],
       "type": "section",
     },

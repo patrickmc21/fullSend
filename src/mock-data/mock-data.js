@@ -26,7 +26,7 @@ export const mockNewUser = {
 }
 
 export const mockRide = {
-  "epoch": "776232323",
+  "epoch": "1523472606",
   "distance": "2",
   "elapsedTime": "120",
   "date": "May 8th, 2017",
@@ -40,7 +40,7 @@ export const mockRide = {
 
 export const mockRides = [
 {
-  "epoch": "776232323",
+  "epoch": "1523472606",
   "distance": "2",
   "elapsedTime": "120",
   "date": "May 8th, 2017",

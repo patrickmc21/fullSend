@@ -25,16 +25,26 @@ const RideCard = ({ride}) => {
           className='ride-image' />
       </div>
       <div className='ride-trail'>
+        <div className={difficulty}></div>
         <h2 className='ride-trail-name'>
           {trailName}
-          <div className={difficulty}></div>
         </h2>
         <h3 className='ride-location'>{location}</h3>
         <p className='ride-summary'>{summary}</p>
       </div>
       <div className='ride-stats'>
-        <h4 className='ride-distance'>Distance: {distance}</h4>
-        <h4 className='ride-time'>Duration: {elapsedTime}</h4>
+        <h4 className='ride-distance'>
+          <span className='type'>
+            Distance:
+          </span> 
+          {distance}
+        </h4>
+        <h4 className='ride-time'>
+          <span className='type'>
+          Duration: 
+          </span>
+          {elapsedTime}
+        </h4>
       </div>
     </article>
   );

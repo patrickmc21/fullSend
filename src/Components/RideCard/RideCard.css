@@ -1,11 +1,13 @@
 .ride-card {
+  display: inline-block;
   border: 1px solid #292727;
-  border-radius: 17px;
-  margin-bottom: 50px;
+  border-radius: 13px;
+  margin: 0 28px 50px 28px;
   height: 450px;
   width: 300px;
-  background-color: rgba(206, 204, 193, 0.8);
+  background-color: rgba(206, 204, 193, 0.9);
   box-sizing: border-box;
+  box-shadow: 0px 0px 3px 0px #292727;
 }
 
 .ride-trail-name,
@@ -33,7 +35,7 @@
 .ride-date {
   position: relative;
   top: 10px;
-  padding-right: 5px;
+  padding: 2px 5px 2px 0;
   border-radius: 4px 4px 0 0;
   background-color: rgba(0,0,0, 0.6);
   color: #e4e4c5;
@@ -44,8 +46,8 @@
 .ride-image {
   display: block;
   border: 1px solid #49403c;
-  border-radius: 15px 15px 0 0;
-  margin-top: -16px;
+  border-radius: 10px 10px 0 0;
+  margin-top: -20px;
   height: 230px;
   width: 296px;
 }
@@ -58,17 +60,17 @@
 
 .ride-trail-name {
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 700;
 }
 
-.ride-trail-name div {
-  display: inline-block;
-  margin-left: 5px;
+.ride-trail div {
+  float: left;
+  /*margin-right: 10px;*/
   height: 15px;
   width: 15px;
   background-size: cover;
   background-repeat: no-repeat;
-  vertical-align: bottom;
 }
 
 .greenBlue {
@@ -95,6 +97,7 @@
 .ride-location {
   margin-bottom: 5px;
   font-size: 18px;
+  font-style: italic;
 }
 
 .ride-stats {
@@ -104,6 +107,11 @@
 
 .ride-distance {
   margin-bottom: 5px;
+}
+
+.type {
+  margin-right: 5px;
+  font-weight: 800;
 }
 
 

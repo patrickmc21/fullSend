@@ -17,3 +17,8 @@ export const clearRides = (id) => ({
   type: 'CLEAR_RIDES',
   id
 });
+
+export const changeMonth = (month) => ({
+  type: 'CHANGE_MONTH',
+  month
+});

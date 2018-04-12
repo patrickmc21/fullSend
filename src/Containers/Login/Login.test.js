@@ -2,8 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import { redirectLogin } from '../../api/external-api-calls/getAthlete';
 import getToken from '../../api/external-api-calls/getToken';
-import { getUserId } from '../../api/internal-api-calls/getUserId';
-import { createUserId } from '../../api/internal-api-calls/createUserId';
+import getUserId from '../../api/internal-api-calls/getUserId';
+import createUserId from '../../api/internal-api-calls/createUserId';
 import getRides from '../../api/internal-api-calls/getUserRides';
 
 jest.mock('../../api/external-api-calls/getAthlete');
@@ -90,6 +90,7 @@ describe('Login', () => {
   });
 
   it('should call loginUser on handleClickEnter', async () => {
+    wrapper.setState({tempToken: 2});
     const spy = jest.spyOn(wrapper.instance(), 'loginUser');
     await wrapper.instance().handleClickEnter();
     expect(spy).toHaveBeenCalled();

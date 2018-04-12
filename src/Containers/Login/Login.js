@@ -68,10 +68,10 @@ export class Login extends Component {
       /* eslint-disable camelcase */
       token: access_token,
       /* eslint-enable camelcase */
-      id: userId.id
+      id: userId ? userId.id : null
     };
     this.props.addUser(user);
-    return userId.id;
+    return userId ? userId.id : null;
   };
 
   getUserRides = async (userId) => {
@@ -98,7 +98,7 @@ export class Login extends Component {
                 to='/main' 
                 onClick={this.handleClickEnter}
                 className='enter-site'>
-                  Send It
+                  Enter
               </NavLink>
             </div>
           }

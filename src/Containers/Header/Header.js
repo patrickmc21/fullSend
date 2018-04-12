@@ -38,6 +38,10 @@ export class Header extends Component {
     clearRides(user.id);
   }
 
+  handleClick = () => {
+    this.props.changeMonth('All');
+  }
+
   render() {
 
     const { name, location, img } = this.state;
@@ -46,10 +50,18 @@ export class Header extends Component {
         <NavLink 
           to='/main'
           className='logo-link'
+          onClick={this.handleClick}
         >
           <h1 className='logo'>fullSend</h1>
         </NavLink>
         <Nav />
+        <NavLink 
+          to='/'
+          className='logout'
+          onClick={this.handleLogout}
+        >
+        Logout
+        </NavLink>
         {name.length > 0 &&
         <aside className='user-info'>
           <img 
@@ -58,13 +70,6 @@ export class Header extends Component {
             className='user-profile-picture' />
           <h4 className='user-name'>{name}</h4>
           <h5 className='user-location'>{location}</h5>
-          <NavLink 
-            to='/'
-            className='logout'
-            onClick={this.handleLogout}
-          >
-          Logout
-          </NavLink>
         </aside>}
       </header>
     );
@@ -74,7 +79,8 @@ export class Header extends Component {
 Header.propTypes = {
   user: PropTypes.object,
   logoutUser: PropTypes.func,
-  clearRides: PropTypes.func
+  clearRides: PropTypes.func,
+  changeMonth: PropTypes.func
 };
 
 export const mapStateToProps = state => ({
@@ -83,7 +89,8 @@ export const mapStateToProps = state => ({
 
 export const mapDispatchToProps = dispatch => ({
   logoutUser: id => dispatch(actions.logoutUser(id)),
-  clearRides: id => dispatch(actions.clearRides(id))
+  clearRides: id => dispatch(actions.clearRides(id)),
+  changeMonth: month => dispatch(actions.changeMonth(month))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));

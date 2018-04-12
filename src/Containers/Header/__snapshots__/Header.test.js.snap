@@ -5,6 +5,8 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
+    changeMonth={[Function]}
+    clearRides={[Function]}
     logoutUser={[Function]}
     user={
         Object {
@@ -31,6 +33,7 @@ ShallowWrapper {
           activeClassName="active"
           ariaCurrent="true"
           className="logo-link"
+          onClick={[Function]}
           to="/main"
 >
           <h1
@@ -38,6 +41,16 @@ ShallowWrapper {
           >
                     fullSend
           </h1>
+</NavLink>,
+        <Nav />,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="logout"
+          onClick={[Function]}
+          to="/"
+>
+          Logout
 </NavLink>,
         false,
       ],
@@ -58,6 +71,7 @@ ShallowWrapper {
             fullSend
 </h1>,
           "className": "logo-link",
+          "onClick": [Function],
           "to": "/main",
         },
         "ref": null,
@@ -75,6 +89,31 @@ ShallowWrapper {
         },
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Logout",
+          "className": "logout",
+          "onClick": [Function],
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Logout",
+        "type": [Function],
+      },
       false,
     ],
     "type": "header",
@@ -90,6 +129,7 @@ ShallowWrapper {
             activeClassName="active"
             ariaCurrent="true"
             className="logo-link"
+            onClick={[Function]}
             to="/main"
 >
             <h1
@@ -97,6 +137,16 @@ ShallowWrapper {
             >
                         fullSend
             </h1>
+</NavLink>,
+          <Nav />,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="logout"
+            onClick={[Function]}
+            to="/"
+>
+            Logout
 </NavLink>,
           false,
         ],
@@ -117,6 +167,7 @@ ShallowWrapper {
               fullSend
 </h1>,
             "className": "logo-link",
+            "onClick": [Function],
             "to": "/main",
           },
           "ref": null,
@@ -132,6 +183,31 @@ ShallowWrapper {
             "rendered": "fullSend",
             "type": "h1",
           },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Logout",
+            "className": "logout",
+            "onClick": [Function],
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Logout",
           "type": [Function],
         },
         false,
@@ -154,6 +230,8 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
+    changeMonth={[Function]}
+    clearRides={[Function]}
     logoutUser={[Function]}
     user={
         Object {
@@ -180,6 +258,7 @@ ShallowWrapper {
           activeClassName="active"
           ariaCurrent="true"
           className="logo-link"
+          onClick={[Function]}
           to="/main"
 >
           <h1
@@ -187,6 +266,16 @@ ShallowWrapper {
           >
                     fullSend
           </h1>
+</NavLink>,
+        <Nav />,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="logout"
+          onClick={[Function]}
+          to="/"
+>
+          Logout
 </NavLink>,
         false,
       ],
@@ -207,6 +296,7 @@ ShallowWrapper {
             fullSend
 </h1>,
           "className": "logo-link",
+          "onClick": [Function],
           "to": "/main",
         },
         "ref": null,
@@ -224,6 +314,31 @@ ShallowWrapper {
         },
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Logout",
+          "className": "logout",
+          "onClick": [Function],
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Logout",
+        "type": [Function],
+      },
       false,
     ],
     "type": "header",
@@ -239,6 +354,7 @@ ShallowWrapper {
             activeClassName="active"
             ariaCurrent="true"
             className="logo-link"
+            onClick={[Function]}
             to="/main"
 >
             <h1
@@ -246,6 +362,16 @@ ShallowWrapper {
             >
                         fullSend
             </h1>
+</NavLink>,
+          <Nav />,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="logout"
+            onClick={[Function]}
+            to="/"
+>
+            Logout
 </NavLink>,
           false,
         ],
@@ -266,6 +392,7 @@ ShallowWrapper {
               fullSend
 </h1>,
             "className": "logo-link",
+            "onClick": [Function],
             "to": "/main",
           },
           "ref": null,
@@ -281,6 +408,31 @@ ShallowWrapper {
             "rendered": "fullSend",
             "type": "h1",
           },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Logout",
+            "className": "logout",
+            "onClick": [Function],
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Logout",
           "type": [Function],
         },
         false,
@@ -328,6 +480,7 @@ ShallowWrapper {
           activeClassName="active"
           ariaCurrent="true"
           className="logo-link"
+          onClick={[Function]}
           to="/main"
 >
           <h1
@@ -335,6 +488,16 @@ ShallowWrapper {
           >
                     fullSend
           </h1>
+</NavLink>,
+        <Nav />,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          className="logout"
+          onClick={[Function]}
+          to="/"
+>
+          Logout
 </NavLink>,
         false,
       ],
@@ -355,6 +518,7 @@ ShallowWrapper {
             fullSend
 </h1>,
           "className": "logo-link",
+          "onClick": [Function],
           "to": "/main",
         },
         "ref": null,
@@ -372,6 +536,31 @@ ShallowWrapper {
         },
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Logout",
+          "className": "logout",
+          "onClick": [Function],
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Logout",
+        "type": [Function],
+      },
       false,
     ],
     "type": "header",
@@ -387,6 +576,7 @@ ShallowWrapper {
             activeClassName="active"
             ariaCurrent="true"
             className="logo-link"
+            onClick={[Function]}
             to="/main"
 >
             <h1
@@ -394,6 +584,16 @@ ShallowWrapper {
             >
                         fullSend
             </h1>
+</NavLink>,
+          <Nav />,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="logout"
+            onClick={[Function]}
+            to="/"
+>
+            Logout
 </NavLink>,
           false,
         ],
@@ -414,6 +614,7 @@ ShallowWrapper {
               fullSend
 </h1>,
             "className": "logo-link",
+            "onClick": [Function],
             "to": "/main",
           },
           "ref": null,
@@ -429,6 +630,31 @@ ShallowWrapper {
             "rendered": "fullSend",
             "type": "h1",
           },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Logout",
+            "className": "logout",
+            "onClick": [Function],
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Logout",
           "type": [Function],
         },
         false,

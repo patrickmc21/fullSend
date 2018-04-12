@@ -26,8 +26,10 @@ describe('RideContainer', () => {
   let mockedUpdateRides;
   let wrapper;
   let mockedRideActivity;
+  let mockMonth;
 
   beforeEach(() => {
+    mockMonth = 'April';
     mockedUser = mocks.mockUser;
     mockedRides = mocks.mockRides;
     mockedRideActivity = [mocks.mockUserActivityLog[0]];
@@ -36,7 +38,8 @@ describe('RideContainer', () => {
       <RideContainer
         user={mockedUser}
         rides={mockedRides}
-        updateRides={mockedUpdateRides} />
+        updateRides={mockedUpdateRides}
+        month={mockMonth} />
     );
   });
 
@@ -103,7 +106,8 @@ describe('RideContainer', () => {
       <RideContainer
         user={mockedUser}
         rides={mockedRides}
-        updateRides={mockedUpdateRides} />
+        updateRides={mockedUpdateRides}
+        month={mockMonth} />
     );
     const expected = 'BAD!';
     await wrapper.instance().handleClick();
@@ -146,7 +150,8 @@ describe('RideContainer', () => {
       <RideContainer
         user={mockedUser}
         rides={mockedRides}
-        updateRides={mockedUpdateRides} />
+        updateRides={mockedUpdateRides}
+        month={mockMonth} />
     );
     const expected = Date.parse(moment().startOf('year'))/1000;
     const results = wrapper.instance().getRidesTimeSpan(mockedRides).after;
@@ -156,6 +161,17 @@ describe('RideContainer', () => {
   it('should add rides to local server', () => {
     wrapper.instance().addRidesToLocalServer(mockedRides, mockedUser.id);
     expect(updateUserRides).toHaveBeenCalled();
+  });
+
+  it('should render all cards if month is All', () => {
+    wrapper = shallow(
+      <RideContainer
+        user={mockedUser}
+        rides={mockedRides}
+        updateRides={mockedUpdateRides}
+        month='All' />
+    );
+    expect(wrapper).toMatchSnapshot();
   });
 
 });

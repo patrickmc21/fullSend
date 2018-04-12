@@ -25,17 +25,6 @@ describe('logoutUser', () => {
   });
 });
 
-describe('addRides', () => {
-  it('should return a type of ADD_RIDES', () => {
-    const mockRides = mock.mockRides;
-    const expected = {
-      type: 'ADD_RIDES',
-      rides: mockRides
-    };
-    const results = Actions.addRides(mockRides);
-    expect(results).toEqual(expected);
-  });
-});
 
 describe('updateRides', () => {
   it('should return a type of UPDATE_RIDES', () => {
