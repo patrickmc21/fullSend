@@ -32,24 +32,74 @@
   font-family: 'Lato', sans-serif;
 }
 
-.ride-date {
+.ride-header {
   position: relative;
+  top: 0;
+  height: 230px;
+}
+
+.ride-date {
+  position: absolute;
   top: 10px;
+  right: 0px;
   padding: 2px 5px 2px 0;
   border-radius: 4px 4px 0 0;
+  width: 100%;
   background-color: rgba(0,0,0, 0.6);
+  box-sizing: border-box;
   color: #e4e4c5;
   text-align: right;
   z-index: 10;
 }
 
 .ride-image {
-  display: block;
+  position: absolute;
+  top: 0;
   border: 1px solid #49403c;
   border-radius: 10px 10px 0 0;
-  margin-top: -20px;
   height: 230px;
   width: 296px;
+}
+
+.ride-header div {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 2px 2px;
+  z-index: 100;
+}
+
+.ride-header .greenBlue {
+  background-image: url('images/green.png'), url('images/blue.png');
+  background-size: 10px 10px;
+  background-position: 3px 3px;
+}
+
+.blueBlack {
+  background-image: url('./images/blue-black.png');
+}
+
+.ride-header .blue {
+  background-image: url('images/blue.png');
+  background-size: 10px 10px;
+  background-position: 3px 3px;
+}
+
+.black {
+  background-image: url('./images/black.png');
+  background-color: #fff;
+}
+
+.green {
+  background-image: url('./images/green.png');
+  background-color: #fff;
 }
 
 .ride-trail {
@@ -64,35 +114,6 @@
   font-weight: 700;
 }
 
-.ride-trail div {
-  float: left;
-  /*margin-right: 10px;*/
-  height: 15px;
-  width: 15px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.greenBlue {
-  background-color: #266695;
-  background-image: url('images/green.png');
-}
-
-.blueBlack {
-  background-image: url('./images/blue-black.png');
-}
-
-.blue {
-  background-image: url('images/blue.png');
-}
-
-.black {
-  background-image: url('./images/black.png');
-}
-
-.green {
-  background-image: url('./images/green.png');
-}
 
 .ride-location {
   margin-bottom: 5px;

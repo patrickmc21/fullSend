@@ -18,6 +18,7 @@ const RideCard = ({ride}) => {
   return (
     <article className='ride-card'>
       <div className='ride-header'>
+        <div className={difficulty}></div>
         <h6 className='ride-date'>{date}</h6>
         <img 
           src={img} 
@@ -25,7 +26,6 @@ const RideCard = ({ride}) => {
           className='ride-image' />
       </div>
       <div className='ride-trail'>
-        <div className={difficulty}></div>
         <h2 className='ride-trail-name'>
           {trailName}
         </h2>
