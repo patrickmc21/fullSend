@@ -1,6 +1,6 @@
 const getRiderStats = async (id, token) => {
   const url = `https://www.strava.com/api/v3/athletes/${id}/stats`;
-  const urlOptions = 's?page=1&per_page=30';
+  const urlOptions = '?page=1&per_page=30';
   const optionsObject = {
     method: 'GET',
     headers: {
@@ -20,4 +20,4 @@ const getRiderStats = async (id, token) => {
   }
 };
 
-export cosnt getRiderStats;
+export default getRiderStats;

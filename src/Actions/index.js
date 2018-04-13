@@ -22,3 +22,12 @@ export const changeMonth = (month) => ({
   type: 'CHANGE_MONTH',
   month
 });
+
+export const addRiderStats = (riderStats) => ({
+  type: 'ADD_RIDER_STATS',
+  riderStats
+});
+
+export const clearRiderStats = () => ({
+  type: 'CLEAR_RIDER_STATS'
+});
