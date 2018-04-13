@@ -9,12 +9,12 @@ const cleanRiderStats = (rider) => {
   const recentDistance = convertMetersToMiles(rider.recent_ride_totals.distance);
   const recentTime = convertSecondsToHoursMins(rider.recent_ride_totals.moving_time);
   const recentGain = convertMetersToFeet(rider.recent_ride_totals.elevation_gain);
-  const yearDistance = 
-  const yearTime
-  const yearGain
-  const lifeDistance
-  const lifeTime
-  const lifeGain
+  const yearDistance = convertMetersToMiles(rider.ytd_ride_totals.distance);
+  const yearTime = convertSecondsToHoursMins(rider.ytd_ride_totals.moving_time);
+  const yearGain = convertMetersToFeet(rider.ytd_ride_totals.elevation_gain);
+  const lifeDistance = convertMetersToMiles(rider.all_ride_totals.distance);
+  const lifeTime = convertSecondsToHoursMins(rider.all_ride_totals.moving_time);
+  const lifeGain = convertMetersToFeet(rider.all_ride_totals.elevation_gain);
 
   return {
     biggestRideDistance: biggestRideDistance,

@@ -9,6 +9,7 @@ import getUserId from '../../api/internal-api-calls/getUserId';
 import createUserId from '../../api/internal-api-calls/createUserId';
 import getRides from '../../api/internal-api-calls/getUserRides';
 import getRiderStats from '../../api/external-api-calls/getRiderStats';
+import cleanRiderStats from '../../api/helpers/cleanRiderStats';
 import * as actions from '../../Actions';
 import './Login.css';
 
@@ -87,8 +88,9 @@ export class Login extends Component {
   }
 
   getRiderStats = async (userId, token) => {
-    const stats = await getRiderStats(userId, token);
-    this.props.riderStats(stats);
+    const rawStats = await getRiderStats(userId, token);
+    const cleanStats = cleanRiderStats(rawStats);
+    this.props.riderStats(cleanStats);
   }
 
 

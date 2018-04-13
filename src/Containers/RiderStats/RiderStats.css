@@ -1,0 +1,13 @@
+.rider-stats {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #292727;
+  border-radius: 13px;
+  margin: auto;
+  height: 560px;
+  width: 98vw;
+  background-color: rgba(206, 204, 193, 0.9);
+}
+
+.rider-profile,
+.rider-recent-stats

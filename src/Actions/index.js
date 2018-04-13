@@ -8,6 +8,11 @@ export const logoutUser = (id) => ({
   id
 });
 
+export const addUserStrava = (stravaInfo) => ({
+  type: 'ADD_USER_STRAVA',
+  stravaInfo
+});
+
 export const updateRides = (rides) => ({
   type: 'UPDATE_RIDES',
   rides
