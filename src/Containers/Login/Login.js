@@ -68,7 +68,8 @@ export class Login extends Component {
       /* eslint-disable camelcase */
       token: access_token,
       /* eslint-enable camelcase */
-      id: userId ? userId.id : null
+      id: userId ? userId.id : null,
+      stravaId: athlete.id
     };
     this.props.addUser(user);
     return userId ? userId.id : null;
