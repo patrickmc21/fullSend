@@ -68,6 +68,7 @@ export class Login extends Component {
     }
     const user = {
       name: athlete.firstname,
+      email: athlete.email,
       /* eslint-disable camelcase */
       token: access_token,
       /* eslint-enable camelcase */

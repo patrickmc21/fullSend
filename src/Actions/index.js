@@ -36,3 +36,8 @@ export const addRiderStats = (riderStats) => ({
 export const clearRiderStats = () => ({
   type: 'CLEAR_RIDER_STATS'
 });
+
+export const addBikes = (bikes) => ({
+  type: 'ADD_BIKES',
+  bikes
+});

@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom';
 import Header from '../../Containers/Header/Header';
 import MainContent from '../MainContent/MainContent';
 import RideContainer from '../../Containers/RideContainer/RideContainer';
+import BikeContainer from '../../Containers/BikesContainer/BikeContainer';
 import RiderStats from '../../Containers/RiderStats/RiderStats';
 import Footer from '../Footer/Footer';
 
@@ -20,6 +21,9 @@ const Main = () => {
         }} />
         <Route exact path='/main/rides' render={() => {
           return <RideContainer />;
+        }} />
+        <Route exact path='/main/bikes' render={() => {
+          return <BikeContainer />;
         }} />
         <Route exact path='/main/stats' render={() => {
           return <RiderStats />;
