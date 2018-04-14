@@ -1,0 +1,539 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BikeCard should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <BikeCard
+    bike={
+        Object {
+            "brand_name": "BMC",
+            "description": "My Bike.",
+            "distance": 388206,
+            "frame_type": 3,
+            "id": "b1231",
+            "model_name": "Teammachine",
+            "primary": false,
+            "resource_state": 3,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="bike image"
+          className="bike-img"
+          src="default.jpeg"
+/>,
+        <h3
+          className="bike-name"
+>
+          "
+          "
+</h3>,
+        <h4
+          className="bike-brand"
+>
+          BMC
+</h4>,
+        <h4
+          className="bike-model"
+>
+          Teammachine
+</h4>,
+        <p
+          className="bike-mileage"
+>
+          Mileage: 
+          241 miles
+</p>,
+      ],
+      "className": "bike-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "bike image",
+          "className": "bike-img",
+          "src": "default.jpeg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "\\"",
+            undefined,
+            "\\"",
+          ],
+          "className": "bike-name",
+        },
+        "ref": null,
+        "rendered": Array [
+          "\\"",
+          undefined,
+          "\\"",
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "BMC",
+          "className": "bike-brand",
+        },
+        "ref": null,
+        "rendered": "BMC",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Teammachine",
+          "className": "bike-model",
+        },
+        "ref": null,
+        "rendered": "Teammachine",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Mileage: ",
+            "241 miles",
+          ],
+          "className": "bike-mileage",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Mileage: ",
+          "241 miles",
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="bike image"
+            className="bike-img"
+            src="default.jpeg"
+/>,
+          <h3
+            className="bike-name"
+>
+            "
+            "
+</h3>,
+          <h4
+            className="bike-brand"
+>
+            BMC
+</h4>,
+          <h4
+            className="bike-model"
+>
+            Teammachine
+</h4>,
+          <p
+            className="bike-mileage"
+>
+            Mileage: 
+            241 miles
+</p>,
+        ],
+        "className": "bike-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "bike image",
+            "className": "bike-img",
+            "src": "default.jpeg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "\\"",
+              undefined,
+              "\\"",
+            ],
+            "className": "bike-name",
+          },
+          "ref": null,
+          "rendered": Array [
+            "\\"",
+            undefined,
+            "\\"",
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "BMC",
+            "className": "bike-brand",
+          },
+          "ref": null,
+          "rendered": "BMC",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Teammachine",
+            "className": "bike-model",
+          },
+          "ref": null,
+          "rendered": "Teammachine",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Mileage: ",
+              "241 miles",
+            ],
+            "className": "bike-mileage",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Mileage: ",
+            "241 miles",
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`BikeCard should match the snapshot if user provides pic 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <BikeCard
+    bike={
+        Object {
+            "brand_name": "BMC",
+            "description": "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21761533_10155021148621275_7324564082030573632_n.jpg?_nc_cat=0&oh=bdedd1a008af0a9bf3833e01f4766ef9&oe=5B6FC959",
+            "distance": 388206,
+            "frame_type": 3,
+            "id": "b1231",
+            "model_name": "Teammachine",
+            "primary": false,
+            "resource_state": 3,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="bike image"
+          className="bike-img"
+          src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21761533_10155021148621275_7324564082030573632_n.jpg?_nc_cat=0&oh=bdedd1a008af0a9bf3833e01f4766ef9&oe=5B6FC959"
+/>,
+        <h3
+          className="bike-name"
+>
+          "
+          "
+</h3>,
+        <h4
+          className="bike-brand"
+>
+          BMC
+</h4>,
+        <h4
+          className="bike-model"
+>
+          Teammachine
+</h4>,
+        <p
+          className="bike-mileage"
+>
+          Mileage: 
+          241 miles
+</p>,
+      ],
+      "className": "bike-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "bike image",
+          "className": "bike-img",
+          "src": "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21761533_10155021148621275_7324564082030573632_n.jpg?_nc_cat=0&oh=bdedd1a008af0a9bf3833e01f4766ef9&oe=5B6FC959",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "\\"",
+            undefined,
+            "\\"",
+          ],
+          "className": "bike-name",
+        },
+        "ref": null,
+        "rendered": Array [
+          "\\"",
+          undefined,
+          "\\"",
+        ],
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "BMC",
+          "className": "bike-brand",
+        },
+        "ref": null,
+        "rendered": "BMC",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Teammachine",
+          "className": "bike-model",
+        },
+        "ref": null,
+        "rendered": "Teammachine",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Mileage: ",
+            "241 miles",
+          ],
+          "className": "bike-mileage",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Mileage: ",
+          "241 miles",
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="bike image"
+            className="bike-img"
+            src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21761533_10155021148621275_7324564082030573632_n.jpg?_nc_cat=0&oh=bdedd1a008af0a9bf3833e01f4766ef9&oe=5B6FC959"
+/>,
+          <h3
+            className="bike-name"
+>
+            "
+            "
+</h3>,
+          <h4
+            className="bike-brand"
+>
+            BMC
+</h4>,
+          <h4
+            className="bike-model"
+>
+            Teammachine
+</h4>,
+          <p
+            className="bike-mileage"
+>
+            Mileage: 
+            241 miles
+</p>,
+        ],
+        "className": "bike-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "bike image",
+            "className": "bike-img",
+            "src": "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21761533_10155021148621275_7324564082030573632_n.jpg?_nc_cat=0&oh=bdedd1a008af0a9bf3833e01f4766ef9&oe=5B6FC959",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "\\"",
+              undefined,
+              "\\"",
+            ],
+            "className": "bike-name",
+          },
+          "ref": null,
+          "rendered": Array [
+            "\\"",
+            undefined,
+            "\\"",
+          ],
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "BMC",
+            "className": "bike-brand",
+          },
+          "ref": null,
+          "rendered": "BMC",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Teammachine",
+            "className": "bike-model",
+          },
+          "ref": null,
+          "rendered": "Teammachine",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Mileage: ",
+              "241 miles",
+            ],
+            "className": "bike-mileage",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Mileage: ",
+            "241 miles",
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
