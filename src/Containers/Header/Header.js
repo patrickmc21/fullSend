@@ -23,21 +23,25 @@ export class Header extends Component {
   componentDidUpdate = async () => {
     const { token } = this.props.user;
     if (!this.state.name && token) {
-      const userInfo = await getAthleteInfo(token);
-      const user = {
-        name: `${userInfo.firstname} ${userInfo.lastname}`,
-        location: `${userInfo.city}, ${userInfo.state}`,
-        img: userInfo.profile_medium,
-        bikes: userInfo.bikes
-      };
-      this.props.addStravaInfo(user);
-      this.setState(
-        {
-          name: user.name, 
-          location: user.location, 
-          img: user.img
-        }
-      );
+      try {
+        const userInfo = await getAthleteInfo(token);
+        const user = {
+          name: `${userInfo.firstname} ${userInfo.lastname}`,
+          location: `${userInfo.city}, ${userInfo.state}`,
+          img: userInfo.profile_medium,
+          bikes: userInfo.bikes
+        };
+        this.props.addStravaInfo(user);
+        this.setState(
+          {
+            name: user.name, 
+            location: user.location, 
+            img: user.img
+          }
+        );
+      } catch (error) {
+        this.setState({errorStatus: error});
+      }
     }
   }
 

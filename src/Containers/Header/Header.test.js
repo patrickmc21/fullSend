@@ -13,18 +13,21 @@ describe('Header', () => {
   let mockedLogout;
   let mockedClearRides;
   let mockedChangeMonth;
+  let mockAddStravaInfo;
 
   beforeEach(() => {
     mockedUser = mockUser;
     mockedLogout = jest.fn();
     mockedClearRides = jest.fn();
     mockedChangeMonth = jest.fn();
+    mockAddStravaInfo = jest.fn();
     wrapper = shallow(
       <Header 
         user={mockedUser} 
         logoutUser={mockedLogout}
         clearRides={mockedClearRides}
-        changeMonth={mockedChangeMonth} />
+        changeMonth={mockedChangeMonth}
+        addStravaInfo={mockAddStravaInfo} />
     );
   });
 
@@ -48,6 +51,28 @@ describe('Header', () => {
     const expected = mockedUser.token;
     await wrapper.instance().componentDidUpdate();
     expect(getAthleteInfo).toHaveBeenCalledWith(expected);
+  });
+
+  it('should call addStravaInfo on componentDidUpdate', async () => {
+    await wrapper.instance().componentDidUpdate();
+    expect(mockAddStravaInfo).toHaveBeenCalled();
+  });
+
+  it('should set errorStatus on bad request on componentDidUpdate', async () => {
+    const expected = 'FAIL';
+    mockAddStravaInfo = jest.fn().mockImplementation(() => {
+      throw 'FAIL';
+    });
+    wrapper = shallow(
+      <Header 
+        user={mockedUser} 
+        logoutUser={mockedLogout}
+        clearRides={mockedClearRides}
+        changeMonth={mockedChangeMonth}
+        addStravaInfo={mockAddStravaInfo} />
+    );
+    await wrapper.instance().componentDidUpdate();
+    expect(wrapper.state('errorStatus')).toEqual(expected);
   });
 
   it('should call logoutUser on handleLogout', () => {
@@ -112,6 +137,15 @@ describe('mapDispatchToProps', () => {
       month: 'May'
     };
     mapped.changeMonth('May');
+    expect(mockDispatch).toHaveBeenCalledWith(expected);
+  });
+
+  it('should map addStravaInfo to props', () => {
+    const expected = {
+      type: 'ADD_USER_STRAVA',
+      stravaInfo: mockUser
+    };
+    mapped.addStravaInfo(mockUser);
     expect(mockDispatch).toHaveBeenCalledWith(expected);
   });
 });
