@@ -1,9 +1,9 @@
-.bike-container {
+.todo-container {
   height: 617px;
   box-sizing: border-box;
 }
 
-.bike-card-container {
+.todo-card-container {
   display: flex;
   flex-wrap: wrap;
   padding: 20px 0;
@@ -13,4 +13,11 @@
   width: 99vw;
   box-sizing: border-box;
   overflow: scroll;
+}
+
+.todo-card-container .none-found {
+  color: #FFFFFE;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  text-align: center;
 }
