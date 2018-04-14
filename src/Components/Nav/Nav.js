@@ -23,7 +23,7 @@ const Nav = () => {
           Bikes
         </NavLink>
         <NavLink 
-          to='/main/rider' 
+          to='/main/stats' 
           className='nav-btn' 
           activeClassName='active-nav'
         >

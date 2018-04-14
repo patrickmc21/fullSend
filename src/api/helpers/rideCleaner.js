@@ -6,6 +6,11 @@ export const cleanDate = (date) => {
   return cleanDate;
 };
 
+export const convertMetersToFeet = (meters) => {
+  const feet = meters * 3.28;
+  return `${feet.toFixed(0)} ft`;
+};
+
 export const convertMetersToMiles = (meters) => {
   const miles = meters * 0.000621371;
   return `${miles.toFixed(0)} miles`;

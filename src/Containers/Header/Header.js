@@ -23,12 +23,21 @@ export class Header extends Component {
   componentDidUpdate = async () => {
     const { token } = this.props.user;
     if (!this.state.name && token) {
-      const user = await getAthleteInfo(token);
-      this.setState({
-        name: `${user.firstname} ${user.lastname}`,
-        location: `${user.city}, ${user.state}`,
-        img: user.profile_medium
-      });
+      const userInfo = await getAthleteInfo(token);
+      const user = {
+        name: `${userInfo.firstname} ${userInfo.lastname}`,
+        location: `${userInfo.city}, ${userInfo.state}`,
+        img: userInfo.profile_medium,
+        bikes: userInfo.bikes
+      };
+      this.props.addStravaInfo(user);
+      this.setState(
+        {
+          name: user.name, 
+          location: user.location, 
+          img: user.img
+        }
+      );
     }
   }
 
@@ -90,7 +99,8 @@ export const mapStateToProps = state => ({
 export const mapDispatchToProps = dispatch => ({
   logoutUser: id => dispatch(actions.logoutUser(id)),
   clearRides: id => dispatch(actions.clearRides(id)),
-  changeMonth: month => dispatch(actions.changeMonth(month))
+  changeMonth: month => dispatch(actions.changeMonth(month)),
+  addStravaInfo: info => dispatch(actions.addUserStrava(info))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));

@@ -8,6 +8,8 @@ import getToken from '../../api/external-api-calls/getToken';
 import getUserId from '../../api/internal-api-calls/getUserId';
 import createUserId from '../../api/internal-api-calls/createUserId';
 import getRides from '../../api/internal-api-calls/getUserRides';
+import getRiderStats from '../../api/external-api-calls/getRiderStats';
+import cleanRiderStats from '../../api/helpers/cleanRiderStats';
 import * as actions from '../../Actions';
 import './Login.css';
 
@@ -44,8 +46,9 @@ export class Login extends Component {
   };
 
   handleClickEnter = async () => {
-    const userId = await this.loginUser();
+    const { userId, token, stravaId } = await this.loginUser();
     this.getUserRides(userId);
+    this.getRiderStats(stravaId, token);
   };
 
   loginUser = async () => {
@@ -65,18 +68,30 @@ export class Login extends Component {
     }
     const user = {
       name: athlete.firstname,
+      email: athlete.email,
       /* eslint-disable camelcase */
       token: access_token,
       /* eslint-enable camelcase */
-      id: userId ? userId.id : null
+      id: userId ? userId.id : null,
+      stravaId: athlete.id
     };
     this.props.addUser(user);
-    return userId ? userId.id : null;
+    return {
+      userId: userId ? userId.id : null, 
+      token: user.token,
+      stravaId: user.stravaId
+    }
   };
 
   getUserRides = async (userId) => {
     const userRides = await getRides(userId);
     this.props.updateRides(userRides);
+  }
+
+  getRiderStats = async (userId, token) => {
+    const rawStats = await getRiderStats(userId, token);
+    const cleanStats = cleanRiderStats(rawStats);
+    this.props.riderStats(cleanStats);
   }
 
 
@@ -116,7 +131,8 @@ Login.propTypes = {
 
 export const mapDispatchToProps = dispatch => ({
   addUser: user => dispatch(actions.signInUser(user)),
-  updateRides: rides => dispatch(actions.updateRides(rides))
+  updateRides: rides => dispatch(actions.updateRides(rides)),
+  riderStats: stats => dispatch(actions.addRiderStats(stats))
 });
 
 export default withRouter(connect(null, mapDispatchToProps)(Login));

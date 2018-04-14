@@ -1,0 +1,80 @@
+.rider-stats {
+  display: block;
+  padding-top: 30px;
+  margin: auto;
+  height: 100%;
+  width: 70vw;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px 0;
+  border: 1px solid #292727;
+  border-radius: 13px;
+  height: 530px;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: scroll;
+}
+
+.rider-profile,
+.rider-recent-stats,
+.rider-year-stats,
+.rider-life-stats {
+  border: 1px solid #292727;
+  border-radius: 13px;
+  margin: 5px 0;
+  height: 250px;
+  width: 450px;
+  background-color: rgba(206, 204, 193, 0.9);
+  color: #292727;
+}
+
+.rider-recent-stats,
+.rider-year-stats,
+.rider-life-stats {
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.user-profile-picture-stats {
+  float: left;
+  border: 1px solid black;
+  border-radius: 100px;
+  margin: 10px 0 0 10px;
+  height: 200px;
+}
+
+.user-name-stats {
+  display: inline-block;
+  margin: 30px 0 0 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  vertical-align: top;
+}
+
+.user-location-stats {
+  display: inline-block;
+  margin: 5px 0 30px 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  vertical-align: top;
+}
+
+.stats-container h3 {
+  margin: 30px 0 10px 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.stats-container p {
+  margin: 5px 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
