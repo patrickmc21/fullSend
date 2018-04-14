@@ -9,4 +9,10 @@ describe('bikesReducer', () => {
     const results = bikesReducer(undefined, {});
     expect(results).toEqual(expected);
   });
+
+  it('should add bikes on ADD_BIKES', () => {
+    const expected = mockBikes;
+    const results = bikesReducer(undefined, addBikes(mockBikes));
+    expect(results).toEqual(expected);
+  });
 });
