@@ -650,7 +650,6 @@ export const mockTodos = [
   "url": "https:\/\/www.mtbproject.com\/trail\/3671983\/monarch-crest-imba-epic",
   "imgSqSmall": "https:\/\/cdn-files.apstatic.com\/mtb\/7003758_sqsmall_1436760699.jpg",
   "imgSmall": "https:\/\/cdn-files.apstatic.com\/mtb\/7003758_small_1436760699.jpg",
-  "imgSmallMed": "https:\/\/cdn-files.apstatic.com\/mtb\/7003758_smallMed_1436760699.jpg",
   "imgMedium": "https:\/\/cdn-files.apstatic.com\/mtb\/7003758_medium_1436760699.jpg",
   "length": 36.2,
   "ascent": 2035,

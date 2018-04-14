@@ -1,0 +1,2044 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToDoCard should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ToDoCard
+    todo={
+        Object {
+            "ascent": 1195,
+            "conditionDate": "2018-04-11 12:26:40",
+            "conditionDetails": "Mostly Dry",
+            "conditionStatus": "All Clear",
+            "descent": -2962,
+            "difficulty": "black",
+            "high": 6803,
+            "id": 157369,
+            "imgMedium": "https://img.youtube.com/vi/t5nCdl3OLBo/hqdefault.jpg",
+            "imgSmall": "https://img.youtube.com/vi/t5nCdl3OLBo/hqdefault.jpg",
+            "imgSmallMed": "https://img.youtube.com/vi/t5nCdl3OLBo/hqdefault.jpg",
+            "imgSqSmall": "https://img.youtube.com/vi/t5nCdl3OLBo/hqdefault.jpg",
+            "latitude": 38.5819,
+            "length": 14.7,
+            "location": "Moab, Utah",
+            "longitude": -109.4164,
+            "low": 4022,
+            "name": "Porcupine Rim",
+            "starVotes": 259,
+            "stars": 4.7,
+            "summary": "The world famous Porcupine Rim ride; a bone jarring route with a sweet singletrack finish.",
+            "type": "Featured Ride",
+            "url": "https://www.mtbproject.com/trail/157369/porcupine-rim",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="todo-header"
+>
+          <div
+                    className="black"
+          />
+          <h6
+                    className="todo-rating"
+          >
+                    4.7
+                     stars
+          </h6>
+          <img
+                    alt="Porcupine Rim"
+                    className="todo-image"
+                    src="https://img.youtube.com/vi/t5nCdl3OLBo/hqdefault.jpg"
+          />
+</div>,
+        <div
+          className="todo-trail"
+>
+          <h2
+                    className="todo-trail-name"
+          >
+                    Porcupine Rim
+          </h2>
+          <h3
+                    className="todo-location"
+          >
+                    Moab, Utah
+          </h3>
+          <h6
+                    className="todo-latlong"
+          >
+                    38.5819
+                    °, 
+                    -109.4164
+                    °
+          </h6>
+          <p
+                    className="todo-summary"
+          >
+                    The world famous Porcupine Rim ride; a bone jarring route with a sweet singletrack finish.
+          </p>
+</div>,
+        <div
+          className="todo-stats"
+>
+          <h4
+                    className="todo-distance"
+          >
+                    <span
+                              className="type"
+                    >
+                              Distance:
+                    </span>
+                    14.7
+                     miles
+          </h4>
+          <h4
+                    className="todo-gain"
+          >
+                    <span
+                              className="type"
+                    >
+                              Gain:
+                    </span>
+                    1195
+          </h4>
+          <h4
+                    className="todo-high"
+          >
+                    <span
+                              className="type"
+                    >
+                              High:
+                    </span>
+                    6803
+                     ft
+          </h4>
+          <h4
+                    className="todo-low"
+          >
+                    <span
+                              className="type"
+                    >
+                              Low:
+                    </span>
+                    4022
+                     ft
+          </h4>
+</div>,
+        <a
+          className="todo-link"
+          href="https://www.mtbproject.com/trail/157369/porcupine-rim"
+>
+          See on MTB Project
+</a>,
+      ],
+      "className": "todo-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="black"
+/>,
+            <h6
+              className="todo-rating"
+>
+              4.7
+               stars
+</h6>,
+            <img
+              alt="Porcupine Rim"
+              className="todo-image"
+              src="https://img.youtube.com/vi/t5nCdl3OLBo/hqdefault.jpg"
+/>,
+          ],
+          "className": "todo-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "black",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                4.7,
+                " stars",
+              ],
+              "className": "todo-rating",
+            },
+            "ref": null,
+            "rendered": Array [
+              4.7,
+              " stars",
+            ],
+            "type": "h6",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Porcupine Rim",
+              "className": "todo-image",
+              "src": "https://img.youtube.com/vi/t5nCdl3OLBo/hqdefault.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="todo-trail-name"
+>
+              Porcupine Rim
+</h2>,
+            <h3
+              className="todo-location"
+>
+              Moab, Utah
+</h3>,
+            <h6
+              className="todo-latlong"
+>
+              38.5819
+              °, 
+              -109.4164
+              °
+</h6>,
+            <p
+              className="todo-summary"
+>
+              The world famous Porcupine Rim ride; a bone jarring route with a sweet singletrack finish.
+</p>,
+          ],
+          "className": "todo-trail",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Porcupine Rim",
+              "className": "todo-trail-name",
+            },
+            "ref": null,
+            "rendered": "Porcupine Rim",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Moab, Utah",
+              "className": "todo-location",
+            },
+            "ref": null,
+            "rendered": "Moab, Utah",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                38.5819,
+                "°, ",
+                -109.4164,
+                "°",
+              ],
+              "className": "todo-latlong",
+            },
+            "ref": null,
+            "rendered": Array [
+              38.5819,
+              "°, ",
+              -109.4164,
+              "°",
+            ],
+            "type": "h6",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "The world famous Porcupine Rim ride; a bone jarring route with a sweet singletrack finish.",
+              "className": "todo-summary",
+            },
+            "ref": null,
+            "rendered": "The world famous Porcupine Rim ride; a bone jarring route with a sweet singletrack finish.",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4
+              className="todo-distance"
+>
+              <span
+                            className="type"
+              >
+                            Distance:
+              </span>
+              14.7
+               miles
+</h4>,
+            <h4
+              className="todo-gain"
+>
+              <span
+                            className="type"
+              >
+                            Gain:
+              </span>
+              1195
+</h4>,
+            <h4
+              className="todo-high"
+>
+              <span
+                            className="type"
+              >
+                            High:
+              </span>
+              6803
+               ft
+</h4>,
+            <h4
+              className="todo-low"
+>
+              <span
+                            className="type"
+              >
+                            Low:
+              </span>
+              4022
+               ft
+</h4>,
+          ],
+          "className": "todo-stats",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="type"
+>
+                  Distance:
+</span>,
+                14.7,
+                " miles",
+              ],
+              "className": "todo-distance",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Distance:",
+                  "className": "type",
+                },
+                "ref": null,
+                "rendered": "Distance:",
+                "type": "span",
+              },
+              14.7,
+              " miles",
+            ],
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="type"
+>
+                  Gain:
+</span>,
+                1195,
+              ],
+              "className": "todo-gain",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Gain:",
+                  "className": "type",
+                },
+                "ref": null,
+                "rendered": "Gain:",
+                "type": "span",
+              },
+              1195,
+            ],
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="type"
+>
+                  High:
+</span>,
+                6803,
+                " ft",
+              ],
+              "className": "todo-high",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "High:",
+                  "className": "type",
+                },
+                "ref": null,
+                "rendered": "High:",
+                "type": "span",
+              },
+              6803,
+              " ft",
+            ],
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="type"
+>
+                  Low:
+</span>,
+                4022,
+                " ft",
+              ],
+              "className": "todo-low",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Low:",
+                  "className": "type",
+                },
+                "ref": null,
+                "rendered": "Low:",
+                "type": "span",
+              },
+              4022,
+              " ft",
+            ],
+            "type": "h4",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "See on MTB Project",
+          "className": "todo-link",
+          "href": "https://www.mtbproject.com/trail/157369/porcupine-rim",
+        },
+        "ref": null,
+        "rendered": "See on MTB Project",
+        "type": "a",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="todo-header"
+>
+            <div
+                        className="black"
+            />
+            <h6
+                        className="todo-rating"
+            >
+                        4.7
+                         stars
+            </h6>
+            <img
+                        alt="Porcupine Rim"
+                        className="todo-image"
+                        src="https://img.youtube.com/vi/t5nCdl3OLBo/hqdefault.jpg"
+            />
+</div>,
+          <div
+            className="todo-trail"
+>
+            <h2
+                        className="todo-trail-name"
+            >
+                        Porcupine Rim
+            </h2>
+            <h3
+                        className="todo-location"
+            >
+                        Moab, Utah
+            </h3>
+            <h6
+                        className="todo-latlong"
+            >
+                        38.5819
+                        °, 
+                        -109.4164
+                        °
+            </h6>
+            <p
+                        className="todo-summary"
+            >
+                        The world famous Porcupine Rim ride; a bone jarring route with a sweet singletrack finish.
+            </p>
+</div>,
+          <div
+            className="todo-stats"
+>
+            <h4
+                        className="todo-distance"
+            >
+                        <span
+                                    className="type"
+                        >
+                                    Distance:
+                        </span>
+                        14.7
+                         miles
+            </h4>
+            <h4
+                        className="todo-gain"
+            >
+                        <span
+                                    className="type"
+                        >
+                                    Gain:
+                        </span>
+                        1195
+            </h4>
+            <h4
+                        className="todo-high"
+            >
+                        <span
+                                    className="type"
+                        >
+                                    High:
+                        </span>
+                        6803
+                         ft
+            </h4>
+            <h4
+                        className="todo-low"
+            >
+                        <span
+                                    className="type"
+                        >
+                                    Low:
+                        </span>
+                        4022
+                         ft
+            </h4>
+</div>,
+          <a
+            className="todo-link"
+            href="https://www.mtbproject.com/trail/157369/porcupine-rim"
+>
+            See on MTB Project
+</a>,
+        ],
+        "className": "todo-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="black"
+/>,
+              <h6
+                className="todo-rating"
+>
+                4.7
+                 stars
+</h6>,
+              <img
+                alt="Porcupine Rim"
+                className="todo-image"
+                src="https://img.youtube.com/vi/t5nCdl3OLBo/hqdefault.jpg"
+/>,
+            ],
+            "className": "todo-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "black",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  4.7,
+                  " stars",
+                ],
+                "className": "todo-rating",
+              },
+              "ref": null,
+              "rendered": Array [
+                4.7,
+                " stars",
+              ],
+              "type": "h6",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Porcupine Rim",
+                "className": "todo-image",
+                "src": "https://img.youtube.com/vi/t5nCdl3OLBo/hqdefault.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="todo-trail-name"
+>
+                Porcupine Rim
+</h2>,
+              <h3
+                className="todo-location"
+>
+                Moab, Utah
+</h3>,
+              <h6
+                className="todo-latlong"
+>
+                38.5819
+                °, 
+                -109.4164
+                °
+</h6>,
+              <p
+                className="todo-summary"
+>
+                The world famous Porcupine Rim ride; a bone jarring route with a sweet singletrack finish.
+</p>,
+            ],
+            "className": "todo-trail",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Porcupine Rim",
+                "className": "todo-trail-name",
+              },
+              "ref": null,
+              "rendered": "Porcupine Rim",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Moab, Utah",
+                "className": "todo-location",
+              },
+              "ref": null,
+              "rendered": "Moab, Utah",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  38.5819,
+                  "°, ",
+                  -109.4164,
+                  "°",
+                ],
+                "className": "todo-latlong",
+              },
+              "ref": null,
+              "rendered": Array [
+                38.5819,
+                "°, ",
+                -109.4164,
+                "°",
+              ],
+              "type": "h6",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "The world famous Porcupine Rim ride; a bone jarring route with a sweet singletrack finish.",
+                "className": "todo-summary",
+              },
+              "ref": null,
+              "rendered": "The world famous Porcupine Rim ride; a bone jarring route with a sweet singletrack finish.",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4
+                className="todo-distance"
+>
+                <span
+                                className="type"
+                >
+                                Distance:
+                </span>
+                14.7
+                 miles
+</h4>,
+              <h4
+                className="todo-gain"
+>
+                <span
+                                className="type"
+                >
+                                Gain:
+                </span>
+                1195
+</h4>,
+              <h4
+                className="todo-high"
+>
+                <span
+                                className="type"
+                >
+                                High:
+                </span>
+                6803
+                 ft
+</h4>,
+              <h4
+                className="todo-low"
+>
+                <span
+                                className="type"
+                >
+                                Low:
+                </span>
+                4022
+                 ft
+</h4>,
+            ],
+            "className": "todo-stats",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="type"
+>
+                    Distance:
+</span>,
+                  14.7,
+                  " miles",
+                ],
+                "className": "todo-distance",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Distance:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Distance:",
+                  "type": "span",
+                },
+                14.7,
+                " miles",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="type"
+>
+                    Gain:
+</span>,
+                  1195,
+                ],
+                "className": "todo-gain",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Gain:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Gain:",
+                  "type": "span",
+                },
+                1195,
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="type"
+>
+                    High:
+</span>,
+                  6803,
+                  " ft",
+                ],
+                "className": "todo-high",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "High:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "High:",
+                  "type": "span",
+                },
+                6803,
+                " ft",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="type"
+>
+                    Low:
+</span>,
+                  4022,
+                  " ft",
+                ],
+                "className": "todo-low",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Low:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Low:",
+                  "type": "span",
+                },
+                4022,
+                " ft",
+              ],
+              "type": "h4",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "See on MTB Project",
+            "className": "todo-link",
+            "href": "https://www.mtbproject.com/trail/157369/porcupine-rim",
+          },
+          "ref": null,
+          "rendered": "See on MTB Project",
+          "type": "a",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`ToDoCard should match the snapshot if no image present 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ToDoCard
+    todo={
+        Object {
+            "ascent": 2035,
+            "conditionDate": "2018-04-08 18:35:55",
+            "conditionDetails": "Muddy, Snowy, Icy",
+            "conditionStatus": "Bad / Closed",
+            "descent": -5890,
+            "difficulty": "blueBlack",
+            "high": 11962,
+            "id": 3671983,
+            "imgMedium": "https://cdn-files.apstatic.com/mtb/7003758_medium_1436760699.jpg",
+            "imgSmall": "https://cdn-files.apstatic.com/mtb/7003758_small_1436760699.jpg",
+            "imgSqSmall": "https://cdn-files.apstatic.com/mtb/7003758_sqsmall_1436760699.jpg",
+            "latitude": 38.4965,
+            "length": 36.2,
+            "location": "Whitepine, Colorado",
+            "longitude": -106.3254,
+            "low": 7458,
+            "name": "Monarch Crest - IMBA EPIC",
+            "starVotes": 179,
+            "stars": 4.7,
+            "summary": "One of Colorado's top 5 epic rides - classic high-altitude riding in the Rockies!",
+            "type": "Featured Ride",
+            "url": "https://www.mtbproject.com/trail/3671983/monarch-crest-imba-epic",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="todo-header"
+>
+          <div
+                    className="blueBlack"
+          />
+          <h6
+                    className="todo-rating"
+          >
+                    4.7
+                     stars
+          </h6>
+          <img
+                    alt="Monarch Crest - IMBA EPIC"
+                    className="todo-image"
+                    src="default-bkgrnd.jpg"
+          />
+</div>,
+        <div
+          className="todo-trail"
+>
+          <h2
+                    className="todo-trail-name"
+          >
+                    Monarch Crest - IMBA EPIC
+          </h2>
+          <h3
+                    className="todo-location"
+          >
+                    Whitepine, Colorado
+          </h3>
+          <h6
+                    className="todo-latlong"
+          >
+                    38.4965
+                    °, 
+                    -106.3254
+                    °
+          </h6>
+          <p
+                    className="todo-summary"
+          >
+                    One of Colorado's top 5 epic rides - classic high-altitude riding in the Rockies!
+          </p>
+</div>,
+        <div
+          className="todo-stats"
+>
+          <h4
+                    className="todo-distance"
+          >
+                    <span
+                              className="type"
+                    >
+                              Distance:
+                    </span>
+                    36.2
+                     miles
+          </h4>
+          <h4
+                    className="todo-gain"
+          >
+                    <span
+                              className="type"
+                    >
+                              Gain:
+                    </span>
+                    2035
+          </h4>
+          <h4
+                    className="todo-high"
+          >
+                    <span
+                              className="type"
+                    >
+                              High:
+                    </span>
+                    11962
+                     ft
+          </h4>
+          <h4
+                    className="todo-low"
+          >
+                    <span
+                              className="type"
+                    >
+                              Low:
+                    </span>
+                    7458
+                     ft
+          </h4>
+</div>,
+        <a
+          className="todo-link"
+          href="https://www.mtbproject.com/trail/3671983/monarch-crest-imba-epic"
+>
+          See on MTB Project
+</a>,
+      ],
+      "className": "todo-card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="blueBlack"
+/>,
+            <h6
+              className="todo-rating"
+>
+              4.7
+               stars
+</h6>,
+            <img
+              alt="Monarch Crest - IMBA EPIC"
+              className="todo-image"
+              src="default-bkgrnd.jpg"
+/>,
+          ],
+          "className": "todo-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "blueBlack",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                4.7,
+                " stars",
+              ],
+              "className": "todo-rating",
+            },
+            "ref": null,
+            "rendered": Array [
+              4.7,
+              " stars",
+            ],
+            "type": "h6",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Monarch Crest - IMBA EPIC",
+              "className": "todo-image",
+              "src": "default-bkgrnd.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="todo-trail-name"
+>
+              Monarch Crest - IMBA EPIC
+</h2>,
+            <h3
+              className="todo-location"
+>
+              Whitepine, Colorado
+</h3>,
+            <h6
+              className="todo-latlong"
+>
+              38.4965
+              °, 
+              -106.3254
+              °
+</h6>,
+            <p
+              className="todo-summary"
+>
+              One of Colorado's top 5 epic rides - classic high-altitude riding in the Rockies!
+</p>,
+          ],
+          "className": "todo-trail",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Monarch Crest - IMBA EPIC",
+              "className": "todo-trail-name",
+            },
+            "ref": null,
+            "rendered": "Monarch Crest - IMBA EPIC",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Whitepine, Colorado",
+              "className": "todo-location",
+            },
+            "ref": null,
+            "rendered": "Whitepine, Colorado",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                38.4965,
+                "°, ",
+                -106.3254,
+                "°",
+              ],
+              "className": "todo-latlong",
+            },
+            "ref": null,
+            "rendered": Array [
+              38.4965,
+              "°, ",
+              -106.3254,
+              "°",
+            ],
+            "type": "h6",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "One of Colorado's top 5 epic rides - classic high-altitude riding in the Rockies!",
+              "className": "todo-summary",
+            },
+            "ref": null,
+            "rendered": "One of Colorado's top 5 epic rides - classic high-altitude riding in the Rockies!",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4
+              className="todo-distance"
+>
+              <span
+                            className="type"
+              >
+                            Distance:
+              </span>
+              36.2
+               miles
+</h4>,
+            <h4
+              className="todo-gain"
+>
+              <span
+                            className="type"
+              >
+                            Gain:
+              </span>
+              2035
+</h4>,
+            <h4
+              className="todo-high"
+>
+              <span
+                            className="type"
+              >
+                            High:
+              </span>
+              11962
+               ft
+</h4>,
+            <h4
+              className="todo-low"
+>
+              <span
+                            className="type"
+              >
+                            Low:
+              </span>
+              7458
+               ft
+</h4>,
+          ],
+          "className": "todo-stats",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="type"
+>
+                  Distance:
+</span>,
+                36.2,
+                " miles",
+              ],
+              "className": "todo-distance",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Distance:",
+                  "className": "type",
+                },
+                "ref": null,
+                "rendered": "Distance:",
+                "type": "span",
+              },
+              36.2,
+              " miles",
+            ],
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="type"
+>
+                  Gain:
+</span>,
+                2035,
+              ],
+              "className": "todo-gain",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Gain:",
+                  "className": "type",
+                },
+                "ref": null,
+                "rendered": "Gain:",
+                "type": "span",
+              },
+              2035,
+            ],
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="type"
+>
+                  High:
+</span>,
+                11962,
+                " ft",
+              ],
+              "className": "todo-high",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "High:",
+                  "className": "type",
+                },
+                "ref": null,
+                "rendered": "High:",
+                "type": "span",
+              },
+              11962,
+              " ft",
+            ],
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="type"
+>
+                  Low:
+</span>,
+                7458,
+                " ft",
+              ],
+              "className": "todo-low",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Low:",
+                  "className": "type",
+                },
+                "ref": null,
+                "rendered": "Low:",
+                "type": "span",
+              },
+              7458,
+              " ft",
+            ],
+            "type": "h4",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "See on MTB Project",
+          "className": "todo-link",
+          "href": "https://www.mtbproject.com/trail/3671983/monarch-crest-imba-epic",
+        },
+        "ref": null,
+        "rendered": "See on MTB Project",
+        "type": "a",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="todo-header"
+>
+            <div
+                        className="blueBlack"
+            />
+            <h6
+                        className="todo-rating"
+            >
+                        4.7
+                         stars
+            </h6>
+            <img
+                        alt="Monarch Crest - IMBA EPIC"
+                        className="todo-image"
+                        src="default-bkgrnd.jpg"
+            />
+</div>,
+          <div
+            className="todo-trail"
+>
+            <h2
+                        className="todo-trail-name"
+            >
+                        Monarch Crest - IMBA EPIC
+            </h2>
+            <h3
+                        className="todo-location"
+            >
+                        Whitepine, Colorado
+            </h3>
+            <h6
+                        className="todo-latlong"
+            >
+                        38.4965
+                        °, 
+                        -106.3254
+                        °
+            </h6>
+            <p
+                        className="todo-summary"
+            >
+                        One of Colorado's top 5 epic rides - classic high-altitude riding in the Rockies!
+            </p>
+</div>,
+          <div
+            className="todo-stats"
+>
+            <h4
+                        className="todo-distance"
+            >
+                        <span
+                                    className="type"
+                        >
+                                    Distance:
+                        </span>
+                        36.2
+                         miles
+            </h4>
+            <h4
+                        className="todo-gain"
+            >
+                        <span
+                                    className="type"
+                        >
+                                    Gain:
+                        </span>
+                        2035
+            </h4>
+            <h4
+                        className="todo-high"
+            >
+                        <span
+                                    className="type"
+                        >
+                                    High:
+                        </span>
+                        11962
+                         ft
+            </h4>
+            <h4
+                        className="todo-low"
+            >
+                        <span
+                                    className="type"
+                        >
+                                    Low:
+                        </span>
+                        7458
+                         ft
+            </h4>
+</div>,
+          <a
+            className="todo-link"
+            href="https://www.mtbproject.com/trail/3671983/monarch-crest-imba-epic"
+>
+            See on MTB Project
+</a>,
+        ],
+        "className": "todo-card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="blueBlack"
+/>,
+              <h6
+                className="todo-rating"
+>
+                4.7
+                 stars
+</h6>,
+              <img
+                alt="Monarch Crest - IMBA EPIC"
+                className="todo-image"
+                src="default-bkgrnd.jpg"
+/>,
+            ],
+            "className": "todo-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "blueBlack",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  4.7,
+                  " stars",
+                ],
+                "className": "todo-rating",
+              },
+              "ref": null,
+              "rendered": Array [
+                4.7,
+                " stars",
+              ],
+              "type": "h6",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Monarch Crest - IMBA EPIC",
+                "className": "todo-image",
+                "src": "default-bkgrnd.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="todo-trail-name"
+>
+                Monarch Crest - IMBA EPIC
+</h2>,
+              <h3
+                className="todo-location"
+>
+                Whitepine, Colorado
+</h3>,
+              <h6
+                className="todo-latlong"
+>
+                38.4965
+                °, 
+                -106.3254
+                °
+</h6>,
+              <p
+                className="todo-summary"
+>
+                One of Colorado's top 5 epic rides - classic high-altitude riding in the Rockies!
+</p>,
+            ],
+            "className": "todo-trail",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Monarch Crest - IMBA EPIC",
+                "className": "todo-trail-name",
+              },
+              "ref": null,
+              "rendered": "Monarch Crest - IMBA EPIC",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Whitepine, Colorado",
+                "className": "todo-location",
+              },
+              "ref": null,
+              "rendered": "Whitepine, Colorado",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  38.4965,
+                  "°, ",
+                  -106.3254,
+                  "°",
+                ],
+                "className": "todo-latlong",
+              },
+              "ref": null,
+              "rendered": Array [
+                38.4965,
+                "°, ",
+                -106.3254,
+                "°",
+              ],
+              "type": "h6",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "One of Colorado's top 5 epic rides - classic high-altitude riding in the Rockies!",
+                "className": "todo-summary",
+              },
+              "ref": null,
+              "rendered": "One of Colorado's top 5 epic rides - classic high-altitude riding in the Rockies!",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4
+                className="todo-distance"
+>
+                <span
+                                className="type"
+                >
+                                Distance:
+                </span>
+                36.2
+                 miles
+</h4>,
+              <h4
+                className="todo-gain"
+>
+                <span
+                                className="type"
+                >
+                                Gain:
+                </span>
+                2035
+</h4>,
+              <h4
+                className="todo-high"
+>
+                <span
+                                className="type"
+                >
+                                High:
+                </span>
+                11962
+                 ft
+</h4>,
+              <h4
+                className="todo-low"
+>
+                <span
+                                className="type"
+                >
+                                Low:
+                </span>
+                7458
+                 ft
+</h4>,
+            ],
+            "className": "todo-stats",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="type"
+>
+                    Distance:
+</span>,
+                  36.2,
+                  " miles",
+                ],
+                "className": "todo-distance",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Distance:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Distance:",
+                  "type": "span",
+                },
+                36.2,
+                " miles",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="type"
+>
+                    Gain:
+</span>,
+                  2035,
+                ],
+                "className": "todo-gain",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Gain:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Gain:",
+                  "type": "span",
+                },
+                2035,
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="type"
+>
+                    High:
+</span>,
+                  11962,
+                  " ft",
+                ],
+                "className": "todo-high",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "High:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "High:",
+                  "type": "span",
+                },
+                11962,
+                " ft",
+              ],
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="type"
+>
+                    Low:
+</span>,
+                  7458,
+                  " ft",
+                ],
+                "className": "todo-low",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Low:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Low:",
+                  "type": "span",
+                },
+                7458,
+                " ft",
+              ],
+              "type": "h4",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "See on MTB Project",
+            "className": "todo-link",
+            "href": "https://www.mtbproject.com/trail/3671983/monarch-crest-imba-epic",
+          },
+          "ref": null,
+          "rendered": "See on MTB Project",
+          "type": "a",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
