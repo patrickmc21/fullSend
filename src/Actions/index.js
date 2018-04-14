@@ -41,3 +41,8 @@ export const addBikes = (bikes) => ({
   type: 'ADD_BIKES',
   bikes
 });
+
+export const addTodos = (todos) => ({
+  type: 'ADD_TODOS',
+  todos
+});

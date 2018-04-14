@@ -4,16 +4,11 @@ const getTodoIds = async (email) => {
   const rootUrl = 'https://www.mtbproject.com/data/get-to-dos';
   const urlOptions = `?email=${email}&key=${key}`;
   const endpoint = `${rootUrl}${urlOptions}`;
-  const optionsObject = {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  };
 
   try {
-    const response = await fetch(endpoint, optionsObject);
+    const response = await fetch(endpoint);
     const ids = await response.json();
+    console.log(ids)
     return ids;
   } catch (error) {
     throw error.message;
