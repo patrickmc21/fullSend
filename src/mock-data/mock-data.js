@@ -3,7 +3,7 @@
 export const mockUser = {
   name: 'Pat',
   id: 12,
-  token:"2y589wyhgfiouqehr8to8"
+  token:"2y589wyasdfhgfiouqehr8to8"
 }
 
 export const mockUserInfo = {
