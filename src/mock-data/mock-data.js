@@ -559,21 +559,46 @@ export const mockUserStravaInfo = {
   "recent_run_totals" : "11",
   "all_run_totals" : "11",
   "recent_swim_totals" : "11",
-  "biggest_ride_distance" : 0.8008281904610115,
+  "biggest_ride_distance" : 100000,
   "ytd_swim_totals" : "11",
   "all_swim_totals" : "11",
   "recent_ride_totals" : {
-    "distance" : 5.962134,
+    "distance" : 101010,
     "achievement_count" : 9,
     "count" : 1,
-    "elapsed_time" : 2,
-    "elevation_gain" : 7.0614014,
+    "elapsed_time" : 20000,
+    "elevation_gain" : 12334,
     "moving_time" : 5
   },
-  "biggest_climb_elevation_gain" : 6.027456183070403,
+  "biggest_climb_elevation_gain" : 300,
   "ytd_ride_totals" : "11",
   "all_ride_totals" : "11",
   "ytd_run_totals" : "11"
+};
+
+export const cleanStravaInfo =  {
+  "biggestElevation": "984 ft", 
+  "biggestRideDistance": "62 miles", 
+  "lifetime": {
+    "count": undefined, 
+    "distance": "NaN miles", 
+    "gain": "NaN ft", "time": 
+    "NaN hr(s) NaN min(s)"
+  }, 
+  "recentRides": {
+    "count": 1, 
+    "distance": 
+    "63 miles", 
+    "gain": 
+    "40456 ft", 
+    "time": "0 hr(s) 0 min(s)"
+  }, 
+  "yearToDate": {
+    "count": undefined, 
+    "distance": "NaN miles", 
+    "gain": "NaN ft", 
+    "time": "NaN hr(s) NaN min(s)"
+  }
 };
 
 export const mockBikes = [{
