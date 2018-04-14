@@ -554,3 +554,88 @@ export const mockRideCleanerReturn = [
     "trailName": "Betasso Preserve"
   }
 ];
+
+export const mockUserStravaInfo = {
+  "recent_run_totals" : "11",
+  "all_run_totals" : "11",
+  "recent_swim_totals" : "11",
+  "biggest_ride_distance" : 0.8008281904610115,
+  "ytd_swim_totals" : "11",
+  "all_swim_totals" : "11",
+  "recent_ride_totals" : {
+    "distance" : 5.962134,
+    "achievement_count" : 9,
+    "count" : 1,
+    "elapsed_time" : 2,
+    "elevation_gain" : 7.0614014,
+    "moving_time" : 5
+  },
+  "biggest_climb_elevation_gain" : 6.027456183070403,
+  "ytd_ride_totals" : "11",
+  "all_ride_totals" : "11",
+  "ytd_run_totals" : "11"
+};
+
+export const mockBikes = [{
+  "id" : "b1231",
+  "primary" : false,
+  "resource_state" : 3,
+  "distance" : 388206,
+  "brand_name" : "BMC",
+  "model_name" : "Teammachine",
+  "frame_type" : 3,
+  "description" : "My Bike."
+}];
+
+export const mockTodos = [
+{
+  "id": 157369,
+  "name": "Porcupine Rim",
+  "type": "Featured Ride",
+  "summary": "The world famous Porcupine Rim ride; a bone jarring route with a sweet singletrack finish.",
+  "difficulty": "black",
+  "stars": 4.7,
+  "starVotes": 259,
+  "location": "Moab, Utah",
+  "url": "https:\/\/www.mtbproject.com\/trail\/157369\/porcupine-rim",
+  "imgSqSmall": "https:\/\/img.youtube.com\/vi\/t5nCdl3OLBo\/hqdefault.jpg",
+  "imgSmall": "https:\/\/img.youtube.com\/vi\/t5nCdl3OLBo\/hqdefault.jpg",
+  "imgSmallMed": "https:\/\/img.youtube.com\/vi\/t5nCdl3OLBo\/hqdefault.jpg",
+  "imgMedium": "https:\/\/img.youtube.com\/vi\/t5nCdl3OLBo\/hqdefault.jpg",
+  "length": 14.7,
+  "ascent": 1195,
+  "descent": -2962,
+  "high": 6803,
+  "low": 4022,
+  "longitude": -109.4164,
+  "latitude": 38.5819,
+  "conditionStatus": "All Clear",
+  "conditionDetails": "Mostly Dry",
+  "conditionDate": "2018-04-11 12:26:40"
+},
+{
+  "id": 3671983,
+  "name": "Monarch Crest - IMBA EPIC",
+  "type": "Featured Ride",
+  "summary": "One of Colorado's top 5 epic rides - classic high-altitude riding in the Rockies!",
+  "difficulty": "blueBlack",
+  "stars": 4.7,
+  "starVotes": 179,
+  "location": "Whitepine, Colorado",
+  "url": "https:\/\/www.mtbproject.com\/trail\/3671983\/monarch-crest-imba-epic",
+  "imgSqSmall": "https:\/\/cdn-files.apstatic.com\/mtb\/7003758_sqsmall_1436760699.jpg",
+  "imgSmall": "https:\/\/cdn-files.apstatic.com\/mtb\/7003758_small_1436760699.jpg",
+  "imgSmallMed": "https:\/\/cdn-files.apstatic.com\/mtb\/7003758_smallMed_1436760699.jpg",
+  "imgMedium": "https:\/\/cdn-files.apstatic.com\/mtb\/7003758_medium_1436760699.jpg",
+  "length": 36.2,
+  "ascent": 2035,
+  "descent": -5890,
+  "high": 11962,
+  "low": 7458,
+  "longitude": -106.3254,
+  "latitude": 38.4965,
+  "conditionStatus": "Bad \/ Closed",
+  "conditionDetails": "Muddy, Snowy, Icy",
+  "conditionDate": "2018-04-08 18:35:55"
+}
+];
