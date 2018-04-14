@@ -5,6 +5,8 @@ import getBikes from '../../api/external-api-calls/getBikes';
 import * as actions from '../../Actions';
 import PropTypes from 'prop-types';
 
+import BikeCard from '../../Components/BikeCard/BikeCard';
+
 import './BikeContainer.css';
 
 export class BikeContainer extends Component {
