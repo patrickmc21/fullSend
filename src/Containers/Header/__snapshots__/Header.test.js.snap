@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
+    addStravaInfo={[Function]}
     changeMonth={[Function]}
     clearRides={[Function]}
     logoutUser={[Function]}
@@ -12,7 +13,7 @@ ShallowWrapper {
         Object {
             "id": 12,
             "name": "Pat",
-            "token": "2y589wyhgfiouqehr8to8",
+            "token": "2y589wyasdfhgfiouqehr8to8",
           }
     }
 />,
@@ -230,6 +231,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
+    addStravaInfo={[Function]}
     changeMonth={[Function]}
     clearRides={[Function]}
     logoutUser={[Function]}
@@ -237,7 +239,7 @@ ShallowWrapper {
         Object {
             "id": 12,
             "name": "Pat",
-            "token": "2y589wyhgfiouqehr8to8",
+            "token": "2y589wyasdfhgfiouqehr8to8",
           }
     }
 />,

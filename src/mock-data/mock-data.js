@@ -3,7 +3,7 @@
 export const mockUser = {
   name: 'Pat',
   id: 12,
-  token:"2y589wyhgfiouqehr8to8"
+  token:"2y589wyasdfhgfiouqehr8to8"
 }
 
 export const mockUserInfo = {
@@ -554,3 +554,147 @@ export const mockRideCleanerReturn = [
     "trailName": "Betasso Preserve"
   }
 ];
+
+export const mockUserStravaInfo = {
+  "recent_run_totals" : "11",
+  "all_run_totals" : "11",
+  "recent_swim_totals" : "11",
+  "biggest_ride_distance" : 100000,
+  "ytd_swim_totals" : "11",
+  "all_swim_totals" : "11",
+  "recent_ride_totals" : {
+    "distance" : 101010,
+    "achievement_count" : 9,
+    "count" : 1,
+    "elapsed_time" : 20000,
+    "elevation_gain" : 12334,
+    "moving_time" : 5
+  },
+  "biggest_climb_elevation_gain" : 300,
+  "ytd_ride_totals" : "11",
+  "all_ride_totals" : "11",
+  "ytd_run_totals" : "11"
+};
+
+export const cleanStravaInfo =  {
+  "biggestElevation": "984 ft", 
+  "biggestRideDistance": "62 miles", 
+  "lifetime": {
+    "count": undefined, 
+    "distance": "NaN miles", 
+    "gain": "NaN ft", "time": 
+    "NaN hr(s) NaN min(s)"
+  }, 
+  "recentRides": {
+    "count": 1, 
+    "distance": 
+    "63 miles", 
+    "gain": 
+    "40456 ft", 
+    "time": "0 hr(s) 0 min(s)"
+  }, 
+  "yearToDate": {
+    "count": undefined, 
+    "distance": "NaN miles", 
+    "gain": "NaN ft", 
+    "time": "NaN hr(s) NaN min(s)"
+  }
+};
+
+export const mockBikes = [{
+  "id" : "b1231",
+  "primary" : false,
+  "resource_state" : 3,
+  "distance" : 388206,
+  "brand_name" : "BMC",
+  "model_name" : "Teammachine",
+  "frame_type" : 3,
+  "description" : "My Bike."
+}];
+
+export const mockTodos = [
+{
+  "id": 157369,
+  "name": "Porcupine Rim",
+  "type": "Featured Ride",
+  "summary": "The world famous Porcupine Rim ride; a bone jarring route with a sweet singletrack finish.",
+  "difficulty": "black",
+  "stars": 4.7,
+  "starVotes": 259,
+  "location": "Moab, Utah",
+  "url": "https:\/\/www.mtbproject.com\/trail\/157369\/porcupine-rim",
+  "imgSqSmall": "https:\/\/img.youtube.com\/vi\/t5nCdl3OLBo\/hqdefault.jpg",
+  "imgSmall": "https:\/\/img.youtube.com\/vi\/t5nCdl3OLBo\/hqdefault.jpg",
+  "imgSmallMed": "https:\/\/img.youtube.com\/vi\/t5nCdl3OLBo\/hqdefault.jpg",
+  "imgMedium": "https:\/\/img.youtube.com\/vi\/t5nCdl3OLBo\/hqdefault.jpg",
+  "length": 14.7,
+  "ascent": 1195,
+  "descent": -2962,
+  "high": 6803,
+  "low": 4022,
+  "longitude": -109.4164,
+  "latitude": 38.5819,
+  "conditionStatus": "All Clear",
+  "conditionDetails": "Mostly Dry",
+  "conditionDate": "2018-04-11 12:26:40"
+},
+{
+  "id": 3671983,
+  "name": "Monarch Crest - IMBA EPIC",
+  "type": "Featured Ride",
+  "summary": "One of Colorado's top 5 epic rides - classic high-altitude riding in the Rockies!",
+  "difficulty": "blueBlack",
+  "stars": 4.7,
+  "starVotes": 179,
+  "location": "Whitepine, Colorado",
+  "url": "https:\/\/www.mtbproject.com\/trail\/3671983\/monarch-crest-imba-epic",
+  "imgSqSmall": "https:\/\/cdn-files.apstatic.com\/mtb\/7003758_sqsmall_1436760699.jpg",
+  "imgSmall": "https:\/\/cdn-files.apstatic.com\/mtb\/7003758_small_1436760699.jpg",
+  "imgMedium": "https:\/\/cdn-files.apstatic.com\/mtb\/7003758_medium_1436760699.jpg",
+  "length": 36.2,
+  "ascent": 2035,
+  "descent": -5890,
+  "high": 11962,
+  "low": 7458,
+  "longitude": -106.3254,
+  "latitude": 38.4965,
+  "conditionStatus": "Bad \/ Closed",
+  "conditionDetails": "Muddy, Snowy, Icy",
+  "conditionDate": "2018-04-08 18:35:55"
+}
+];
+
+export const mockTodoIds = {
+  "toDos": [
+  5123520,
+  5123567,
+  5122984,
+  7004447,
+  7022216,
+  3671983,
+  7006733,
+  3793807,
+  621788,
+  7006270,
+  5271508,
+  4362647,
+  338027,
+  42669,
+  7019162,
+  7022348,
+  7022349,
+  7022352,
+  4285990,
+  7011153,
+  6321794,
+  3590206,
+  4221967,
+  7007957,
+  7032645,
+  616805,
+  652241,
+  157019,
+  624376
+  ],
+  "success": 1
+}

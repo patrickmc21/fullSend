@@ -16,6 +16,13 @@ describe('usersReducer', () => {
     expect(results).toEqual(expected);
   });
 
+  it('should add users strava info', () => {
+    const expected = {...mock.mockReturnUser, ...mock.mockStravaUser};
+    const mockState = mock.mockReturnUser;
+    const results = usersReducer(mockState, Actions.addUserStrava(mock.mockStravaUser));
+    expect(results).toEqual(expected);
+  });
+
   it('should remove user from state', () => {
     const user = mock.mockUser;
     const id = user.id;

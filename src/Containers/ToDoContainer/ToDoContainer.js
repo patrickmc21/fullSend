@@ -16,20 +16,14 @@ export class ToDoContainer extends Component {
   async componentDidMount() {
     const { user, todos } = this.props;
     if (todos.length < 1 && user.name) {
-      console.log('step 1 mount')
       const todoRides = await this.getToDoRides(user);
-      console.log('step 2 mount', todoRides)
       this.props.addTodos(todoRides);
     }
   }
 
   getToDoRides = async (user) => {
-    console.log('step 1 get')
-    console.log(user)
     const todoIds = await getTodoIds(user.email);
-    console.log('step 2 get', todoIds)
     const todoRides = await getTrailsById(todoIds);
-    console.log('step 3 get', todoRides)
     return todoRides.trails;
   }
 

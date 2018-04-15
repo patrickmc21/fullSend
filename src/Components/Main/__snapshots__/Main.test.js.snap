@@ -30,6 +30,21 @@ ShallowWrapper {
                     path="/main/rides"
                     render={[Function]}
           />
+          <Route
+                    exact={true}
+                    path="/main/bikes"
+                    render={[Function]}
+          />
+          <Route
+                    exact={true}
+                    path="/main/stats"
+                    render={[Function]}
+          />
+          <Route
+                    exact={true}
+                    path="/main/todos"
+                    render={[Function]}
+          />
 </main>,
         <Footer />,
       ],
@@ -61,6 +76,21 @@ ShallowWrapper {
               path="/main/rides"
               render={[Function]}
 />,
+            <Route
+              exact={true}
+              path="/main/bikes"
+              render={[Function]}
+/>,
+            <Route
+              exact={true}
+              path="/main/stats"
+              render={[Function]}
+/>,
+            <Route
+              exact={true}
+              path="/main/todos"
+              render={[Function]}
+/>,
           ],
         },
         "ref": null,
@@ -85,6 +115,45 @@ ShallowWrapper {
             "props": Object {
               "exact": true,
               "path": "/main/rides",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/main/bikes",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/main/stats",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/main/todos",
               "render": [Function],
             },
             "ref": null,
@@ -125,6 +194,21 @@ ShallowWrapper {
                         path="/main/rides"
                         render={[Function]}
             />
+            <Route
+                        exact={true}
+                        path="/main/bikes"
+                        render={[Function]}
+            />
+            <Route
+                        exact={true}
+                        path="/main/stats"
+                        render={[Function]}
+            />
+            <Route
+                        exact={true}
+                        path="/main/todos"
+                        render={[Function]}
+            />
 </main>,
           <Footer />,
         ],
@@ -156,6 +240,21 @@ ShallowWrapper {
                 path="/main/rides"
                 render={[Function]}
 />,
+              <Route
+                exact={true}
+                path="/main/bikes"
+                render={[Function]}
+/>,
+              <Route
+                exact={true}
+                path="/main/stats"
+                render={[Function]}
+/>,
+              <Route
+                exact={true}
+                path="/main/todos"
+                render={[Function]}
+/>,
             ],
           },
           "ref": null,
@@ -180,6 +279,45 @@ ShallowWrapper {
               "props": Object {
                 "exact": true,
                 "path": "/main/rides",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/main/bikes",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/main/stats",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/main/todos",
                 "render": [Function],
               },
               "ref": null,

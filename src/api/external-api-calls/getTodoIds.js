@@ -8,7 +8,6 @@ const getTodoIds = async (email) => {
   try {
     const response = await fetch(endpoint);
     const ids = await response.json();
-    console.log(ids)
     return ids;
   } catch (error) {
     throw error.message;
