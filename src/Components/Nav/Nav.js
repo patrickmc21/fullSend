@@ -34,7 +34,7 @@ const Nav = () => {
           className='nav-btn' 
           activeClassName='active-nav'
         >
-          Trails To Do
+          Trails To Send
         </NavLink>
       </div>
     </nav>
