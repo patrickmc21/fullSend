@@ -36,6 +36,9 @@ ShallowWrapper {
         <div
           className="ride-header"
 >
+          <div
+                    className="green"
+          />
           <h6
                     className="ride-date"
           >
@@ -50,9 +53,6 @@ ShallowWrapper {
         <div
           className="ride-trail"
 >
-          <div
-                    className="green"
-          />
           <h2
                     className="ride-trail-name"
           >
@@ -104,6 +104,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <div
+              className="green"
+/>,
             <h6
               className="ride-date"
 >
@@ -119,6 +122,17 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "green",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -153,9 +167,6 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <div
-              className="green"
-/>,
             <h2
               className="ride-trail-name"
 >
@@ -176,17 +187,6 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "green",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "div",
-          },
           Object {
             "instance": null,
             "key": undefined,
@@ -339,6 +339,9 @@ ShallowWrapper {
           <div
             className="ride-header"
 >
+            <div
+                        className="green"
+            />
             <h6
                         className="ride-date"
             >
@@ -353,9 +356,6 @@ ShallowWrapper {
           <div
             className="ride-trail"
 >
-            <div
-                        className="green"
-            />
             <h2
                         className="ride-trail-name"
             >
@@ -407,6 +407,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <div
+                className="green"
+/>,
               <h6
                 className="ride-date"
 >
@@ -422,6 +425,17 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "green",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -456,9 +470,6 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <div
-                className="green"
-/>,
               <h2
                 className="ride-trail-name"
 >
@@ -479,17 +490,6 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "className": "green",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "div",
-            },
             Object {
               "instance": null,
               "key": undefined,

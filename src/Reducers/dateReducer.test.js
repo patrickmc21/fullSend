@@ -11,7 +11,7 @@ describe('dateReducer', () => {
 
   it('should return default state', () => {
     const expected = 'All';
-    const results = dateReducer(mockState, {});
+    const results = dateReducer(undefined, {});
     expect(results).toEqual(expected);
   });
 

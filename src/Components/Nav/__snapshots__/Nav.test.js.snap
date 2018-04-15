@@ -40,9 +40,17 @@ ShallowWrapper {
                 activeClassName="active-nav"
                 ariaCurrent="true"
                 className="nav-btn"
-                to="/main/rider"
+                to="/main/stats"
         >
                 Rider Stats
+        </NavLink>
+        <NavLink
+                activeClassName="active-nav"
+                ariaCurrent="true"
+                className="nav-btn"
+                to="/main/todos"
+        >
+                Trails To Do
         </NavLink>
 </div>,
       "className": "app-nav",
@@ -74,9 +82,17 @@ ShallowWrapper {
             activeClassName="active-nav"
             ariaCurrent="true"
             className="nav-btn"
-            to="/main/rider"
+            to="/main/stats"
 >
             Rider Stats
+</NavLink>,
+          <NavLink
+            activeClassName="active-nav"
+            ariaCurrent="true"
+            className="nav-btn"
+            to="/main/todos"
+>
+            Trails To Do
 </NavLink>,
         ],
         "className": "nav-wrapper",
@@ -122,10 +138,25 @@ ShallowWrapper {
             "ariaCurrent": "true",
             "children": "Rider Stats",
             "className": "nav-btn",
-            "to": "/main/rider",
+            "to": "/main/stats",
           },
           "ref": null,
           "rendered": "Rider Stats",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active-nav",
+            "ariaCurrent": "true",
+            "children": "Trails To Do",
+            "className": "nav-btn",
+            "to": "/main/todos",
+          },
+          "ref": null,
+          "rendered": "Trails To Do",
           "type": [Function],
         },
       ],
@@ -162,9 +193,17 @@ ShallowWrapper {
                     activeClassName="active-nav"
                     ariaCurrent="true"
                     className="nav-btn"
-                    to="/main/rider"
+                    to="/main/stats"
           >
                     Rider Stats
+          </NavLink>
+          <NavLink
+                    activeClassName="active-nav"
+                    ariaCurrent="true"
+                    className="nav-btn"
+                    to="/main/todos"
+          >
+                    Trails To Do
           </NavLink>
 </div>,
         "className": "app-nav",
@@ -196,9 +235,17 @@ ShallowWrapper {
               activeClassName="active-nav"
               ariaCurrent="true"
               className="nav-btn"
-              to="/main/rider"
+              to="/main/stats"
 >
               Rider Stats
+</NavLink>,
+            <NavLink
+              activeClassName="active-nav"
+              ariaCurrent="true"
+              className="nav-btn"
+              to="/main/todos"
+>
+              Trails To Do
 </NavLink>,
           ],
           "className": "nav-wrapper",
@@ -244,10 +291,25 @@ ShallowWrapper {
               "ariaCurrent": "true",
               "children": "Rider Stats",
               "className": "nav-btn",
-              "to": "/main/rider",
+              "to": "/main/stats",
             },
             "ref": null,
             "rendered": "Rider Stats",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active-nav",
+              "ariaCurrent": "true",
+              "children": "Trails To Do",
+              "className": "nav-btn",
+              "to": "/main/todos",
+            },
+            "ref": null,
+            "rendered": "Trails To Do",
             "type": [Function],
           },
         ],
