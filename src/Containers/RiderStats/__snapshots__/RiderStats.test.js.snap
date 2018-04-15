@@ -1,0 +1,1579 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RiderStats should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    stats={
+        Object {
+            "biggestElevation": "984 ft",
+            "biggestRideDistance": "62 miles",
+            "lifetime": Object {
+              "count": undefined,
+              "distance": "NaN miles",
+              "gain": "NaN ft",
+              "time": "NaN hr(s) NaN min(s)",
+            },
+            "recentRides": Object {
+              "count": 1,
+              "distance": "63 miles",
+              "gain": "40456 ft",
+              "time": "0 hr(s) 0 min(s)",
+            },
+            "yearToDate": Object {
+              "count": undefined,
+              "distance": "NaN miles",
+              "gain": "NaN ft",
+              "time": "NaN hr(s) NaN min(s)",
+            },
+          }
+    }
+    user={
+        Object {
+            "athlete_type": 1,
+            "badge_type_id": 4,
+            "bikes": Array [
+              Object {
+                "distance": 0,
+                "id": "b12345678987655",
+                "name": "EMC",
+                "primary": true,
+                "resource_state": 2,
+              },
+            ],
+            "city": "San Francisco",
+            "clubs": Array [],
+            "country": "US",
+            "created_at": "2017-11-14T02:30:05Z",
+            "date_preference": "%m/%d/%Y",
+            "email": "mv@abc.com",
+            "firstname": "Marianne",
+            "follower": null,
+            "follower_count": 5,
+            "friend": null,
+            "friend_count": 5,
+            "ftp": null,
+            "id": 1234567890987654400,
+            "lastname": "V.",
+            "measurement_preference": "feet",
+            "mutual_friend_count": 0,
+            "premium": true,
+            "profile": "https://xxxxx.cloudfront.net/pictures/athletes/123456789/123456789/2/large.jpg",
+            "profile_medium": "https://xxxxxx.cloudfront.net/pictures/athletes/123456789/123456789/2/medium.jpg",
+            "resource_state": 3,
+            "sex": "F",
+            "shoes": Array [
+              Object {
+                "distance": 4904,
+                "id": "g12345678987655",
+                "name": "adidas",
+                "primary": true,
+                "resource_state": 2,
+              },
+            ],
+            "state": "CA",
+            "updated_at": "2018-02-06T19:32:20Z",
+            "username": "marianne_v",
+            "weight": 0,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="stats-container"
+>
+        <article
+                className="rider-profile"
+        >
+                <div
+                        className="rider-info"
+                >
+                        <img
+                                alt="user profile"
+                                className="user-profile-picture-stats"
+                                src={undefined}
+                        />
+                        <h4
+                                className="user-name-stats"
+                        />
+                        <h5
+                                className="user-location-stats"
+                        />
+                </div>
+                <div
+                        className="rider-records"
+                >
+                        <h3>
+                                All-Time Records
+                        </h3>
+                        <p>
+                                Biggest Ride: 
+                                62 miles
+                        </p>
+                        <p>
+                                Biggest Climb: 
+                                984 ft
+                        </p>
+                </div>
+        </article>
+        <article
+                className="rider-recent-stats"
+        >
+                <h3>
+                        Recent Rides
+                </h3>
+                <p>
+                        Rides: 
+                        1
+                </p>
+                <p>
+                        Distance: 
+                        63 miles
+                </p>
+                <p>
+                        Time: 
+                        0 hr(s) 0 min(s)
+                </p>
+                <p>
+                        Gain: 
+                        40456 ft
+                </p>
+        </article>
+        <article
+                className="rider-year-stats"
+        >
+                <h3>
+                        Year to Date
+                </h3>
+                <p>
+                        Rides: 
+                </p>
+                <p>
+                        Distance: 
+                        NaN miles
+                </p>
+                <p>
+                        Time: 
+                        NaN hr(s) NaN min(s)
+                </p>
+                <p>
+                        Gain: 
+                        NaN ft
+                </p>
+        </article>
+        <article
+                className="rider-life-stats"
+        >
+                <h3>
+                        Lifetime
+                </h3>
+                <p>
+                        Rides: 
+                </p>
+                <p>
+                        Distance: 
+                        NaN miles
+                </p>
+                <p>
+                        Time: 
+                        NaN hr(s) NaN min(s)
+                </p>
+                <p>
+                        Gain: 
+                        NaN ft
+                </p>
+        </article>
+</div>,
+      "className": "rider-stats",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <article
+            className="rider-profile"
+>
+            <div
+                        className="rider-info"
+            >
+                        <img
+                                    alt="user profile"
+                                    className="user-profile-picture-stats"
+                                    src={undefined}
+                        />
+                        <h4
+                                    className="user-name-stats"
+                        />
+                        <h5
+                                    className="user-location-stats"
+                        />
+            </div>
+            <div
+                        className="rider-records"
+            >
+                        <h3>
+                                    All-Time Records
+                        </h3>
+                        <p>
+                                    Biggest Ride: 
+                                    62 miles
+                        </p>
+                        <p>
+                                    Biggest Climb: 
+                                    984 ft
+                        </p>
+            </div>
+</article>,
+          <article
+            className="rider-recent-stats"
+>
+            <h3>
+                        Recent Rides
+            </h3>
+            <p>
+                        Rides: 
+                        1
+            </p>
+            <p>
+                        Distance: 
+                        63 miles
+            </p>
+            <p>
+                        Time: 
+                        0 hr(s) 0 min(s)
+            </p>
+            <p>
+                        Gain: 
+                        40456 ft
+            </p>
+</article>,
+          <article
+            className="rider-year-stats"
+>
+            <h3>
+                        Year to Date
+            </h3>
+            <p>
+                        Rides: 
+            </p>
+            <p>
+                        Distance: 
+                        NaN miles
+            </p>
+            <p>
+                        Time: 
+                        NaN hr(s) NaN min(s)
+            </p>
+            <p>
+                        Gain: 
+                        NaN ft
+            </p>
+</article>,
+          <article
+            className="rider-life-stats"
+>
+            <h3>
+                        Lifetime
+            </h3>
+            <p>
+                        Rides: 
+            </p>
+            <p>
+                        Distance: 
+                        NaN miles
+            </p>
+            <p>
+                        Time: 
+                        NaN hr(s) NaN min(s)
+            </p>
+            <p>
+                        Gain: 
+                        NaN ft
+            </p>
+</article>,
+        ],
+        "className": "stats-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="rider-info"
+>
+                <img
+                                alt="user profile"
+                                className="user-profile-picture-stats"
+                                src={undefined}
+                />
+                <h4
+                                className="user-name-stats"
+                />
+                <h5
+                                className="user-location-stats"
+                />
+</div>,
+              <div
+                className="rider-records"
+>
+                <h3>
+                                All-Time Records
+                </h3>
+                <p>
+                                Biggest Ride: 
+                                62 miles
+                </p>
+                <p>
+                                Biggest Climb: 
+                                984 ft
+                </p>
+</div>,
+            ],
+            "className": "rider-profile",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <img
+                    alt="user profile"
+                    className="user-profile-picture-stats"
+                    src={undefined}
+/>,
+                  <h4
+                    className="user-name-stats"
+/>,
+                  <h5
+                    className="user-location-stats"
+/>,
+                ],
+                "className": "rider-info",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "user profile",
+                    "className": "user-profile-picture-stats",
+                    "src": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                    "className": "user-name-stats",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "h4",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": undefined,
+                    "className": "user-location-stats",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "h5",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3>
+                    All-Time Records
+</h3>,
+                  <p>
+                    Biggest Ride: 
+                    62 miles
+</p>,
+                  <p>
+                    Biggest Climb: 
+                    984 ft
+</p>,
+                ],
+                "className": "rider-records",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "All-Time Records",
+                  },
+                  "ref": null,
+                  "rendered": "All-Time Records",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Biggest Ride: ",
+                      "62 miles",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Biggest Ride: ",
+                    "62 miles",
+                  ],
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Biggest Climb: ",
+                      "984 ft",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Biggest Climb: ",
+                    "984 ft",
+                  ],
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                Recent Rides
+</h3>,
+              <p>
+                Rides: 
+                1
+</p>,
+              <p>
+                Distance: 
+                63 miles
+</p>,
+              <p>
+                Time: 
+                0 hr(s) 0 min(s)
+</p>,
+              <p>
+                Gain: 
+                40456 ft
+</p>,
+            ],
+            "className": "rider-recent-stats",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Recent Rides",
+              },
+              "ref": null,
+              "rendered": "Recent Rides",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Rides: ",
+                  1,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Rides: ",
+                1,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Distance: ",
+                  "63 miles",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Distance: ",
+                "63 miles",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Time: ",
+                  "0 hr(s) 0 min(s)",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Time: ",
+                "0 hr(s) 0 min(s)",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Gain: ",
+                  "40456 ft",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Gain: ",
+                "40456 ft",
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                Year to Date
+</h3>,
+              <p>
+                Rides: 
+</p>,
+              <p>
+                Distance: 
+                NaN miles
+</p>,
+              <p>
+                Time: 
+                NaN hr(s) NaN min(s)
+</p>,
+              <p>
+                Gain: 
+                NaN ft
+</p>,
+            ],
+            "className": "rider-year-stats",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Year to Date",
+              },
+              "ref": null,
+              "rendered": "Year to Date",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Rides: ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Rides: ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Distance: ",
+                  "NaN miles",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Distance: ",
+                "NaN miles",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Time: ",
+                  "NaN hr(s) NaN min(s)",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Time: ",
+                "NaN hr(s) NaN min(s)",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Gain: ",
+                  "NaN ft",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Gain: ",
+                "NaN ft",
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3>
+                Lifetime
+</h3>,
+              <p>
+                Rides: 
+</p>,
+              <p>
+                Distance: 
+                NaN miles
+</p>,
+              <p>
+                Time: 
+                NaN hr(s) NaN min(s)
+</p>,
+              <p>
+                Gain: 
+                NaN ft
+</p>,
+            ],
+            "className": "rider-life-stats",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Lifetime",
+              },
+              "ref": null,
+              "rendered": "Lifetime",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Rides: ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Rides: ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Distance: ",
+                  "NaN miles",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Distance: ",
+                "NaN miles",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Time: ",
+                  "NaN hr(s) NaN min(s)",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Time: ",
+                "NaN hr(s) NaN min(s)",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Gain: ",
+                  "NaN ft",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Gain: ",
+                "NaN ft",
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "article",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="stats-container"
+>
+          <article
+                    className="rider-profile"
+          >
+                    <div
+                              className="rider-info"
+                    >
+                              <img
+                                        alt="user profile"
+                                        className="user-profile-picture-stats"
+                                        src={undefined}
+                              />
+                              <h4
+                                        className="user-name-stats"
+                              />
+                              <h5
+                                        className="user-location-stats"
+                              />
+                    </div>
+                    <div
+                              className="rider-records"
+                    >
+                              <h3>
+                                        All-Time Records
+                              </h3>
+                              <p>
+                                        Biggest Ride: 
+                                        62 miles
+                              </p>
+                              <p>
+                                        Biggest Climb: 
+                                        984 ft
+                              </p>
+                    </div>
+          </article>
+          <article
+                    className="rider-recent-stats"
+          >
+                    <h3>
+                              Recent Rides
+                    </h3>
+                    <p>
+                              Rides: 
+                              1
+                    </p>
+                    <p>
+                              Distance: 
+                              63 miles
+                    </p>
+                    <p>
+                              Time: 
+                              0 hr(s) 0 min(s)
+                    </p>
+                    <p>
+                              Gain: 
+                              40456 ft
+                    </p>
+          </article>
+          <article
+                    className="rider-year-stats"
+          >
+                    <h3>
+                              Year to Date
+                    </h3>
+                    <p>
+                              Rides: 
+                    </p>
+                    <p>
+                              Distance: 
+                              NaN miles
+                    </p>
+                    <p>
+                              Time: 
+                              NaN hr(s) NaN min(s)
+                    </p>
+                    <p>
+                              Gain: 
+                              NaN ft
+                    </p>
+          </article>
+          <article
+                    className="rider-life-stats"
+          >
+                    <h3>
+                              Lifetime
+                    </h3>
+                    <p>
+                              Rides: 
+                    </p>
+                    <p>
+                              Distance: 
+                              NaN miles
+                    </p>
+                    <p>
+                              Time: 
+                              NaN hr(s) NaN min(s)
+                    </p>
+                    <p>
+                              Gain: 
+                              NaN ft
+                    </p>
+          </article>
+</div>,
+        "className": "rider-stats",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <article
+              className="rider-profile"
+>
+              <div
+                            className="rider-info"
+              >
+                            <img
+                                          alt="user profile"
+                                          className="user-profile-picture-stats"
+                                          src={undefined}
+                            />
+                            <h4
+                                          className="user-name-stats"
+                            />
+                            <h5
+                                          className="user-location-stats"
+                            />
+              </div>
+              <div
+                            className="rider-records"
+              >
+                            <h3>
+                                          All-Time Records
+                            </h3>
+                            <p>
+                                          Biggest Ride: 
+                                          62 miles
+                            </p>
+                            <p>
+                                          Biggest Climb: 
+                                          984 ft
+                            </p>
+              </div>
+</article>,
+            <article
+              className="rider-recent-stats"
+>
+              <h3>
+                            Recent Rides
+              </h3>
+              <p>
+                            Rides: 
+                            1
+              </p>
+              <p>
+                            Distance: 
+                            63 miles
+              </p>
+              <p>
+                            Time: 
+                            0 hr(s) 0 min(s)
+              </p>
+              <p>
+                            Gain: 
+                            40456 ft
+              </p>
+</article>,
+            <article
+              className="rider-year-stats"
+>
+              <h3>
+                            Year to Date
+              </h3>
+              <p>
+                            Rides: 
+              </p>
+              <p>
+                            Distance: 
+                            NaN miles
+              </p>
+              <p>
+                            Time: 
+                            NaN hr(s) NaN min(s)
+              </p>
+              <p>
+                            Gain: 
+                            NaN ft
+              </p>
+</article>,
+            <article
+              className="rider-life-stats"
+>
+              <h3>
+                            Lifetime
+              </h3>
+              <p>
+                            Rides: 
+              </p>
+              <p>
+                            Distance: 
+                            NaN miles
+              </p>
+              <p>
+                            Time: 
+                            NaN hr(s) NaN min(s)
+              </p>
+              <p>
+                            Gain: 
+                            NaN ft
+              </p>
+</article>,
+          ],
+          "className": "stats-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="rider-info"
+>
+                  <img
+                                    alt="user profile"
+                                    className="user-profile-picture-stats"
+                                    src={undefined}
+                  />
+                  <h4
+                                    className="user-name-stats"
+                  />
+                  <h5
+                                    className="user-location-stats"
+                  />
+</div>,
+                <div
+                  className="rider-records"
+>
+                  <h3>
+                                    All-Time Records
+                  </h3>
+                  <p>
+                                    Biggest Ride: 
+                                    62 miles
+                  </p>
+                  <p>
+                                    Biggest Climb: 
+                                    984 ft
+                  </p>
+</div>,
+              ],
+              "className": "rider-profile",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <img
+                      alt="user profile"
+                      className="user-profile-picture-stats"
+                      src={undefined}
+/>,
+                    <h4
+                      className="user-name-stats"
+/>,
+                    <h5
+                      className="user-location-stats"
+/>,
+                  ],
+                  "className": "rider-info",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "user profile",
+                      "className": "user-profile-picture-stats",
+                      "src": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "user-name-stats",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "h4",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": undefined,
+                      "className": "user-location-stats",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "h5",
+                  },
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h3>
+                      All-Time Records
+</h3>,
+                    <p>
+                      Biggest Ride: 
+                      62 miles
+</p>,
+                    <p>
+                      Biggest Climb: 
+                      984 ft
+</p>,
+                  ],
+                  "className": "rider-records",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "All-Time Records",
+                    },
+                    "ref": null,
+                    "rendered": "All-Time Records",
+                    "type": "h3",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Biggest Ride: ",
+                        "62 miles",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Biggest Ride: ",
+                      "62 miles",
+                    ],
+                    "type": "p",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        "Biggest Climb: ",
+                        "984 ft",
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      "Biggest Climb: ",
+                      "984 ft",
+                    ],
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "article",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3>
+                  Recent Rides
+</h3>,
+                <p>
+                  Rides: 
+                  1
+</p>,
+                <p>
+                  Distance: 
+                  63 miles
+</p>,
+                <p>
+                  Time: 
+                  0 hr(s) 0 min(s)
+</p>,
+                <p>
+                  Gain: 
+                  40456 ft
+</p>,
+              ],
+              "className": "rider-recent-stats",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Recent Rides",
+                },
+                "ref": null,
+                "rendered": "Recent Rides",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Rides: ",
+                    1,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Rides: ",
+                  1,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    "63 miles",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  "63 miles",
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Time: ",
+                    "0 hr(s) 0 min(s)",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Time: ",
+                  "0 hr(s) 0 min(s)",
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Gain: ",
+                    "40456 ft",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Gain: ",
+                  "40456 ft",
+                ],
+                "type": "p",
+              },
+            ],
+            "type": "article",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3>
+                  Year to Date
+</h3>,
+                <p>
+                  Rides: 
+</p>,
+                <p>
+                  Distance: 
+                  NaN miles
+</p>,
+                <p>
+                  Time: 
+                  NaN hr(s) NaN min(s)
+</p>,
+                <p>
+                  Gain: 
+                  NaN ft
+</p>,
+              ],
+              "className": "rider-year-stats",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Year to Date",
+                },
+                "ref": null,
+                "rendered": "Year to Date",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Rides: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Rides: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    "NaN miles",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  "NaN miles",
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Time: ",
+                    "NaN hr(s) NaN min(s)",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Time: ",
+                  "NaN hr(s) NaN min(s)",
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Gain: ",
+                    "NaN ft",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Gain: ",
+                  "NaN ft",
+                ],
+                "type": "p",
+              },
+            ],
+            "type": "article",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3>
+                  Lifetime
+</h3>,
+                <p>
+                  Rides: 
+</p>,
+                <p>
+                  Distance: 
+                  NaN miles
+</p>,
+                <p>
+                  Time: 
+                  NaN hr(s) NaN min(s)
+</p>,
+                <p>
+                  Gain: 
+                  NaN ft
+</p>,
+              ],
+              "className": "rider-life-stats",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Lifetime",
+                },
+                "ref": null,
+                "rendered": "Lifetime",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Rides: ",
+                    undefined,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Rides: ",
+                  undefined,
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Distance: ",
+                    "NaN miles",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Distance: ",
+                  "NaN miles",
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Time: ",
+                    "NaN hr(s) NaN min(s)",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Time: ",
+                  "NaN hr(s) NaN min(s)",
+                ],
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Gain: ",
+                    "NaN ft",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Gain: ",
+                  "NaN ft",
+                ],
+                "type": "p",
+              },
+            ],
+            "type": "article",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
