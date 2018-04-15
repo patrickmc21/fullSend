@@ -5,14 +5,18 @@ import getToken from '../../api/external-api-calls/getToken';
 import getUserId from '../../api/internal-api-calls/getUserId';
 import createUserId from '../../api/internal-api-calls/createUserId';
 import getRides from '../../api/internal-api-calls/getUserRides';
+import getRiderStats from '../../api/external-api-calls/getRiderStats';
 
 jest.mock('../../api/external-api-calls/getAthlete');
 jest.mock('../../api/external-api-calls/getToken');
 jest.mock('../../api/internal-api-calls/getUserId');
 jest.mock('../../api/internal-api-calls/createUserId');
 jest.mock('../../api/internal-api-calls/getUserRides');
+jest.mock('../../api/external-api-calls/getRiderStats');
 
 import { Login, mapDispatchToProps } from './Login';
+import * as mock from '../../mock-data/mock-data';
+
 
 describe('Login', () => {
 
@@ -21,6 +25,7 @@ describe('Login', () => {
   let mockUpdateRides;
   let mockToken;
   let mockLocation;
+  let mockRiderStats;
 
   beforeEach(() => {
     mockToken = '12345qwert09876jhgfd75849quthf76453bfhgj';
@@ -30,10 +35,12 @@ describe('Login', () => {
     };
     mockAddUser = jest.fn();
     mockUpdateRides = jest.fn();
+    mockRiderStats = jest.fn();
     wrapper = shallow(
       <Login
         addUser={mockAddUser}
-        updateRides={mockUpdateRides} />
+        updateRides={mockUpdateRides}
+        riderStats={mockRiderStats} />
     );
   });
 
@@ -139,18 +146,20 @@ describe('Login', () => {
   });
 
   it('should run addUser on loginUser', async () => {
-    const expected = {
-      name: 'Tim',
-      token: 2,
-      id: 1
-    };
+    const expected = 
+    {
+      "email": "lame@aol.com", 
+      "id": 1, "name": "Tim", 
+      "stravaId": 321, 
+      "token": 2
+    }
     wrapper.setState({tempToken: 2});
     await wrapper.instance().loginUser();
     expect(mockAddUser).toHaveBeenCalledWith(expected);
   });
 
   it('should return the user id on loginUser', async () => {
-    const expected = 1;
+    const expected = {"stravaId": 321, "token": 2, "userId": 1};
     wrapper.setState({tempToken: 2});
     const results = await wrapper.instance().loginUser();
     expect(results).toEqual(expected);
@@ -167,6 +176,16 @@ describe('Login', () => {
     await wrapper.instance().getUserRides(1);
     expect(mockUpdateRides).toHaveBeenCalledWith(expected);
   });
+
+  it('should call getRiderStats api on getRiderStats', async () => {
+    await wrapper.instance().getRiderStats();
+    expect(getRiderStats).toHaveBeenCalled();
+  });
+
+  it('should call riderStats on getRiderStats', async () => {
+    await wrapper.instance().getRiderStats();
+    expect(mockRiderStats).toHaveBeenCalled();
+  })
 
 });
 
@@ -194,13 +213,23 @@ describe('mapDispatchToProps', () => {
     expect(mockDispatch).toHaveBeenCalledWith(expected);
   });
 
-  it('should map addRides to props', async () => {
-    const mockRides = await getRides();
+  it('should map addRides to props', () => {
+    const mockRides = mock.mockRides;
     const expected = {
       type: 'UPDATE_RIDES',
       rides: mockRides
     };
     mapped.updateRides(mockRides);
+    expect(mockDispatch).toHaveBeenCalledWith(expected);
+  });
+
+  it('should map riderStats to props', () => {
+    const riderStats = mock.mockUserStravaInfo;
+    const expected = {
+      type: 'ADD_RIDER_STATS',
+      riderStats
+    }
+    mapped.riderStats(riderStats);
     expect(mockDispatch).toHaveBeenCalledWith(expected);
   });
 });
