@@ -14,31 +14,31 @@ This project is currently through the MVP requirements, as well as a few additio
 
 #### Desktop
 
-![Login](readme-images/main.png)
+![Login](readme-images/login.png)
 
-![Main](readme-images/single-movie.png)
+![Main](readme-images/main.png)
 
-![Rides](readme-images/single-movie.png)
+![Rides](readme-images/rides.png)
 
-![Bikes](readme-images/single-movie.png)
+![Bikes](readme-images/bikes.png)
 
-![Stats](readme-images/single-movie.png)
+![Stats](readme-images/stats.png)
 
-![Todos](readme-images/single-movie.png)
+![Todos](readme-images/todos.png)
 
 #### Mobile
 
-![Login-mobile](readme-images/main.png)
+![Login-mobile](readme-images/mobile-login.png)
 
-![Main-mobile](readme-images/single-movie.png)
+![Main-mobile](readme-images/mobile-main.png)
 
-![Rides-mobile](readme-images/single-movie.png)
+![Rides-mobile](readme-images/mobile.rides.png)
 
-![Bikes-mobile](readme-images/single-movie.png)
+![Bikes-mobile](readme-images/mobile.bikes.png)
 
-![Stats-mobile](readme-images/single-movie.png)
+![Stats-mobile](readme-images/mobile.stats.png)
 
-![Todos-mobile](readme-images/single-movie.png)
+![Todos-mobile](readme-images/mobile.todos.png)
 
 ## Installation and Setup Instructions
 
