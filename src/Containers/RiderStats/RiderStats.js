@@ -48,8 +48,13 @@ export const RiderStats = ({stats, user}) => {
         </article>
       </div>
     </section>
-  )
-}
+  );
+};
+
+RiderStats.propTypes = {
+  user: PropTypes.object,
+  stats: PropTypes.object
+};
 
 export const mapStateToProps = (state) => ({
   user: state.user,

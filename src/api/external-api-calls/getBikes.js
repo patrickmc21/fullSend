@@ -13,8 +13,8 @@ const getBikes = async (bikeId, token) => {
     const data = await response.json();
     return data;  
   } catch (error) {
-    throw error.message
-  };
+    throw error.message;
+  }
 };
 
 export default getBikes;

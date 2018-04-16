@@ -15,7 +15,7 @@ describe('getBikes', () => {
         json: () => {
           return Promise.resolve(mockBikes[0]);
         }
-      })
+      });
     });
   });
 
@@ -44,7 +44,7 @@ describe('getBikes', () => {
       return Promise.reject({
         status: 404,
         message: 'FAIL'
-      })
+      });
     });
     const expected = 'FAIL';
     const results = getBikes(mockBikeId, mockToken);

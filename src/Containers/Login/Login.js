@@ -80,7 +80,7 @@ export class Login extends Component {
       userId: userId ? userId.id : null, 
       token: user.token,
       stravaId: user.stravaId
-    }
+    };
   };
 
   getUserRides = async (userId) => {
@@ -126,7 +126,8 @@ export class Login extends Component {
 
 Login.propTypes = {
   addUser: PropTypes.func,
-  updateRides: PropTypes.func
+  updateRides: PropTypes.func,
+  riderStats: PropTypes.func
 };
 
 export const mapDispatchToProps = dispatch => ({

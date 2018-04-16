@@ -30,7 +30,7 @@ export class ToDoContainer extends Component {
   createToDoCards = () => {
     const { todos } = this.props;
     return todos.map(todo => {
-      return <ToDoCard key={todo.id} todo={todo} />
+      return <ToDoCard key={todo.id} todo={todo} />;
     });
   }
 
@@ -41,12 +41,18 @@ export class ToDoContainer extends Component {
       <section className='todo-container'>
         <div className='todo-card-container'>
           {todos.length >= 1 && todoCards}
-            {todos.length < 1 && 
-              <h6 className='none-found'>No Rides to Show!</h6>}
+          {todos.length < 1 && 
+            <h6 className='none-found'>No Rides to Show!</h6>}
         </div>
       </section>
-    )
+    );
   }
+}
+
+ToDoContainer.propTypes = {
+  user: PropTypes.object,
+  todos: PropTypes.array,
+  addTodos: PropTypes.func
 };
 
 export const mapStateToProps = (state) => ({
@@ -58,4 +64,5 @@ export const mapDispatchToProps = (dispatch) => ({
   addTodos: todos => dispatch(actions.addTodos(todos))
 });
 
+/* eslint-disable max-len */
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ToDoContainer));

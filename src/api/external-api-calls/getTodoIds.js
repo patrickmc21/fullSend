@@ -11,7 +11,7 @@ const getTodoIds = async (email) => {
     return ids;
   } catch (error) {
     throw error.message;
-  };
+  }
 };
 
 export default getTodoIds;

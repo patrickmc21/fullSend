@@ -15,9 +15,9 @@ describe('getRiderStats', () => {
       return Promise.resolve({
         status: 200,
         json: () => {
-          return Promise.resolve(mockInfo)
+          return Promise.resolve(mockInfo);
         }
-      })
+      });
     });
   });
 
@@ -48,7 +48,7 @@ describe('getRiderStats', () => {
       return Promise.reject({
         status: 404,
         message: 'FAIL'
-      })
+      });
     });
     const expected = 'FAIL';
     const results = getRiderStats(mockId, mockToken);

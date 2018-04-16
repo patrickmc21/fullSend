@@ -152,7 +152,7 @@ describe('Login', () => {
       "id": 1, "name": "Tim", 
       "stravaId": 321, 
       "token": 2
-    }
+    };
     wrapper.setState({tempToken: 2});
     await wrapper.instance().loginUser();
     expect(mockAddUser).toHaveBeenCalledWith(expected);
@@ -185,7 +185,7 @@ describe('Login', () => {
   it('should call riderStats on getRiderStats', async () => {
     await wrapper.instance().getRiderStats();
     expect(mockRiderStats).toHaveBeenCalled();
-  })
+  });
 
 });
 
@@ -228,7 +228,7 @@ describe('mapDispatchToProps', () => {
     const expected = {
       type: 'ADD_RIDER_STATS',
       riderStats
-    }
+    };
     mapped.riderStats(riderStats);
     expect(mockDispatch).toHaveBeenCalledWith(expected);
   });

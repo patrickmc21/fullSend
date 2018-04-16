@@ -14,9 +14,9 @@ describe('getTrailsById', () => {
       return Promise.resolve({
         status: 200,
         json: () => {
-          return Promise.resolve(mockTrails)
+          return Promise.resolve(mockTrails);
         }
-      })
+      });
     });
   });
 
@@ -40,7 +40,7 @@ describe('getTrailsById', () => {
       return Promise.reject({
         status: 404,
         message: 'FAIL'
-      })
+      });
     });
     const expected = 'FAIL';
     const results = getTrailsById(mockIds);

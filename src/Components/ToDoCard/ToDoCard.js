@@ -19,7 +19,7 @@ const ToDoCard = ({todo}) => {
     high, 
     low,
     longitude,
-    latitude,
+    latitude
   } = todo;
 
   const img = imgSmallMed ? imgSmallMed : defaultImg;
@@ -74,7 +74,11 @@ const ToDoCard = ({todo}) => {
         See on MTB Project 
       </a>
     </article>
-  )
+  );
+};
+
+ToDoCard.propTypes = {
+  todo: PropTypes.object
 };
 
 export default ToDoCard;

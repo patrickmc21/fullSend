@@ -14,9 +14,9 @@ describe('getTodoIds', () => {
       return Promise.resolve({
         status: 200,
         json: () => {
-          return Promise.resolve(mockTodos)
+          return Promise.resolve(mockTodos);
         }
-      })
+      });
     });
   });
 
@@ -39,7 +39,7 @@ describe('getTodoIds', () => {
       return Promise.reject({
         status: 404,
         message: 'FAIL'
-      })
+      });
     });
     const expected = 'FAIL';
     const results = getTodoIds(mockEmail);
