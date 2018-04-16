@@ -5,3 +5,9 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 450px) {
+  main {
+    height: 410px;
+  }
+}

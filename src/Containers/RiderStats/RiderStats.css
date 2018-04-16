@@ -3,7 +3,8 @@
   padding-top: 30px;
   margin: auto;
   height: 100%;
-  width: 70vw;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.4);
 }
 
 .stats-container {
@@ -13,8 +14,10 @@
   padding: 15px 0;
   border: 1px solid #292727;
   border-radius: 13px;
+  margin: auto;
   height: 530px;
-  background-color: rgba(0, 0, 0, 0.4);
+  width: 60%;
+  background-color: rgba(206, 204, 193, 0.9);
   overflow: scroll;
 }
 
@@ -22,59 +25,45 @@
 .rider-recent-stats,
 .rider-year-stats,
 .rider-life-stats {
-  border: 1px solid #292727;
-  border-radius: 13px;
-  margin: 5px 0;
-  height: 250px;
-  width: 450px;
-  background-color: rgba(206, 204, 193, 0.9);
+  margin: 15px 0;
+  height: 160px;
+  width: 400px;
   color: #292727;
-}
-
-.rider-recent-stats,
-.rider-year-stats,
-.rider-life-stats {
-  padding-top: 20px;
   box-sizing: border-box;
-}
-
-.user-profile-picture-stats {
-  float: left;
-  border: 1px solid black;
-  border-radius: 100px;
-  margin: 10px 0 0 10px;
-  height: 200px;
-}
-
-.user-name-stats {
-  display: inline-block;
-  margin: 30px 0 0 30px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 22px;
-  vertical-align: top;
-}
-
-.user-location-stats {
-  display: inline-block;
-  margin: 5px 0 30px 30px;
-  font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  font-style: italic;
-  vertical-align: top;
 }
 
 .stats-container h3 {
   margin: 30px 0 10px 0;
   font-family: 'Raleway', sans-serif;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 800;
   text-align: center;
-  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 .stats-container p {
   margin: 5px 0;
   font-family: 'Lato', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
+}
+
+.stats-container .type {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 450px) {
+  .rider-stats {
+    padding-top: 10px;
+    height: 410px;
+  }
+
+  .stats-container {
+    padding: 10px 0;
+    height: 370px;
+    width: 90%;
+    background-color: rgba(206, 204, 193, 0.9);
+    overflow: scroll;
+  }
 }

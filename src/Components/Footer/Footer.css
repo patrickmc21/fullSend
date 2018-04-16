@@ -20,3 +20,23 @@
 .mtb-logo {
   width: 90px;
 }
+
+@media screen and (max-width: 450px) {
+  .App footer {
+    height: 56px;
+  }
+
+  .api-logos {
+    margin: auto;
+    height: 50px;
+    width: 90vw;
+  }
+
+  .strava-logo {
+    width: 160px;
+  }
+
+  .mtb-logo {
+    width: 90px;
+  }
+}

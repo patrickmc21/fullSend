@@ -55,7 +55,11 @@ ShallowWrapper {
         <p
           className="bike-mileage"
 >
-          Mileage: 
+          <span
+                    className="type"
+          >
+                    Mileage:
+          </span>
           241 miles
 </p>,
       ],
@@ -126,14 +130,29 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Mileage: ",
+            <span
+              className="type"
+>
+              Mileage:
+</span>,
             "241 miles",
           ],
           "className": "bike-mileage",
         },
         "ref": null,
         "rendered": Array [
-          "Mileage: ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Mileage:",
+              "className": "type",
+            },
+            "ref": null,
+            "rendered": "Mileage:",
+            "type": "span",
+          },
           "241 miles",
         ],
         "type": "p",
@@ -172,7 +191,11 @@ ShallowWrapper {
           <p
             className="bike-mileage"
 >
-            Mileage: 
+            <span
+                        className="type"
+            >
+                        Mileage:
+            </span>
             241 miles
 </p>,
         ],
@@ -243,14 +266,29 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Mileage: ",
+              <span
+                className="type"
+>
+                Mileage:
+</span>,
               "241 miles",
             ],
             "className": "bike-mileage",
           },
           "ref": null,
           "rendered": Array [
-            "Mileage: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Mileage:",
+                "className": "type",
+              },
+              "ref": null,
+              "rendered": "Mileage:",
+              "type": "span",
+            },
             "241 miles",
           ],
           "type": "p",
@@ -277,7 +315,7 @@ ShallowWrapper {
     bike={
         Object {
             "brand_name": "BMC",
-            "description": "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21761533_10155021148621275_7324564082030573632_n.jpg?_nc_cat=0&oh=bdedd1a008af0a9bf3833e01f4766ef9&oe=5B6FC959",
+            "description": "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21",
             "distance": 388206,
             "frame_type": 3,
             "id": "b1231",
@@ -303,7 +341,7 @@ ShallowWrapper {
         <img
           alt="bike image"
           className="bike-img"
-          src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21761533_10155021148621275_7324564082030573632_n.jpg?_nc_cat=0&oh=bdedd1a008af0a9bf3833e01f4766ef9&oe=5B6FC959"
+          src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21"
 />,
         <h3
           className="bike-name"
@@ -324,7 +362,11 @@ ShallowWrapper {
         <p
           className="bike-mileage"
 >
-          Mileage: 
+          <span
+                    className="type"
+          >
+                    Mileage:
+          </span>
           241 miles
 </p>,
       ],
@@ -339,7 +381,7 @@ ShallowWrapper {
         "props": Object {
           "alt": "bike image",
           "className": "bike-img",
-          "src": "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21761533_10155021148621275_7324564082030573632_n.jpg?_nc_cat=0&oh=bdedd1a008af0a9bf3833e01f4766ef9&oe=5B6FC959",
+          "src": "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21",
         },
         "ref": null,
         "rendered": null,
@@ -395,14 +437,29 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Mileage: ",
+            <span
+              className="type"
+>
+              Mileage:
+</span>,
             "241 miles",
           ],
           "className": "bike-mileage",
         },
         "ref": null,
         "rendered": Array [
-          "Mileage: ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Mileage:",
+              "className": "type",
+            },
+            "ref": null,
+            "rendered": "Mileage:",
+            "type": "span",
+          },
           "241 miles",
         ],
         "type": "p",
@@ -420,7 +477,7 @@ ShallowWrapper {
           <img
             alt="bike image"
             className="bike-img"
-            src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21761533_10155021148621275_7324564082030573632_n.jpg?_nc_cat=0&oh=bdedd1a008af0a9bf3833e01f4766ef9&oe=5B6FC959"
+            src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21"
 />,
           <h3
             className="bike-name"
@@ -441,7 +498,11 @@ ShallowWrapper {
           <p
             className="bike-mileage"
 >
-            Mileage: 
+            <span
+                        className="type"
+            >
+                        Mileage:
+            </span>
             241 miles
 </p>,
         ],
@@ -456,7 +517,7 @@ ShallowWrapper {
           "props": Object {
             "alt": "bike image",
             "className": "bike-img",
-            "src": "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21761533_10155021148621275_7324564082030573632_n.jpg?_nc_cat=0&oh=bdedd1a008af0a9bf3833e01f4766ef9&oe=5B6FC959",
+            "src": "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21",
           },
           "ref": null,
           "rendered": null,
@@ -512,14 +573,29 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Mileage: ",
+              <span
+                className="type"
+>
+                Mileage:
+</span>,
               "241 miles",
             ],
             "className": "bike-mileage",
           },
           "ref": null,
           "rendered": Array [
-            "Mileage: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Mileage:",
+                "className": "type",
+              },
+              "ref": null,
+              "rendered": "Mileage:",
+              "type": "span",
+            },
             "241 miles",
           ],
           "type": "p",

@@ -33,6 +33,16 @@ ShallowWrapper {
         <NavLink
           activeClassName="active"
           ariaCurrent="true"
+          className="logout"
+          onClick={[Function]}
+          to="/"
+>
+          Logout
+</NavLink>,
+        false,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
           className="logo-link"
           onClick={[Function]}
           to="/main"
@@ -44,21 +54,28 @@ ShallowWrapper {
           </h1>
 </NavLink>,
         <Nav />,
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          className="logout"
-          onClick={[Function]}
-          to="/"
->
-          Logout
-</NavLink>,
-        false,
       ],
       "className": "app-header",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Logout",
+          "className": "logout",
+          "onClick": [Function],
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Logout",
+        "type": [Function],
+      },
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -99,23 +116,6 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "Logout",
-          "className": "logout",
-          "onClick": [Function],
-          "to": "/",
-        },
-        "ref": null,
-        "rendered": "Logout",
-        "type": [Function],
-      },
-      false,
     ],
     "type": "header",
   },
@@ -126,6 +126,16 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="logout"
+            onClick={[Function]}
+            to="/"
+>
+            Logout
+</NavLink>,
+          false,
           <NavLink
             activeClassName="active"
             ariaCurrent="true"
@@ -140,21 +150,28 @@ ShallowWrapper {
             </h1>
 </NavLink>,
           <Nav />,
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            className="logout"
-            onClick={[Function]}
-            to="/"
->
-            Logout
-</NavLink>,
-          false,
         ],
         "className": "app-header",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Logout",
+            "className": "logout",
+            "onClick": [Function],
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Logout",
+          "type": [Function],
+        },
+        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -195,23 +212,6 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
-            "children": "Logout",
-            "className": "logout",
-            "onClick": [Function],
-            "to": "/",
-          },
-          "ref": null,
-          "rendered": "Logout",
-          "type": [Function],
-        },
-        false,
       ],
       "type": "header",
     },
@@ -259,6 +259,16 @@ ShallowWrapper {
         <NavLink
           activeClassName="active"
           ariaCurrent="true"
+          className="logout"
+          onClick={[Function]}
+          to="/"
+>
+          Logout
+</NavLink>,
+        false,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
           className="logo-link"
           onClick={[Function]}
           to="/main"
@@ -270,21 +280,28 @@ ShallowWrapper {
           </h1>
 </NavLink>,
         <Nav />,
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          className="logout"
-          onClick={[Function]}
-          to="/"
->
-          Logout
-</NavLink>,
-        false,
       ],
       "className": "app-header",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Logout",
+          "className": "logout",
+          "onClick": [Function],
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Logout",
+        "type": [Function],
+      },
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -325,23 +342,6 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "Logout",
-          "className": "logout",
-          "onClick": [Function],
-          "to": "/",
-        },
-        "ref": null,
-        "rendered": "Logout",
-        "type": [Function],
-      },
-      false,
     ],
     "type": "header",
   },
@@ -352,6 +352,16 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="logout"
+            onClick={[Function]}
+            to="/"
+>
+            Logout
+</NavLink>,
+          false,
           <NavLink
             activeClassName="active"
             ariaCurrent="true"
@@ -366,21 +376,28 @@ ShallowWrapper {
             </h1>
 </NavLink>,
           <Nav />,
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            className="logout"
-            onClick={[Function]}
-            to="/"
->
-            Logout
-</NavLink>,
-          false,
         ],
         "className": "app-header",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Logout",
+            "className": "logout",
+            "onClick": [Function],
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Logout",
+          "type": [Function],
+        },
+        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -421,23 +438,6 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
-            "children": "Logout",
-            "className": "logout",
-            "onClick": [Function],
-            "to": "/",
-          },
-          "ref": null,
-          "rendered": "Logout",
-          "type": [Function],
-        },
-        false,
       ],
       "type": "header",
     },
@@ -481,6 +481,16 @@ ShallowWrapper {
         <NavLink
           activeClassName="active"
           ariaCurrent="true"
+          className="logout"
+          onClick={[Function]}
+          to="/"
+>
+          Logout
+</NavLink>,
+        false,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
           className="logo-link"
           onClick={[Function]}
           to="/main"
@@ -492,21 +502,28 @@ ShallowWrapper {
           </h1>
 </NavLink>,
         <Nav />,
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          className="logout"
-          onClick={[Function]}
-          to="/"
->
-          Logout
-</NavLink>,
-        false,
       ],
       "className": "app-header",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Logout",
+          "className": "logout",
+          "onClick": [Function],
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Logout",
+        "type": [Function],
+      },
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -547,23 +564,6 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "Logout",
-          "className": "logout",
-          "onClick": [Function],
-          "to": "/",
-        },
-        "ref": null,
-        "rendered": "Logout",
-        "type": [Function],
-      },
-      false,
     ],
     "type": "header",
   },
@@ -574,6 +574,16 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            className="logout"
+            onClick={[Function]}
+            to="/"
+>
+            Logout
+</NavLink>,
+          false,
           <NavLink
             activeClassName="active"
             ariaCurrent="true"
@@ -588,21 +598,28 @@ ShallowWrapper {
             </h1>
 </NavLink>,
           <Nav />,
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            className="logout"
-            onClick={[Function]}
-            to="/"
->
-            Logout
-</NavLink>,
-          false,
         ],
         "className": "app-header",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Logout",
+            "className": "logout",
+            "onClick": [Function],
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Logout",
+          "type": [Function],
+        },
+        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -643,23 +660,6 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
-            "children": "Logout",
-            "className": "logout",
-            "onClick": [Function],
-            "to": "/",
-          },
-          "ref": null,
-          "rendered": "Logout",
-          "type": [Function],
-        },
-        false,
       ],
       "type": "header",
     },

@@ -2,7 +2,7 @@
   display: inline-block;
   border: 1px solid #292727;
   border-radius: 13px;
-  margin: 0 28px 50px 28px;
+  margin: 0 1.2rem 50px 1.2rem;
   height: 450px;
   width: 300px;
   background-color: rgba(206, 204, 193, 0.9);
@@ -104,6 +104,7 @@
 
 .ride-trail {
   margin: 10px auto;
+  height: 120px;
   width: 90%;
   text-align: center;
 }
@@ -116,9 +117,13 @@
 
 
 .ride-location {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 18px;
   font-style: italic;
+}
+
+.ride-summary {
+  font-size: 14px;
 }
 
 .ride-stats {
@@ -132,7 +137,31 @@
 
 .type {
   margin-right: 5px;
+  font-size: 18px;
   font-weight: 800;
+}
+
+@media screen and (max-width: 719px) {
+  .ride-card {
+    margin: 0 42px 50px 180px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .ride-card {
+    margin: 0 auto 50px auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ride-image {
+    position: absolute;
+    top: 0;
+    border: 1px solid #49403c;
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    width: 100%;
+  }
 }
 
 

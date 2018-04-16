@@ -97,36 +97,25 @@ ShallowWrapper {
         <article
                 className="rider-profile"
         >
-                <div
-                        className="rider-info"
-                >
-                        <img
-                                alt="user profile"
-                                className="user-profile-picture-stats"
-                                src={undefined}
-                        />
-                        <h4
-                                className="user-name-stats"
-                        />
-                        <h5
-                                className="user-location-stats"
-                        />
-                </div>
-                <div
-                        className="rider-records"
-                >
-                        <h3>
-                                All-Time Records
-                        </h3>
-                        <p>
-                                Biggest Ride: 
-                                62 miles
-                        </p>
-                        <p>
-                                Biggest Climb: 
-                                984 ft
-                        </p>
-                </div>
+                <h3>
+                        All-Time Records
+                </h3>
+                <p>
+                        <span
+                                className="type"
+                        >
+                                Biggest Ride:
+                        </span>
+                        62 miles
+                </p>
+                <p>
+                        <span
+                                className="type"
+                        >
+                                Biggest Climb:
+                        </span>
+                        984 ft
+                </p>
         </article>
         <article
                 className="rider-recent-stats"
@@ -135,19 +124,35 @@ ShallowWrapper {
                         Recent Rides
                 </h3>
                 <p>
-                        Rides: 
+                        <span
+                                className="type"
+                        >
+                                Rides:
+                        </span>
                         1
                 </p>
                 <p>
-                        Distance: 
+                        <span
+                                className="type"
+                        >
+                                Distance:
+                        </span>
                         63 miles
                 </p>
                 <p>
-                        Time: 
+                        <span
+                                className="type"
+                        >
+                                Time:
+                        </span>
                         0 hr(s) 0 min(s)
                 </p>
                 <p>
-                        Gain: 
+                        <span
+                                className="type"
+                        >
+                                Gain:
+                        </span>
                         40456 ft
                 </p>
         </article>
@@ -158,18 +163,34 @@ ShallowWrapper {
                         Year to Date
                 </h3>
                 <p>
-                        Rides: 
+                        <span
+                                className="type"
+                        >
+                                Rides:
+                        </span>
                 </p>
                 <p>
-                        Distance: 
+                        <span
+                                className="type"
+                        >
+                                Distance:
+                        </span>
                         NaN miles
                 </p>
                 <p>
-                        Time: 
+                        <span
+                                className="type"
+                        >
+                                Time:
+                        </span>
                         NaN hr(s) NaN min(s)
                 </p>
                 <p>
-                        Gain: 
+                        <span
+                                className="type"
+                        >
+                                Gain:
+                        </span>
                         NaN ft
                 </p>
         </article>
@@ -180,18 +201,34 @@ ShallowWrapper {
                         Lifetime
                 </h3>
                 <p>
-                        Rides: 
+                        <span
+                                className="type"
+                        >
+                                Rides:
+                        </span>
                 </p>
                 <p>
-                        Distance: 
+                        <span
+                                className="type"
+                        >
+                                Distance:
+                        </span>
                         NaN miles
                 </p>
                 <p>
-                        Time: 
+                        <span
+                                className="type"
+                        >
+                                Time:
+                        </span>
                         NaN hr(s) NaN min(s)
                 </p>
                 <p>
-                        Gain: 
+                        <span
+                                className="type"
+                        >
+                                Gain:
+                        </span>
                         NaN ft
                 </p>
         </article>
@@ -208,36 +245,25 @@ ShallowWrapper {
           <article
             className="rider-profile"
 >
-            <div
-                        className="rider-info"
-            >
-                        <img
-                                    alt="user profile"
-                                    className="user-profile-picture-stats"
-                                    src={undefined}
-                        />
-                        <h4
-                                    className="user-name-stats"
-                        />
-                        <h5
-                                    className="user-location-stats"
-                        />
-            </div>
-            <div
-                        className="rider-records"
-            >
-                        <h3>
-                                    All-Time Records
-                        </h3>
-                        <p>
-                                    Biggest Ride: 
-                                    62 miles
-                        </p>
-                        <p>
-                                    Biggest Climb: 
-                                    984 ft
-                        </p>
-            </div>
+            <h3>
+                        All-Time Records
+            </h3>
+            <p>
+                        <span
+                                    className="type"
+                        >
+                                    Biggest Ride:
+                        </span>
+                        62 miles
+            </p>
+            <p>
+                        <span
+                                    className="type"
+                        >
+                                    Biggest Climb:
+                        </span>
+                        984 ft
+            </p>
 </article>,
           <article
             className="rider-recent-stats"
@@ -246,19 +272,35 @@ ShallowWrapper {
                         Recent Rides
             </h3>
             <p>
-                        Rides: 
+                        <span
+                                    className="type"
+                        >
+                                    Rides:
+                        </span>
                         1
             </p>
             <p>
-                        Distance: 
+                        <span
+                                    className="type"
+                        >
+                                    Distance:
+                        </span>
                         63 miles
             </p>
             <p>
-                        Time: 
+                        <span
+                                    className="type"
+                        >
+                                    Time:
+                        </span>
                         0 hr(s) 0 min(s)
             </p>
             <p>
-                        Gain: 
+                        <span
+                                    className="type"
+                        >
+                                    Gain:
+                        </span>
                         40456 ft
             </p>
 </article>,
@@ -269,18 +311,34 @@ ShallowWrapper {
                         Year to Date
             </h3>
             <p>
-                        Rides: 
+                        <span
+                                    className="type"
+                        >
+                                    Rides:
+                        </span>
             </p>
             <p>
-                        Distance: 
+                        <span
+                                    className="type"
+                        >
+                                    Distance:
+                        </span>
                         NaN miles
             </p>
             <p>
-                        Time: 
+                        <span
+                                    className="type"
+                        >
+                                    Time:
+                        </span>
                         NaN hr(s) NaN min(s)
             </p>
             <p>
-                        Gain: 
+                        <span
+                                    className="type"
+                        >
+                                    Gain:
+                        </span>
                         NaN ft
             </p>
 </article>,
@@ -291,18 +349,34 @@ ShallowWrapper {
                         Lifetime
             </h3>
             <p>
-                        Rides: 
+                        <span
+                                    className="type"
+                        >
+                                    Rides:
+                        </span>
             </p>
             <p>
-                        Distance: 
+                        <span
+                                    className="type"
+                        >
+                                    Distance:
+                        </span>
                         NaN miles
             </p>
             <p>
-                        Time: 
+                        <span
+                                    className="type"
+                        >
+                                    Time:
+                        </span>
                         NaN hr(s) NaN min(s)
             </p>
             <p>
-                        Gain: 
+                        <span
+                                    className="type"
+                        >
+                                    Gain:
+                        </span>
                         NaN ft
             </p>
 </article>,
@@ -317,36 +391,25 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <div
-                className="rider-info"
->
-                <img
-                                alt="user profile"
-                                className="user-profile-picture-stats"
-                                src={undefined}
-                />
-                <h4
-                                className="user-name-stats"
-                />
-                <h5
-                                className="user-location-stats"
-                />
-</div>,
-              <div
-                className="rider-records"
->
-                <h3>
-                                All-Time Records
-                </h3>
-                <p>
-                                Biggest Ride: 
-                                62 miles
-                </p>
-                <p>
-                                Biggest Climb: 
-                                984 ft
-                </p>
-</div>,
+              <h3>
+                All-Time Records
+</h3>,
+              <p>
+                <span
+                                className="type"
+                >
+                                Biggest Ride:
+                </span>
+                62 miles
+</p>,
+              <p>
+                <span
+                                className="type"
+                >
+                                Biggest Climb:
+                </span>
+                984 ft
+</p>,
             ],
             "className": "rider-profile",
           },
@@ -357,62 +420,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <img
-                    alt="user profile"
-                    className="user-profile-picture-stats"
-                    src={undefined}
-/>,
-                  <h4
-                    className="user-name-stats"
-/>,
-                  <h5
-                    className="user-location-stats"
-/>,
-                ],
-                "className": "rider-info",
+                "children": "All-Time Records",
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "alt": "user profile",
-                    "className": "user-profile-picture-stats",
-                    "src": undefined,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "img",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": undefined,
-                    "className": "user-name-stats",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "h4",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": undefined,
-                    "className": "user-location-stats",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "h5",
-                },
-              ],
-              "type": "div",
+              "rendered": "All-Time Records",
+              "type": "h3",
             },
             Object {
               "instance": null,
@@ -420,19 +432,13 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <h3>
-                    All-Time Records
-</h3>,
-                  <p>
-                    Biggest Ride: 
-                    62 miles
-</p>,
-                  <p>
-                    Biggest Climb: 
-                    984 ft
-</p>,
+                  <span
+                    className="type"
+>
+                    Biggest Ride:
+</span>,
+                  "62 miles",
                 ],
-                "className": "rider-records",
               },
               "ref": null,
               "rendered": Array [
@@ -441,48 +447,48 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "All-Time Records",
+                    "children": "Biggest Ride:",
+                    "className": "type",
                   },
                   "ref": null,
-                  "rendered": "All-Time Records",
-                  "type": "h3",
+                  "rendered": "Biggest Ride:",
+                  "type": "span",
                 },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Biggest Ride: ",
-                      "62 miles",
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Biggest Ride: ",
-                    "62 miles",
-                  ],
-                  "type": "p",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      "Biggest Climb: ",
-                      "984 ft",
-                    ],
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    "Biggest Climb: ",
-                    "984 ft",
-                  ],
-                  "type": "p",
-                },
+                "62 miles",
               ],
-              "type": "div",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="type"
+>
+                    Biggest Climb:
+</span>,
+                  "984 ft",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Biggest Climb:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Biggest Climb:",
+                  "type": "span",
+                },
+                "984 ft",
+              ],
+              "type": "p",
             },
           ],
           "type": "article",
@@ -497,19 +503,35 @@ ShallowWrapper {
                 Recent Rides
 </h3>,
               <p>
-                Rides: 
+                <span
+                                className="type"
+                >
+                                Rides:
+                </span>
                 1
 </p>,
               <p>
-                Distance: 
+                <span
+                                className="type"
+                >
+                                Distance:
+                </span>
                 63 miles
 </p>,
               <p>
-                Time: 
+                <span
+                                className="type"
+                >
+                                Time:
+                </span>
                 0 hr(s) 0 min(s)
 </p>,
               <p>
-                Gain: 
+                <span
+                                className="type"
+                >
+                                Gain:
+                </span>
                 40456 ft
 </p>,
             ],
@@ -534,13 +556,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Rides: ",
+                  <span
+                    className="type"
+>
+                    Rides:
+</span>,
                   1,
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Rides: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Rides:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Rides:",
+                  "type": "span",
+                },
                 1,
               ],
               "type": "p",
@@ -551,13 +588,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Distance: ",
+                  <span
+                    className="type"
+>
+                    Distance:
+</span>,
                   "63 miles",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Distance: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Distance:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Distance:",
+                  "type": "span",
+                },
                 "63 miles",
               ],
               "type": "p",
@@ -568,13 +620,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Time: ",
+                  <span
+                    className="type"
+>
+                    Time:
+</span>,
                   "0 hr(s) 0 min(s)",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Time: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Time:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Time:",
+                  "type": "span",
+                },
                 "0 hr(s) 0 min(s)",
               ],
               "type": "p",
@@ -585,13 +652,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Gain: ",
+                  <span
+                    className="type"
+>
+                    Gain:
+</span>,
                   "40456 ft",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Gain: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Gain:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Gain:",
+                  "type": "span",
+                },
                 "40456 ft",
               ],
               "type": "p",
@@ -609,18 +691,34 @@ ShallowWrapper {
                 Year to Date
 </h3>,
               <p>
-                Rides: 
+                <span
+                                className="type"
+                >
+                                Rides:
+                </span>
 </p>,
               <p>
-                Distance: 
+                <span
+                                className="type"
+                >
+                                Distance:
+                </span>
                 NaN miles
 </p>,
               <p>
-                Time: 
+                <span
+                                className="type"
+                >
+                                Time:
+                </span>
                 NaN hr(s) NaN min(s)
 </p>,
               <p>
-                Gain: 
+                <span
+                                className="type"
+                >
+                                Gain:
+                </span>
                 NaN ft
 </p>,
             ],
@@ -645,13 +743,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Rides: ",
+                  <span
+                    className="type"
+>
+                    Rides:
+</span>,
                   undefined,
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Rides: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Rides:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Rides:",
+                  "type": "span",
+                },
                 undefined,
               ],
               "type": "p",
@@ -662,13 +775,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Distance: ",
+                  <span
+                    className="type"
+>
+                    Distance:
+</span>,
                   "NaN miles",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Distance: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Distance:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Distance:",
+                  "type": "span",
+                },
                 "NaN miles",
               ],
               "type": "p",
@@ -679,13 +807,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Time: ",
+                  <span
+                    className="type"
+>
+                    Time:
+</span>,
                   "NaN hr(s) NaN min(s)",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Time: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Time:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Time:",
+                  "type": "span",
+                },
                 "NaN hr(s) NaN min(s)",
               ],
               "type": "p",
@@ -696,13 +839,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Gain: ",
+                  <span
+                    className="type"
+>
+                    Gain:
+</span>,
                   "NaN ft",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Gain: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Gain:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Gain:",
+                  "type": "span",
+                },
                 "NaN ft",
               ],
               "type": "p",
@@ -720,18 +878,34 @@ ShallowWrapper {
                 Lifetime
 </h3>,
               <p>
-                Rides: 
+                <span
+                                className="type"
+                >
+                                Rides:
+                </span>
 </p>,
               <p>
-                Distance: 
+                <span
+                                className="type"
+                >
+                                Distance:
+                </span>
                 NaN miles
 </p>,
               <p>
-                Time: 
+                <span
+                                className="type"
+                >
+                                Time:
+                </span>
                 NaN hr(s) NaN min(s)
 </p>,
               <p>
-                Gain: 
+                <span
+                                className="type"
+                >
+                                Gain:
+                </span>
                 NaN ft
 </p>,
             ],
@@ -756,13 +930,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Rides: ",
+                  <span
+                    className="type"
+>
+                    Rides:
+</span>,
                   undefined,
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Rides: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Rides:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Rides:",
+                  "type": "span",
+                },
                 undefined,
               ],
               "type": "p",
@@ -773,13 +962,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Distance: ",
+                  <span
+                    className="type"
+>
+                    Distance:
+</span>,
                   "NaN miles",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Distance: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Distance:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Distance:",
+                  "type": "span",
+                },
                 "NaN miles",
               ],
               "type": "p",
@@ -790,13 +994,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Time: ",
+                  <span
+                    className="type"
+>
+                    Time:
+</span>,
                   "NaN hr(s) NaN min(s)",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Time: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Time:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Time:",
+                  "type": "span",
+                },
                 "NaN hr(s) NaN min(s)",
               ],
               "type": "p",
@@ -807,13 +1026,28 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "Gain: ",
+                  <span
+                    className="type"
+>
+                    Gain:
+</span>,
                   "NaN ft",
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "Gain: ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Gain:",
+                    "className": "type",
+                  },
+                  "ref": null,
+                  "rendered": "Gain:",
+                  "type": "span",
+                },
                 "NaN ft",
               ],
               "type": "p",
@@ -838,36 +1072,25 @@ ShallowWrapper {
           <article
                     className="rider-profile"
           >
-                    <div
-                              className="rider-info"
-                    >
-                              <img
-                                        alt="user profile"
-                                        className="user-profile-picture-stats"
-                                        src={undefined}
-                              />
-                              <h4
-                                        className="user-name-stats"
-                              />
-                              <h5
-                                        className="user-location-stats"
-                              />
-                    </div>
-                    <div
-                              className="rider-records"
-                    >
-                              <h3>
-                                        All-Time Records
-                              </h3>
-                              <p>
-                                        Biggest Ride: 
-                                        62 miles
-                              </p>
-                              <p>
-                                        Biggest Climb: 
-                                        984 ft
-                              </p>
-                    </div>
+                    <h3>
+                              All-Time Records
+                    </h3>
+                    <p>
+                              <span
+                                        className="type"
+                              >
+                                        Biggest Ride:
+                              </span>
+                              62 miles
+                    </p>
+                    <p>
+                              <span
+                                        className="type"
+                              >
+                                        Biggest Climb:
+                              </span>
+                              984 ft
+                    </p>
           </article>
           <article
                     className="rider-recent-stats"
@@ -876,19 +1099,35 @@ ShallowWrapper {
                               Recent Rides
                     </h3>
                     <p>
-                              Rides: 
+                              <span
+                                        className="type"
+                              >
+                                        Rides:
+                              </span>
                               1
                     </p>
                     <p>
-                              Distance: 
+                              <span
+                                        className="type"
+                              >
+                                        Distance:
+                              </span>
                               63 miles
                     </p>
                     <p>
-                              Time: 
+                              <span
+                                        className="type"
+                              >
+                                        Time:
+                              </span>
                               0 hr(s) 0 min(s)
                     </p>
                     <p>
-                              Gain: 
+                              <span
+                                        className="type"
+                              >
+                                        Gain:
+                              </span>
                               40456 ft
                     </p>
           </article>
@@ -899,18 +1138,34 @@ ShallowWrapper {
                               Year to Date
                     </h3>
                     <p>
-                              Rides: 
+                              <span
+                                        className="type"
+                              >
+                                        Rides:
+                              </span>
                     </p>
                     <p>
-                              Distance: 
+                              <span
+                                        className="type"
+                              >
+                                        Distance:
+                              </span>
                               NaN miles
                     </p>
                     <p>
-                              Time: 
+                              <span
+                                        className="type"
+                              >
+                                        Time:
+                              </span>
                               NaN hr(s) NaN min(s)
                     </p>
                     <p>
-                              Gain: 
+                              <span
+                                        className="type"
+                              >
+                                        Gain:
+                              </span>
                               NaN ft
                     </p>
           </article>
@@ -921,18 +1176,34 @@ ShallowWrapper {
                               Lifetime
                     </h3>
                     <p>
-                              Rides: 
+                              <span
+                                        className="type"
+                              >
+                                        Rides:
+                              </span>
                     </p>
                     <p>
-                              Distance: 
+                              <span
+                                        className="type"
+                              >
+                                        Distance:
+                              </span>
                               NaN miles
                     </p>
                     <p>
-                              Time: 
+                              <span
+                                        className="type"
+                              >
+                                        Time:
+                              </span>
                               NaN hr(s) NaN min(s)
                     </p>
                     <p>
-                              Gain: 
+                              <span
+                                        className="type"
+                              >
+                                        Gain:
+                              </span>
                               NaN ft
                     </p>
           </article>
@@ -949,36 +1220,25 @@ ShallowWrapper {
             <article
               className="rider-profile"
 >
-              <div
-                            className="rider-info"
-              >
-                            <img
-                                          alt="user profile"
-                                          className="user-profile-picture-stats"
-                                          src={undefined}
-                            />
-                            <h4
-                                          className="user-name-stats"
-                            />
-                            <h5
-                                          className="user-location-stats"
-                            />
-              </div>
-              <div
-                            className="rider-records"
-              >
-                            <h3>
-                                          All-Time Records
-                            </h3>
-                            <p>
-                                          Biggest Ride: 
-                                          62 miles
-                            </p>
-                            <p>
-                                          Biggest Climb: 
-                                          984 ft
-                            </p>
-              </div>
+              <h3>
+                            All-Time Records
+              </h3>
+              <p>
+                            <span
+                                          className="type"
+                            >
+                                          Biggest Ride:
+                            </span>
+                            62 miles
+              </p>
+              <p>
+                            <span
+                                          className="type"
+                            >
+                                          Biggest Climb:
+                            </span>
+                            984 ft
+              </p>
 </article>,
             <article
               className="rider-recent-stats"
@@ -987,19 +1247,35 @@ ShallowWrapper {
                             Recent Rides
               </h3>
               <p>
-                            Rides: 
+                            <span
+                                          className="type"
+                            >
+                                          Rides:
+                            </span>
                             1
               </p>
               <p>
-                            Distance: 
+                            <span
+                                          className="type"
+                            >
+                                          Distance:
+                            </span>
                             63 miles
               </p>
               <p>
-                            Time: 
+                            <span
+                                          className="type"
+                            >
+                                          Time:
+                            </span>
                             0 hr(s) 0 min(s)
               </p>
               <p>
-                            Gain: 
+                            <span
+                                          className="type"
+                            >
+                                          Gain:
+                            </span>
                             40456 ft
               </p>
 </article>,
@@ -1010,18 +1286,34 @@ ShallowWrapper {
                             Year to Date
               </h3>
               <p>
-                            Rides: 
+                            <span
+                                          className="type"
+                            >
+                                          Rides:
+                            </span>
               </p>
               <p>
-                            Distance: 
+                            <span
+                                          className="type"
+                            >
+                                          Distance:
+                            </span>
                             NaN miles
               </p>
               <p>
-                            Time: 
+                            <span
+                                          className="type"
+                            >
+                                          Time:
+                            </span>
                             NaN hr(s) NaN min(s)
               </p>
               <p>
-                            Gain: 
+                            <span
+                                          className="type"
+                            >
+                                          Gain:
+                            </span>
                             NaN ft
               </p>
 </article>,
@@ -1032,18 +1324,34 @@ ShallowWrapper {
                             Lifetime
               </h3>
               <p>
-                            Rides: 
+                            <span
+                                          className="type"
+                            >
+                                          Rides:
+                            </span>
               </p>
               <p>
-                            Distance: 
+                            <span
+                                          className="type"
+                            >
+                                          Distance:
+                            </span>
                             NaN miles
               </p>
               <p>
-                            Time: 
+                            <span
+                                          className="type"
+                            >
+                                          Time:
+                            </span>
                             NaN hr(s) NaN min(s)
               </p>
               <p>
-                            Gain: 
+                            <span
+                                          className="type"
+                            >
+                                          Gain:
+                            </span>
                             NaN ft
               </p>
 </article>,
@@ -1058,36 +1366,25 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <div
-                  className="rider-info"
->
-                  <img
-                                    alt="user profile"
-                                    className="user-profile-picture-stats"
-                                    src={undefined}
-                  />
-                  <h4
-                                    className="user-name-stats"
-                  />
-                  <h5
-                                    className="user-location-stats"
-                  />
-</div>,
-                <div
-                  className="rider-records"
->
-                  <h3>
-                                    All-Time Records
-                  </h3>
-                  <p>
-                                    Biggest Ride: 
-                                    62 miles
-                  </p>
-                  <p>
-                                    Biggest Climb: 
-                                    984 ft
-                  </p>
-</div>,
+                <h3>
+                  All-Time Records
+</h3>,
+                <p>
+                  <span
+                                    className="type"
+                  >
+                                    Biggest Ride:
+                  </span>
+                  62 miles
+</p>,
+                <p>
+                  <span
+                                    className="type"
+                  >
+                                    Biggest Climb:
+                  </span>
+                  984 ft
+</p>,
               ],
               "className": "rider-profile",
             },
@@ -1098,62 +1395,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": Array [
-                    <img
-                      alt="user profile"
-                      className="user-profile-picture-stats"
-                      src={undefined}
-/>,
-                    <h4
-                      className="user-name-stats"
-/>,
-                    <h5
-                      className="user-location-stats"
-/>,
-                  ],
-                  "className": "rider-info",
+                  "children": "All-Time Records",
                 },
                 "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "alt": "user profile",
-                      "className": "user-profile-picture-stats",
-                      "src": undefined,
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "img",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": undefined,
-                      "className": "user-name-stats",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "h4",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": undefined,
-                      "className": "user-location-stats",
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": "h5",
-                  },
-                ],
-                "type": "div",
+                "rendered": "All-Time Records",
+                "type": "h3",
               },
               Object {
                 "instance": null,
@@ -1161,19 +1407,13 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <h3>
-                      All-Time Records
-</h3>,
-                    <p>
-                      Biggest Ride: 
-                      62 miles
-</p>,
-                    <p>
-                      Biggest Climb: 
-                      984 ft
-</p>,
+                    <span
+                      className="type"
+>
+                      Biggest Ride:
+</span>,
+                    "62 miles",
                   ],
-                  "className": "rider-records",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -1182,48 +1422,48 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "All-Time Records",
+                      "children": "Biggest Ride:",
+                      "className": "type",
                     },
                     "ref": null,
-                    "rendered": "All-Time Records",
-                    "type": "h3",
+                    "rendered": "Biggest Ride:",
+                    "type": "span",
                   },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "Biggest Ride: ",
-                        "62 miles",
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Biggest Ride: ",
-                      "62 miles",
-                    ],
-                    "type": "p",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": Array [
-                        "Biggest Climb: ",
-                        "984 ft",
-                      ],
-                    },
-                    "ref": null,
-                    "rendered": Array [
-                      "Biggest Climb: ",
-                      "984 ft",
-                    ],
-                    "type": "p",
-                  },
+                  "62 miles",
                 ],
-                "type": "div",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span
+                      className="type"
+>
+                      Biggest Climb:
+</span>,
+                    "984 ft",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Biggest Climb:",
+                      "className": "type",
+                    },
+                    "ref": null,
+                    "rendered": "Biggest Climb:",
+                    "type": "span",
+                  },
+                  "984 ft",
+                ],
+                "type": "p",
               },
             ],
             "type": "article",
@@ -1238,19 +1478,35 @@ ShallowWrapper {
                   Recent Rides
 </h3>,
                 <p>
-                  Rides: 
+                  <span
+                                    className="type"
+                  >
+                                    Rides:
+                  </span>
                   1
 </p>,
                 <p>
-                  Distance: 
+                  <span
+                                    className="type"
+                  >
+                                    Distance:
+                  </span>
                   63 miles
 </p>,
                 <p>
-                  Time: 
+                  <span
+                                    className="type"
+                  >
+                                    Time:
+                  </span>
                   0 hr(s) 0 min(s)
 </p>,
                 <p>
-                  Gain: 
+                  <span
+                                    className="type"
+                  >
+                                    Gain:
+                  </span>
                   40456 ft
 </p>,
               ],
@@ -1275,13 +1531,28 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Rides: ",
+                    <span
+                      className="type"
+>
+                      Rides:
+</span>,
                     1,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Rides: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Rides:",
+                      "className": "type",
+                    },
+                    "ref": null,
+                    "rendered": "Rides:",
+                    "type": "span",
+                  },
                   1,
                 ],
                 "type": "p",
@@ -1292,13 +1563,28 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Distance: ",
+                    <span
+                      className="type"
+>
+                      Distance:
+</span>,
                     "63 miles",
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Distance: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Distance:",
+                      "className": "type",
+                    },
+                    "ref": null,
+                    "rendered": "Distance:",
+                    "type": "span",
+                  },
                   "63 miles",
                 ],
                 "type": "p",
@@ -1309,13 +1595,28 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Time: ",
+                    <span
+                      className="type"
+>
+                      Time:
+</span>,
                     "0 hr(s) 0 min(s)",
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Time: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Time:",
+                      "className": "type",
+                    },
+                    "ref": null,
+                    "rendered": "Time:",
+                    "type": "span",
+                  },
                   "0 hr(s) 0 min(s)",
                 ],
                 "type": "p",
@@ -1326,13 +1627,28 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Gain: ",
+                    <span
+                      className="type"
+>
+                      Gain:
+</span>,
                     "40456 ft",
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Gain: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Gain:",
+                      "className": "type",
+                    },
+                    "ref": null,
+                    "rendered": "Gain:",
+                    "type": "span",
+                  },
                   "40456 ft",
                 ],
                 "type": "p",
@@ -1350,18 +1666,34 @@ ShallowWrapper {
                   Year to Date
 </h3>,
                 <p>
-                  Rides: 
+                  <span
+                                    className="type"
+                  >
+                                    Rides:
+                  </span>
 </p>,
                 <p>
-                  Distance: 
+                  <span
+                                    className="type"
+                  >
+                                    Distance:
+                  </span>
                   NaN miles
 </p>,
                 <p>
-                  Time: 
+                  <span
+                                    className="type"
+                  >
+                                    Time:
+                  </span>
                   NaN hr(s) NaN min(s)
 </p>,
                 <p>
-                  Gain: 
+                  <span
+                                    className="type"
+                  >
+                                    Gain:
+                  </span>
                   NaN ft
 </p>,
               ],
@@ -1386,13 +1718,28 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Rides: ",
+                    <span
+                      className="type"
+>
+                      Rides:
+</span>,
                     undefined,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Rides: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Rides:",
+                      "className": "type",
+                    },
+                    "ref": null,
+                    "rendered": "Rides:",
+                    "type": "span",
+                  },
                   undefined,
                 ],
                 "type": "p",
@@ -1403,13 +1750,28 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Distance: ",
+                    <span
+                      className="type"
+>
+                      Distance:
+</span>,
                     "NaN miles",
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Distance: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Distance:",
+                      "className": "type",
+                    },
+                    "ref": null,
+                    "rendered": "Distance:",
+                    "type": "span",
+                  },
                   "NaN miles",
                 ],
                 "type": "p",
@@ -1420,13 +1782,28 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Time: ",
+                    <span
+                      className="type"
+>
+                      Time:
+</span>,
                     "NaN hr(s) NaN min(s)",
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Time: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Time:",
+                      "className": "type",
+                    },
+                    "ref": null,
+                    "rendered": "Time:",
+                    "type": "span",
+                  },
                   "NaN hr(s) NaN min(s)",
                 ],
                 "type": "p",
@@ -1437,13 +1814,28 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Gain: ",
+                    <span
+                      className="type"
+>
+                      Gain:
+</span>,
                     "NaN ft",
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Gain: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Gain:",
+                      "className": "type",
+                    },
+                    "ref": null,
+                    "rendered": "Gain:",
+                    "type": "span",
+                  },
                   "NaN ft",
                 ],
                 "type": "p",
@@ -1461,18 +1853,34 @@ ShallowWrapper {
                   Lifetime
 </h3>,
                 <p>
-                  Rides: 
+                  <span
+                                    className="type"
+                  >
+                                    Rides:
+                  </span>
 </p>,
                 <p>
-                  Distance: 
+                  <span
+                                    className="type"
+                  >
+                                    Distance:
+                  </span>
                   NaN miles
 </p>,
                 <p>
-                  Time: 
+                  <span
+                                    className="type"
+                  >
+                                    Time:
+                  </span>
                   NaN hr(s) NaN min(s)
 </p>,
                 <p>
-                  Gain: 
+                  <span
+                                    className="type"
+                  >
+                                    Gain:
+                  </span>
                   NaN ft
 </p>,
               ],
@@ -1497,13 +1905,28 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Rides: ",
+                    <span
+                      className="type"
+>
+                      Rides:
+</span>,
                     undefined,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Rides: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Rides:",
+                      "className": "type",
+                    },
+                    "ref": null,
+                    "rendered": "Rides:",
+                    "type": "span",
+                  },
                   undefined,
                 ],
                 "type": "p",
@@ -1514,13 +1937,28 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Distance: ",
+                    <span
+                      className="type"
+>
+                      Distance:
+</span>,
                     "NaN miles",
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Distance: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Distance:",
+                      "className": "type",
+                    },
+                    "ref": null,
+                    "rendered": "Distance:",
+                    "type": "span",
+                  },
                   "NaN miles",
                 ],
                 "type": "p",
@@ -1531,13 +1969,28 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Time: ",
+                    <span
+                      className="type"
+>
+                      Time:
+</span>,
                     "NaN hr(s) NaN min(s)",
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Time: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Time:",
+                      "className": "type",
+                    },
+                    "ref": null,
+                    "rendered": "Time:",
+                    "type": "span",
+                  },
                   "NaN hr(s) NaN min(s)",
                 ],
                 "type": "p",
@@ -1548,13 +2001,28 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    "Gain: ",
+                    <span
+                      className="type"
+>
+                      Gain:
+</span>,
                     "NaN ft",
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
-                  "Gain: ",
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Gain:",
+                      "className": "type",
+                    },
+                    "ref": null,
+                    "rendered": "Gain:",
+                    "type": "span",
+                  },
                   "NaN ft",
                 ],
                 "type": "p",

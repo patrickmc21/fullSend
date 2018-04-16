@@ -33,7 +33,27 @@
 .main-tagline {
   color: #d2cdad;
   font-family: 'Sedgwick Ave Display', cursive;
-  font-size: 56px;
+  font-size: 80px;
   text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  .main-content-wrapper {
+    padding-top: 20px;
+    height: 400px;
+  }
+
+  .main-content {
+    height: 380px;
+  }
+
+  .main-content-text {
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 2px 2px #727167;
+  }
 }
 

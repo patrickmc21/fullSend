@@ -50,7 +50,7 @@ ShallowWrapper {
                 className="nav-btn"
                 to="/main/todos"
         >
-                Trails To Do
+                Trails To Send
         </NavLink>
 </div>,
       "className": "app-nav",
@@ -92,7 +92,7 @@ ShallowWrapper {
             className="nav-btn"
             to="/main/todos"
 >
-            Trails To Do
+            Trails To Send
 </NavLink>,
         ],
         "className": "nav-wrapper",
@@ -151,12 +151,12 @@ ShallowWrapper {
           "props": Object {
             "activeClassName": "active-nav",
             "ariaCurrent": "true",
-            "children": "Trails To Do",
+            "children": "Trails To Send",
             "className": "nav-btn",
             "to": "/main/todos",
           },
           "ref": null,
-          "rendered": "Trails To Do",
+          "rendered": "Trails To Send",
           "type": [Function],
         },
       ],
@@ -203,7 +203,7 @@ ShallowWrapper {
                     className="nav-btn"
                     to="/main/todos"
           >
-                    Trails To Do
+                    Trails To Send
           </NavLink>
 </div>,
         "className": "app-nav",
@@ -245,7 +245,7 @@ ShallowWrapper {
               className="nav-btn"
               to="/main/todos"
 >
-              Trails To Do
+              Trails To Send
 </NavLink>,
           ],
           "className": "nav-wrapper",
@@ -304,12 +304,12 @@ ShallowWrapper {
             "props": Object {
               "activeClassName": "active-nav",
               "ariaCurrent": "true",
-              "children": "Trails To Do",
+              "children": "Trails To Send",
               "className": "nav-btn",
               "to": "/main/todos",
             },
             "ref": null,
-            "rendered": "Trails To Do",
+            "rendered": "Trails To Send",
             "type": [Function],
           },
         ],
