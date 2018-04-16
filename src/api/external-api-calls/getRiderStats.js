@@ -7,7 +7,7 @@ const getRiderStats = async (id, token) => {
       Authorization: `Bearer ${token}`,
       'Content-Type': 'application/json'
     }
-  }
+  };
 
   const endPoint = `${url}${urlOptions}`;
 

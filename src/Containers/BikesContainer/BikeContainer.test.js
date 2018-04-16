@@ -19,7 +19,7 @@ describe('BikeContainer', () => {
   let wrapper;
 
   beforeEach(() => {
-    mockUser = {...mock.mockUser,...mock.mockStravaUser};
+    mockUser = {...mock.mockUser, ...mock.mockStravaUser};
     mockBikes = mock.mockBikes;
     mockAddBikes = jest.fn();
     wrapper = shallow(
@@ -28,7 +28,7 @@ describe('BikeContainer', () => {
         bikes={mockBikes}
         addBikes={mockAddBikes}/>,
       {disableLifeCycleMethods: true}
-    )
+    );
   });
 
   it('should match the snapshot', () => {
@@ -42,8 +42,10 @@ describe('BikeContainer', () => {
   });
 
   it('should return an array of bikes on getUserBikes', async () => {
+    const bikes = mockUser.bikes;
+    const token = mockUser.token;
     const expected = mockBikes;
-    const results = await wrapper.instance().getUserBikes(mockUser.bikes, mockUser.token);
+    const results = await wrapper.instance().getUserBikes(bikes, token);
     expect(results).toEqual([expected]);
   });
 
@@ -55,7 +57,7 @@ describe('BikeContainer', () => {
         bikes={mockBikes}
         addBikes={mockAddBikes}/>,
       {disableLifeCycleMethods: true}
-    )
+    );
     const spy = jest.spyOn(wrapper.instance(), 'getUserBikes');
     wrapper.instance().componentDidMount();
     expect(spy).toHaveBeenCalled();
@@ -69,7 +71,7 @@ describe('BikeContainer', () => {
         bikes={mockBikes}
         addBikes={mockAddBikes}/>,
       {disableLifeCycleMethods: true}
-    )
+    );
     await wrapper.instance().componentDidMount();
     expect(mockAddBikes).toHaveBeenCalled();
   });

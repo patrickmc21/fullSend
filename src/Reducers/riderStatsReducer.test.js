@@ -1,5 +1,5 @@
 import riderStatsReducer from './riderStatsReducer';
-import * as actions from '../Actions';
+import { addRiderStats, clearRiderStats } from '../Actions';
 
 import { mockUserStravaInfo } from '../mock-data/mock-data';
 
@@ -12,14 +12,14 @@ describe('riderStatsReducer', () => {
 
   it('should add rider stats', () => {
     const expected = mockUserStravaInfo;
-    const results = riderStatsReducer(undefined, actions.addRiderStats(expected));
+    const results = riderStatsReducer(undefined, addRiderStats(expected));
     expect(results).toEqual(expected);
   }); 
 
   it('should clear rider stats', () => {
     const mockState = mockUserStravaInfo;
     const expected = {};
-    const results = riderStatsReducer(mockState, actions.clearRiderStats());
+    const results = riderStatsReducer(mockState, clearRiderStats());
     expect(results).toEqual(expected);
   });
 });

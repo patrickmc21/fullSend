@@ -18,7 +18,7 @@ describe('BikeCard', () => {
   });
 
   it('should match the snapshot if user provides pic', () => {
-    mockBike.description = 'https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21761533_10155021148621275_7324564082030573632_n.jpg?_nc_cat=0&oh=bdedd1a008af0a9bf3833e01f4766ef9&oe=5B6FC959'
+    mockBike.description = 'https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/21';
     wrapper = shallow(<BikeCard bike={mockBike}/>);
     expect(wrapper).toMatchSnapshot();
   });

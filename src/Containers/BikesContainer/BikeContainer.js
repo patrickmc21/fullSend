@@ -14,7 +14,7 @@ export class BikeContainer extends Component {
   async componentDidMount() {
     const { user, bikes } = this.props;
     if (bikes.length < 1) {
-      const bikesToAdd = await this.getUserBikes(user.bikes, user.token)
+      const bikesToAdd = await this.getUserBikes(user.bikes, user.token);
       this.props.addBikes(bikesToAdd);
     }
   }
@@ -30,7 +30,7 @@ export class BikeContainer extends Component {
 
   createBikeCards = () => {
     return this.props.bikes.map(bike => {
-      return <BikeCard key={bike.id} bike={bike} />
+      return <BikeCard key={bike.id} bike={bike} />;
     });
   }
 
@@ -42,8 +42,14 @@ export class BikeContainer extends Component {
           {bikeCards}
         </div>
       </section>
-    )
+    );
   }
+}
+
+BikeContainer.propTypes = {
+  user: PropTypes.object,
+  bikes: PropTypes.array,
+  addBikes: PropTypes.func
 };
 
 export const mapStateToProps = (state) => ({
@@ -55,4 +61,5 @@ export const mapDispatchToProps = (dispatch) => ({
   addBikes: bikes => dispatch(actions.addBikes(bikes))
 });
 
+/* eslint-disable max-len */
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(BikeContainer));

@@ -12,7 +12,7 @@ const getTrailsById = async (ids) => {
     return trails;
   } catch (error) {
     throw error.message;
-  };
+  }
 };
 
 export default getTrailsById;

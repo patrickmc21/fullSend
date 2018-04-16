@@ -58,7 +58,7 @@ describe('Header', () => {
     expect(mockAddStravaInfo).toHaveBeenCalled();
   });
 
-  it('should set errorStatus on bad request on componentDidUpdate', async () => {
+  it('should set errorStatus on bad request on mount', async () => {
     const expected = 'FAIL';
     mockAddStravaInfo = jest.fn().mockImplementation(() => {
       throw 'FAIL';

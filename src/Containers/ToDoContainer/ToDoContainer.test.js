@@ -7,7 +7,10 @@ jest.mock('../../api/external-api-calls/getTodoIds');
 
 import * as mock from '../../mock-data/mock-data';
 
-import { ToDoContainer, mapStateToProps, mapDispatchToProps } from './ToDoContainer';
+import { 
+  ToDoContainer, 
+  mapStateToProps, 
+  mapDispatchToProps } from './ToDoContainer';
 
 describe('ToDoContainer', () => {
 
@@ -49,14 +52,14 @@ describe('ToDoContainer', () => {
     expect(results).toEqual(expected);
   });
 
-  it('should call getToDoRides on componentDidMount' , () => {
+  it('should call getToDoRides on componentDidMount', () => {
     mockTodos = [];
     wrapper = shallow(
       <ToDoContainer
         user={mockUser}
         todos={mockTodos}
         addTodos={mockAddTodos} />,
-        {disableLifecycleMethods: true}
+      {disableLifecycleMethods: true}
     );
     const expected = mockUser;
     const spy = jest.spyOn(wrapper.instance(), 'getToDoRides');
@@ -64,14 +67,14 @@ describe('ToDoContainer', () => {
     expect(spy).toHaveBeenCalledWith(expected);
   });
 
-  it('should call addTodos on componentDidMount' , async () => {
+  it('should call addTodos on componentDidMount', async () => {
     mockTodos = [];
     wrapper = shallow(
       <ToDoContainer
         user={mockUser}
         todos={mockTodos}
         addTodos={mockAddTodos} />,
-        {disableLifecycleMethods: true}
+      {disableLifecycleMethods: true}
     );
     const expected = mock.mockTodos;
     await wrapper.instance().componentDidMount();

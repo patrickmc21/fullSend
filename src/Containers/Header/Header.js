@@ -93,7 +93,8 @@ Header.propTypes = {
   user: PropTypes.object,
   logoutUser: PropTypes.func,
   clearRides: PropTypes.func,
-  changeMonth: PropTypes.func
+  changeMonth: PropTypes.func,
+  addStravaInfo: PropTypes.func
 };
 
 export const mapStateToProps = state => ({
