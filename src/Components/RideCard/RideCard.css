@@ -104,6 +104,7 @@
 
 .ride-trail {
   margin: 10px auto;
+  height: 120px;
   width: 90%;
   text-align: center;
 }
@@ -116,9 +117,13 @@
 
 
 .ride-location {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 18px;
   font-style: italic;
+}
+
+.ride-summary {
+  font-size: 14px;
 }
 
 .ride-stats {
@@ -132,6 +137,7 @@
 
 .type {
   margin-right: 5px;
+  font-size: 18px;
   font-weight: 800;
 }
 

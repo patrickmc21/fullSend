@@ -24,9 +24,8 @@
 .user-info {
   float: right;
   clear: right;
-  border-radius: 25px;
   height: 70px;
-  width: 250px;
+  width: 220px;
 }
 
 .user-profile-picture {
@@ -65,4 +64,44 @@
   border-color: #FFFFFE;
   color: #FFFFFE;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 450px) {
+  .app-header {
+    height: 100px;
+    width: 100vw;
+  }
+
+  .logo {
+    float: left;
+    margin: 15px 15px;
+    width: 140px;
+    background-size: 26px 26px;
+    background-position: 110px 0px;
+    font-size: 32px;
+  }
+
+  .logout {
+    margin: 5px 5px 0 0;
+  }
+
+  .user-info {
+    float: right;
+    clear: right;
+    height: 75px;
+    width: 130px;
+  }
+
+  .user-profile-picture {
+    float: right;
+    margin: 10px 10px;
+    width: 35px;
+    border-radius: 30px;
+  }
+
+  .user-name,
+  .user-location {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+  }
 }

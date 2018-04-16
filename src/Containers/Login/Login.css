@@ -1,5 +1,5 @@
 .login-page {
-  height: 100vh;
+  height: 800px;
   background-image: url('./images/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
   margin-bottom: 40px;
   color: #F9F8F2;
   font-family: 'Sedgwick Ave Display', cursive;
-  font-size: 56px;
+  font-size: 108px;
 }
 
 .authorize-strava {
@@ -56,6 +56,15 @@
   color: #EB592A;
 }
 
+@media screen and (max-width: 450px) {
+  .login-page {
+    height: 100vh;
+    background-image: url('./images/mobile-bkrnd.jpg');
+  }
 
+  .login-logo {
+    font-size: 72px;
+  }
+}
 
 

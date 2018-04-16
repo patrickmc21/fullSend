@@ -94,6 +94,7 @@
   height: 120px;
   width: 90%;
   text-align: center;
+  overflow: scroll;
 }
 
 .todo-trail-name {
@@ -120,7 +121,7 @@
 
 .todo-stats {
   margin: auto;
-  height: 100px;
+  height: 96px;
   width: 90%;
 }
 
@@ -138,14 +139,18 @@
 
 .todo-link {
   display: block;
+  padding: 1px;
+  border: 2px solid #292727;
+  border-radius: 5px;
   margin: auto;
-  width: 68%;
+  width: 66%;
   color: #292727;
   font-size: 20px;
+  text-align: center;
   text-decoration: none;
 }
 
 .todo-link:hover {
+  border-color: #FFFFFE;
   color: #FFFFFE;
-  text-decoration: underline;
 }

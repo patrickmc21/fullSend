@@ -35,3 +35,28 @@
   border: 2px solid #292727;
   color: #292727;
 }
+
+@media screen and (max-width: 450px) {
+  .app-nav {
+    display: block;
+    padding-top: 50px;
+    height: 60px;
+    width: 40vw;
+    box-sizing: border-box;
+  }
+
+  .nav-wrapper {
+    justify-content: flex-end;
+  }
+
+  .nav-btn {
+    padding: 2px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    height: 30px;
+    max-width: 120px;
+    min-width: 60px;
+    color: #000000;
+    font-size: 12px;
+  }
+}

@@ -18,7 +18,10 @@ const BikeCard = ({bike}) => {
       <h3 className='bike-name'>&quot;{bike.name}&quot;</h3>
       <h4 className='bike-brand'>{bike.brand_name}</h4>
       <h4 className='bike-model'>{bike.model_name}</h4>
-      <p className='bike-mileage'>Mileage: {distance}</p>
+      <p className='bike-mileage'>
+        <span className='type'>Mileage:</span> 
+        {distance}
+      </p>
     </article>
   );
 };
