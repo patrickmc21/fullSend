@@ -87,7 +87,6 @@ ShallowWrapper {
                     }
           />
 </div>,
-        ")",
       ],
       "className": "ride-container",
     },
@@ -192,7 +191,6 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-      ")",
     ],
     "type": "section",
   },
@@ -234,7 +232,6 @@ ShallowWrapper {
                         }
             />
 </div>,
-          ")",
         ],
         "className": "ride-container",
       },
@@ -339,7 +336,6 @@ ShallowWrapper {
           ],
           "type": "div",
         },
-        ")",
       ],
       "type": "section",
     },
@@ -402,7 +398,6 @@ ShallowWrapper {
                     No Rides to Show!
           </h6>
 </div>,
-        ")",
       ],
       "className": "ride-container",
     },
@@ -484,7 +479,6 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-      ")",
     ],
     "type": "section",
   },
@@ -515,7 +509,6 @@ ShallowWrapper {
                         No Rides to Show!
             </h6>
 </div>,
-          ")",
         ],
         "className": "ride-container",
       },
@@ -597,7 +590,6 @@ ShallowWrapper {
           ],
           "type": "div",
         },
-        ")",
       ],
       "type": "section",
     },
@@ -715,7 +707,6 @@ ShallowWrapper {
                     }
           />
 </div>,
-        ")",
       ],
       "className": "ride-container",
     },
@@ -858,7 +849,6 @@ ShallowWrapper {
         ],
         "type": "div",
       },
-      ")",
     ],
     "type": "section",
   },
@@ -916,7 +906,6 @@ ShallowWrapper {
                         }
             />
 </div>,
-          ")",
         ],
         "className": "ride-container",
       },
@@ -1059,7 +1048,6 @@ ShallowWrapper {
           ],
           "type": "div",
         },
-        ")",
       ],
       "type": "section",
     },
