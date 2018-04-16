@@ -1,5 +1,5 @@
 .todo-container {
-  height: 617px;
+  height: 620px;
   box-sizing: border-box;
 }
 
@@ -7,10 +7,10 @@
   display: flex;
   flex-wrap: wrap;
   padding: 20px 0;
-  border-radius: 10px;
   margin: auto;
-  height: 617px;
-  width: 99vw;
+  height: 620px;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.5);
   box-sizing: border-box;
   overflow: scroll;
 }
@@ -20,4 +20,16 @@
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
   text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  .todo-container {
+    height: 410px;
+  }
+
+  .todo-card-container {
+    padding: 10px 0;
+    height: 409px;
+    width: 100vw;
+  }
 }

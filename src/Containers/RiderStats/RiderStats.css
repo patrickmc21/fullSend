@@ -52,3 +52,18 @@
   font-family: 'Raleway', sans-serif;
   font-size: 24px;
 }
+
+@media screen and (max-width: 450px) {
+  .rider-stats {
+    padding-top: 10px;
+    height: 410px;
+  }
+
+  .stats-container {
+    padding: 10px 0;
+    height: 370px;
+    width: 90%;
+    background-color: rgba(206, 204, 193, 0.9);
+    overflow: scroll;
+  }
+}

@@ -2,7 +2,7 @@
   display: inline-block;
   border: 1px solid #292727;
   border-radius: 13px;
-  margin: 0 28px 50px 28px;
+  margin: 0 auto 50px auto;
   height: 450px;
   width: 300px;
   background-color: rgba(206, 204, 193, 0.9);
@@ -60,3 +60,17 @@
   font-size: 24px;
 }
 
+@media screen and (max-width: 450px) {
+  .bike-card {
+    margin: 0 auto 10px auto;
+    height: 410px;
+    width: 280px;
+  } 
+
+  .bike-img {
+    border: 1px solid #49403c;
+    border-radius: 10px 10px 0 0;
+    height: 230px;
+    width: 277px;
+  }
+}

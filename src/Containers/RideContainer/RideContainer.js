@@ -110,7 +110,7 @@ export class RideContainer extends Component {
           {rideCards.length >= 1 && rideCards}
           {rideCards.length < 1 && 
             <h6 className='none-found'>No Rides to Show!</h6>}
-        </div>)
+        </div>
       </section>
     );
   }

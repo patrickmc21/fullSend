@@ -39,23 +39,23 @@
 @media screen and (max-width: 450px) {
   .app-nav {
     display: block;
-    padding-top: 50px;
-    height: 60px;
-    width: 40vw;
+    padding-top: 0px;
+    height: 30px;
+    width: 100vw;
     box-sizing: border-box;
   }
 
   .nav-wrapper {
-    justify-content: flex-end;
+    float: left;
+    width: 100vw;
   }
 
   .nav-btn {
-    padding: 2px;
-    border: 2px solid #000000;
-    border-radius: 5px;
+    padding: 10px 0 0 0px;
+    border: 1px solid #000000;
+    border-radius: 0px;
     height: 30px;
-    max-width: 120px;
-    min-width: 60px;
+    min-width: 80px;
     color: #000000;
     font-size: 12px;
   }

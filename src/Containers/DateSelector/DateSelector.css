@@ -24,3 +24,24 @@
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
 }
+
+@media screen and (max-width: 450px) {
+  .month-form {
+    padding-top: 4px;
+    border: 1px solid #000000;
+    margin: 0 0 5px 5px;
+    height: 25px;
+    width: 200px;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  #month {
+    margin: 0 0 0 10px;
+    width: 100px;
+    font-size: 12px;
+  }
+}

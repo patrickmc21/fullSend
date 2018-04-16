@@ -70,7 +70,7 @@ export const RiderStats = ({stats, user}) => {
             <span className='type'>
               Time:
             </span> 
-            stats.yearToDate.time}
+            {stats.yearToDate.time}
           </p>
           <p>
             <span className='type'>

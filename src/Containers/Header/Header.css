@@ -10,7 +10,7 @@
 
 .logo {
   float: left;
-  margin: 20px 20px;
+  margin: 0px 20px;
   width: 300px;
   background-image: url('./images/logo-img.png');
   background-size: 64px 60px;
@@ -68,34 +68,45 @@
 
 @media screen and (max-width: 450px) {
   .app-header {
-    height: 100px;
+    height: 104px;
     width: 100vw;
+  }
+
+  .logo-link {
+    display: block;
+    margin: auto;
+    height: 50px;
+    width: 200px;
   }
 
   .logo {
     float: left;
-    margin: 15px 15px;
-    width: 140px;
-    background-size: 26px 26px;
-    background-position: 110px 0px;
-    font-size: 32px;
+    margin: 0px 15px;
+    width: 200px;
+    background-size: 40px 32px;
+    background-position: 160px 5px;
+    font-size: 48px;
   }
 
   .logout {
-    margin: 5px 5px 0 0;
+    float: left;
+    margin: 5px 0 0 5px;
+    width: 55px;
+    font-size: 16px;
   }
 
   .user-info {
+    display: inline-block;
     float: right;
     clear: right;
-    height: 75px;
-    width: 130px;
+    height: 27px;
+    width: 150px;
   }
 
   .user-profile-picture {
     float: right;
-    margin: 10px 10px;
-    width: 35px;
+    margin: 5px 5px;
+    width: 25px;
     border-radius: 30px;
   }
 
@@ -103,5 +114,9 @@
   .user-location {
     font-family: 'Raleway', sans-serif;
     font-size: 10px;
+  }
+
+  .user-name {
+    margin: 5px 0 3px 0;
   }
 }

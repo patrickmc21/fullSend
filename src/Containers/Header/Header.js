@@ -61,13 +61,6 @@ export class Header extends Component {
     return (
       <header className='app-header'>
         <NavLink 
-          to='/main'
-          className='logo-link'
-          onClick={this.handleClick}
-        >
-          <h1 className='logo'>fullSend</h1>
-        </NavLink>
-        <NavLink 
           to='/'
           className='logout'
           onClick={this.handleLogout}
@@ -83,6 +76,13 @@ export class Header extends Component {
           <h4 className='user-name'>{name}</h4>
           <h5 className='user-location'>{location}</h5>
         </aside>}
+        <NavLink 
+          to='/main'
+          className='logo-link'
+          onClick={this.handleClick}
+        >
+          <h1 className='logo'>fullSend</h1>
+        </NavLink>
         <Nav />
       </header>
     );
