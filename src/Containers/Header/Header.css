@@ -66,7 +66,7 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 860px) {
   .app-header {
     height: 104px;
     width: 100vw;
@@ -75,17 +75,17 @@
   .logo-link {
     display: block;
     margin: auto;
-    height: 50px;
-    width: 200px;
+    height: 75px;
+    width: 300px;
   }
 
   .logo {
     float: left;
     margin: 0px 15px;
-    width: 200px;
-    background-size: 40px 32px;
-    background-position: 160px 5px;
-    font-size: 48px;
+    width: 300px;
+    background-size: 60px 52px;
+    background-position: 240px 5px;
+    font-size: 72px;
   }
 
   .logout {
@@ -100,14 +100,93 @@
     float: right;
     clear: right;
     height: 27px;
-    width: 150px;
+    width: 200px;
   }
 
   .user-profile-picture {
     float: right;
     margin: 5px 5px;
-    width: 25px;
+    width: 45px;
     border-radius: 30px;
+  }
+
+  .user-name,
+  .user-location {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+  }
+
+  .user-name {
+    margin: 5px 0 3px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .logo-link {
+    height: 75px;
+    width: 250px;
+  }
+
+  .logo {
+    width: 250px;
+    background-size: 50px 42px;
+    background-position: 200px 5px;
+    font-size: 60px;
+  }
+
+  .user-info {
+    height: 27px;
+    width: 150px;
+  }
+
+  .user-profile-picture {
+    width: 35px;
+    border-radius: 30px;
+  }
+
+  .user-name,
+  .user-location {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .logo-link {
+    height: 75px;
+    width: 200px;
+  }
+
+  .logo {
+    width: 200px;
+    background-size: 40px 32px;
+    background-position: 160px 5px;
+    font-size: 48px;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .logo-link {
+    height: 50px;
+  }
+
+  .logo {
+    width: 200px;
+    background-size: 40px 32px;
+    background-position: 160px 5px;
+    font-size: 48px;
+  }
+
+  .user-info {
+    height: 27px;
+    width: 150px;
+  }
+
+  .user-profile-picture {
+    width: 25px;
   }
 
   .user-name,
@@ -120,3 +199,4 @@
     margin: 5px 0 3px 0;
   }
 }
+
