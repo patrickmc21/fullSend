@@ -28,17 +28,7 @@ This project is currently through the MVP requirements, as well as a few additio
 
 #### Mobile
 
-<img src="readme-images/mobile-login.png" alt="Login mobile" height="400" width="200" display="inline-block"/>
-
-<img src="readme-images/mobile-main.png" alt="Main mobile" height="400" width="200" display="inline-block"/>
-
-<img src="readme-images/mobile-rides.png" alt="Rides mobile" height="400" width="200"/>
-
-<img src="readme-images/mobile-bikes.png" alt="Bikes mobile" height="400" width="200"/>
-
-<img src="readme-images/mobile-stats.png" alt="Stats mobile" height="400" width="200"/>
-
-<img src="readme-images/mobile-todos.png" alt="Todos mobile" height="400" width="200"/>
+<img src="readme-images/mobile-login.png" alt="Login mobile" height="400" width="200" /><img src="readme-images/mobile-main.png" alt="Main mobile" height="400" width="200" /><img src="readme-images/mobile-rides.png" alt="Rides mobile" height="400" width="200"/><img src="readme-images/mobile-bikes.png" alt="Bikes mobile" height="400" width="200"/><img src="readme-images/mobile-stats.png" alt="Stats mobile" height="400" width="200"/><img src="readme-images/mobile-todos.png" alt="Todos mobile" height="400" width="200"/>
 
 ## Installation and Setup Instructions
 
