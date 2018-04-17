@@ -28,17 +28,17 @@ This project is currently through the MVP requirements, as well as a few additio
 
 #### Mobile
 
-![Login-mobile](readme-images/mobile-login.png)
+![Login-mobile](readme-images/mobile-login.png =100x300)
 
 ![Main-mobile](readme-images/mobile-main.png)
 
-![Rides-mobile](readme-images/mobile.rides.png)
+![Rides-mobile](readme-images/mobile-rides.png)
 
-![Bikes-mobile](readme-images/mobile.bikes.png)
+![Bikes-mobile](readme-images/mobile-bikes.png)
 
-![Stats-mobile](readme-images/mobile.stats.png)
+![Stats-mobile](readme-images/mobile-stats.png)
 
-![Todos-mobile](readme-images/mobile.todos.png)
+![Todos-mobile](readme-images/mobile-todos.png)
 
 ## Installation and Setup Instructions
 
