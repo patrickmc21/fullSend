@@ -28,7 +28,7 @@ This project is currently through the MVP requirements, as well as a few additio
 
 #### Mobile
 
-<img src="readme-images/mobile-login.png" alt="Login-mobile" height="400" width="100px"/>
+<img src="readme-images/mobile-login.png" alt="Login-mobile" height="400" width="200px"/>
 
 ![Main-mobile](readme-images/mobile-main.png)
 
