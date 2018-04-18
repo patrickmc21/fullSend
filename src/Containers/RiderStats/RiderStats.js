@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 import './RiderStats.css';
 
-export const RiderStats = ({stats, user}) => {
+export const RiderStats = ({stats}) => {
   return (
     <section className='rider-stats'>
       <div className='stats-container'>
