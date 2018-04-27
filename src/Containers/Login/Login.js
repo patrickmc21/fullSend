@@ -85,6 +85,7 @@ export class Login extends Component {
 
   getUserRides = async (userId) => {
     const userRides = await getRides(userId);
+    userRides.sort((first, second) => second.epoch - first.epoch);
     this.props.updateRides(userRides);
   }
 

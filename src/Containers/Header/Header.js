@@ -46,9 +46,22 @@ export class Header extends Component {
   }
 
   handleLogout = () => {
-    const { user, logoutUser, clearRides } = this.props;
+    const { 
+      user, 
+      logoutUser, 
+      clearRides,
+      clearBikes,
+      clearStats,
+      clearTodos,
+      changeMonth
+    } = this.props;
+    
     logoutUser(user.id);
     clearRides(user.id);
+    clearBikes();
+    clearStats();
+    clearTodos();
+    changeMonth('All');
   }
 
   handleClick = () => {
@@ -105,7 +118,10 @@ export const mapDispatchToProps = dispatch => ({
   logoutUser: id => dispatch(actions.logoutUser(id)),
   clearRides: id => dispatch(actions.clearRides(id)),
   changeMonth: month => dispatch(actions.changeMonth(month)),
-  addStravaInfo: info => dispatch(actions.addUserStrava(info))
+  addStravaInfo: info => dispatch(actions.addUserStrava(info)),
+  clearStats: () => dispatch(actions.clearRiderStats()),
+  clearBikes: () => dispatch(actions.clearBikes()),
+  clearTodos: () => dispatch(actions.clearTodos())
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));

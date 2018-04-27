@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 
-import RideCard from '../../Components/RideCard/RideCard';
+import RideCard from '../RideCard/RideCard';
 import DateSelector from '../DateSelector/DateSelector';
 
 /* eslint-disable max-len */

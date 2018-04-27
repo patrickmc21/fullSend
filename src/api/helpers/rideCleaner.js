@@ -34,7 +34,9 @@ const rideCleaner = (rides) => {
       location: ride.location,
       difficulty: ride.difficulty,
       img: ride.imgSmallMed,
-      summary: ride.summary
+      summary: ride.summary,
+      rideId: ride.id,
+      details: ''
     };
   });
   return cleanRides;

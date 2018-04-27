@@ -151,6 +151,7 @@
 }
 
 .todo-link:hover {
+  background-color: #292727;
   border-color: #FFFFFE;
   color: #FFFFFE;
 }

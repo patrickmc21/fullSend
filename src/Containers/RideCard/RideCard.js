@@ -1,9 +1,12 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import updateRide from '../../api/internal-api-calls/updateRide.js';
+import * as actions from '../../Actions';
 
 import './RideCard.css';
 
-const RideCard = ({ride}) => {
+const RideCard = ({ride, updateSingleRide}) => {
   const {
     distance, 
     elapsedTime, 
@@ -12,8 +15,19 @@ const RideCard = ({ride}) => {
     location, 
     difficulty, 
     img, 
-    summary 
+    summary,
+    rideId,
+    details 
   } = ride;
+
+  const userDetails = details.length > 0 ? details : 'Click to add details!';
+
+  const handleBlur = (event) => {
+    const newDetails = event.target.innerText;
+    const updatedRide = {...ride, details: newDetails};
+    updateRide(updatedRide);
+    updateSingleRide(updatedRide);
+  }
 
   return (
     <article className='ride-card'>
@@ -45,6 +59,17 @@ const RideCard = ({ride}) => {
           </span>
           {elapsedTime}
         </h4>
+        <h4 className='ride-details'>
+          <span className='type'>
+          Details: 
+          </span>
+          <span 
+            className='details'
+            contentEditable={true}
+            onBlur={handleBlur}>
+            {userDetails}
+          </span>
+        </h4>
       </div>
     </article>
   );
@@ -54,4 +79,8 @@ RideCard.propTypes = {
   ride: PropTypes.object
 };
 
-export default RideCard;
+const mapDispatchToProps = dispatch => ({
+  updateSingleRide: ride => dispatch(actions.updateSingleRide(ride))
+});
+
+export default connect(null, mapDispatchToProps)(RideCard);

@@ -18,6 +18,11 @@ export const updateRides = (rides) => ({
   rides
 });
 
+export const updateSingleRide = (ride) => ({
+  type: 'UPDATE_SINGLE_RIDE',
+  ride
+});
+
 export const clearRides = (id) => ({
   type: 'CLEAR_RIDES',
   id
@@ -42,7 +47,15 @@ export const addBikes = (bikes) => ({
   bikes
 });
 
+export const clearBikes = () => ({
+  type: 'CLEAR_BIKES'
+});
+
 export const addTodos = (todos) => ({
   type: 'ADD_TODOS',
   todos
+});
+
+export const clearTodos = () => ({
+  type: 'CLEAR_TODOS'
 });

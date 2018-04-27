@@ -3,7 +3,7 @@
   border: 1px solid #292727;
   border-radius: 13px;
   margin: 0 1.2rem 50px 1.2rem;
-  height: 450px;
+  height: 500px;
   width: 300px;
   background-color: rgba(206, 204, 193, 0.9);
   box-sizing: border-box;
@@ -15,7 +15,8 @@
 .ride-summary,
 .ride-stats,
 .ride-distance,
-.ride-time {
+.ride-time,
+.ride-details {
   color: #292727;
 }
 
@@ -28,7 +29,8 @@
 .ride-summary,
 .ride-stats,
 .ride-distance,
-.ride-time {
+.ride-time,
+.ride-details {
   font-family: 'Lato', sans-serif;
 }
 
@@ -131,7 +133,8 @@
   width: 90%;
 }
 
-.ride-distance {
+.ride-distance,
+.ride-time {
   margin-bottom: 5px;
 }
 
