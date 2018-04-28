@@ -41,6 +41,7 @@ export class Login extends Component {
           redirected: true,
         }
       );
+      this.handleUserFetchCalls(tempToken)
     }
   };
 
@@ -48,8 +49,8 @@ export class Login extends Component {
     redirectLogin();
   };
 
-  handleClickEnter = async () => {
-    const { userId, token, stravaId, email } = await this.loginUser();
+  handleUserFetchCalls = async (tempToken) => {
+    const { userId, token, stravaId, email } = await this.loginUser(tempToken);
     try {
       const bikes = await this.getStravaInfo(token);
       this.getUserRides(userId);
@@ -63,8 +64,8 @@ export class Login extends Component {
     }
   };
 
-  loginUser = async () => {
-    const athleteInfo = await getToken(this.state.tempToken);
+  loginUser = async (tempToken) => {
+    const athleteInfo = await getToken(tempToken);
     /* eslint-disable camelcase */
     const { access_token, athlete } = athleteInfo;
     /* eslint-enable camelcase */
@@ -150,7 +151,6 @@ export class Login extends Component {
             <div className='enter-container'>
               <NavLink 
                 to='/main' 
-                onClick={this.handleClickEnter}
                 className='enter-site'>
                   Enter
               </NavLink>
