@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import getBikes from '../../api/external-api-calls/getBikes';
 import * as actions from '../../Actions';
 import PropTypes from 'prop-types';
 
@@ -10,23 +9,6 @@ import BikeCard from '../../Components/BikeCard/BikeCard';
 import './BikeContainer.css';
 
 export class BikeContainer extends Component {
-
-  async componentDidMount() {
-    const { user, bikes } = this.props;
-    if (bikes.length < 1) {
-      const bikesToAdd = await this.getUserBikes(user.bikes, user.token);
-      this.props.addBikes(bikesToAdd);
-    }
-  }
-
-  getUserBikes = (bikeArray, token) => {
-    
-    const bikesToAdd = bikeArray.map(async bike => {
-      const bikeDetails = await getBikes(bike.id, token);
-      return bikeDetails;
-    });
-    return Promise.all(bikesToAdd);
-  }
 
   createBikeCards = () => {
     return this.props.bikes.map(bike => {
@@ -49,7 +31,6 @@ export class BikeContainer extends Component {
 BikeContainer.propTypes = {
   user: PropTypes.object,
   bikes: PropTypes.array,
-  addBikes: PropTypes.func
 };
 
 export const mapStateToProps = (state) => ({
@@ -57,9 +38,5 @@ export const mapStateToProps = (state) => ({
   bikes: state.bikes
 });
 
-export const mapDispatchToProps = (dispatch) => ({
-  addBikes: bikes => dispatch(actions.addBikes(bikes))
-});
-
 /* eslint-disable max-len */
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(BikeContainer));
+export default withRouter(connect(mapStateToProps)(BikeContainer));

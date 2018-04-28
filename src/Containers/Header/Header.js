@@ -4,47 +4,12 @@ import { NavLink, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Nav from '../../Components/Nav/Nav';
 
-
 import * as actions from '../../Actions';
-import getAthleteInfo from  '../../api/external-api-calls/getAthleteInfo';
 
 import './Header.css';
 
 export class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      location: '',
-      img: ''
-    };
-  }
-
-  componentDidUpdate = async () => {
-    const { token } = this.props.user;
-    if (!this.state.name && token) {
-      try {
-        const userInfo = await getAthleteInfo(token);
-        const user = {
-          name: `${userInfo.firstname} ${userInfo.lastname}`,
-          location: `${userInfo.city}, ${userInfo.state}`,
-          img: userInfo.profile_medium,
-          bikes: userInfo.bikes
-        };
-        this.props.addStravaInfo(user);
-        this.setState(
-          {
-            name: user.name, 
-            location: user.location, 
-            img: user.img
-          }
-        );
-      } catch (error) {
-        this.setState({errorStatus: error});
-      }
-    }
-  }
-
+ 
   handleLogout = () => {
     const { 
       user, 
@@ -70,7 +35,7 @@ export class Header extends Component {
 
   render() {
 
-    const { name, location, img } = this.state;
+    const { name, location, img } = this.props.user;
     return (
       <header className='app-header'>
         <NavLink 
@@ -80,7 +45,7 @@ export class Header extends Component {
         >
         Logout
         </NavLink>
-        {name.length > 0 &&
+        {this.props.user &&
         <aside className='user-info'>
           <img 
             src={img} 
@@ -107,7 +72,6 @@ Header.propTypes = {
   logoutUser: PropTypes.func,
   clearRides: PropTypes.func,
   changeMonth: PropTypes.func,
-  addStravaInfo: PropTypes.func
 };
 
 export const mapStateToProps = state => ({
@@ -118,7 +82,6 @@ export const mapDispatchToProps = dispatch => ({
   logoutUser: id => dispatch(actions.logoutUser(id)),
   clearRides: id => dispatch(actions.clearRides(id)),
   changeMonth: month => dispatch(actions.changeMonth(month)),
-  addStravaInfo: info => dispatch(actions.addUserStrava(info)),
   clearStats: () => dispatch(actions.clearRiderStats()),
   clearBikes: () => dispatch(actions.clearBikes()),
   clearTodos: () => dispatch(actions.clearTodos())
