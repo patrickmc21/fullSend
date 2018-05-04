@@ -1,11 +1,12 @@
 const updateUserRides = async (ride, userId) => {
-  const url = '/fullsend/users/rides';
+  const url = 'https://git.heroku.com/fullsend.git/fullsend/users/rides';
   const body = Object.assign(ride, {userId: userId});
   const options = {
     method: 'POST',
     body: JSON.stringify(body),
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*'
     }
   };
 
