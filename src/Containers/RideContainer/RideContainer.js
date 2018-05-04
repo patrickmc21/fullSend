@@ -70,8 +70,8 @@ export class RideContainer extends Component {
 
   addRidesToLocalServer = (rides, id) => {
     const ridesWithId = rides.map(async ride => {
-      const id = await updateUserRides(ride, id);
-      return {...ride, id};
+      const rideId = await updateUserRides(ride, id);
+      return {...ride, id: rideId.id};
     });
     return Promise.all(ridesWithId);
   }
