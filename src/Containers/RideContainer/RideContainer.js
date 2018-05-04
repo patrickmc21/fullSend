@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 
-import RideCard from '../../Components/RideCard/RideCard';
+import RideCard from '../RideCard/RideCard';
 import DateSelector from '../DateSelector/DateSelector';
 
 /* eslint-disable max-len */
@@ -29,7 +29,7 @@ export class RideContainer extends Component {
   }
 
   handleClick = async () => {
-    const { user, rides } = this.props;
+    const { user, rides, updateRides } = this.props;
     const { token } = user;
     const { before, after } = this.getRidesTimeSpan(rides);
     try {
@@ -37,8 +37,8 @@ export class RideContainer extends Component {
       const ridesOnly = this.filterActivities(userActivities);
       const ridesWithTrails = await this.getTrails(ridesOnly);
       const cleanRides = rideCleaner(ridesWithTrails);
-      this.props.updateRides(cleanRides);
-      this.addRidesToLocalServer(cleanRides, user.id);
+      const ridesWithId = await this.addRidesToLocalServer(cleanRides, user.id);
+      updateRides(ridesWithId);
     } catch (error) {
       this.setState({errorStatus: error.message});
     }
@@ -69,7 +69,11 @@ export class RideContainer extends Component {
   };
 
   addRidesToLocalServer = (rides, id) => {
-    rides.forEach(ride => updateUserRides(ride, id));
+    const ridesWithId = rides.map(async ride => {
+      const rideId = await updateUserRides(ride, id);
+      return {...ride, id: rideId.id};
+    });
+    return Promise.all(ridesWithId);
   }
 
   buildRideCards = (rides, month) => {

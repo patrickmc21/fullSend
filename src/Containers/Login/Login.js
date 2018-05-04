@@ -10,6 +10,11 @@ import createUserId from '../../api/internal-api-calls/createUserId';
 import getRides from '../../api/internal-api-calls/getUserRides';
 import getRiderStats from '../../api/external-api-calls/getRiderStats';
 import cleanRiderStats from '../../api/helpers/cleanRiderStats';
+import getAthleteInfo from  '../../api/external-api-calls/getAthleteInfo';
+import getBikes from '../../api/external-api-calls/getBikes';
+import getTrailsById from '../../api/external-api-calls/getTrailsById';
+import getTodoIds from '../../api/external-api-calls/getTodoIds';
+
 import * as actions from '../../Actions';
 import './Login.css';
 
@@ -19,7 +24,6 @@ export class Login extends Component {
     this.state = {
       name: '',
       redirected: false,
-      tempToken: '',
       errorStatus: ''
     };
   }
@@ -35,9 +39,9 @@ export class Login extends Component {
       this.setState(
         {
           redirected: true,
-          tempToken
         }
       );
+      this.handleUserFetchCalls(tempToken)
     }
   };
 
@@ -45,14 +49,23 @@ export class Login extends Component {
     redirectLogin();
   };
 
-  handleClickEnter = async () => {
-    const { userId, token, stravaId } = await this.loginUser();
-    this.getUserRides(userId);
-    this.getRiderStats(stravaId, token);
+  handleUserFetchCalls = async (tempToken) => {
+    const { userId, token, stravaId, email } = await this.loginUser(tempToken);
+    try {
+      const bikes = await this.getStravaInfo(token);
+      this.getUserRides(userId);
+      this.getRiderStats(stravaId, token);
+      const bikesToAdd = await this.getUserBikes(bikes, token);
+      this.props.addBikes(bikesToAdd);
+      const todoRides = await this.getToDoRides(email);
+      this.props.addTodos(todoRides);
+    } catch (error) {
+      this.setState({errorStatus: error})
+    }
   };
 
-  loginUser = async () => {
-    const athleteInfo = await getToken(this.state.tempToken);
+  loginUser = async (tempToken) => {
+    const athleteInfo = await getToken(tempToken);
     /* eslint-disable camelcase */
     const { access_token, athlete } = athleteInfo;
     /* eslint-enable camelcase */
@@ -77,7 +90,8 @@ export class Login extends Component {
     };
     this.props.addUser(user);
     return {
-      userId: userId ? userId.id : null, 
+      userId: userId ? userId.id : null,
+      email: athlete.email, 
       token: user.token,
       stravaId: user.stravaId
     };
@@ -85,6 +99,7 @@ export class Login extends Component {
 
   getUserRides = async (userId) => {
     const userRides = await getRides(userId);
+    userRides.sort((first, second) => second.epoch - first.epoch);
     this.props.updateRides(userRides);
   }
 
@@ -94,7 +109,32 @@ export class Login extends Component {
     this.props.riderStats(cleanStats);
   }
 
+  getStravaInfo = async (token) => {
+    const userInfo = await getAthleteInfo(token);
+    const user = {
+      name: `${userInfo.firstname} ${userInfo.lastname}`,
+      location: `${userInfo.city}, ${userInfo.state}`,
+      img: userInfo.profile_medium,
+      bikes: userInfo.bikes
+    };
+    this.props.addStravaInfo(user);
+    return user.bikes;
+  }
 
+  getUserBikes = (bikeArray, token) => {
+    
+    const bikesToAdd = bikeArray.map(async bike => {
+      const bikeDetails = await getBikes(bike.id, token);
+      return bikeDetails;
+    });
+    return Promise.all(bikesToAdd);
+  }
+
+  getToDoRides = async (email) => {
+    const todoIds = await getTodoIds(email);
+    const todoRides = await getTrailsById(todoIds);
+    return todoRides.trails;
+  }
 
   render() {
     const { redirected, errorStatus } = this.state;
@@ -111,7 +151,6 @@ export class Login extends Component {
             <div className='enter-container'>
               <NavLink 
                 to='/main' 
-                onClick={this.handleClickEnter}
                 className='enter-site'>
                   Enter
               </NavLink>
@@ -133,7 +172,10 @@ Login.propTypes = {
 export const mapDispatchToProps = dispatch => ({
   addUser: user => dispatch(actions.signInUser(user)),
   updateRides: rides => dispatch(actions.updateRides(rides)),
-  riderStats: stats => dispatch(actions.addRiderStats(stats))
+  riderStats: stats => dispatch(actions.addRiderStats(stats)),
+  addStravaInfo: info => dispatch(actions.addUserStrava(info)),
+  addBikes: bikes => dispatch(actions.addBikes(bikes)),
+  addTodos: todos => dispatch(actions.addTodos(todos))
 });
 
 export default withRouter(connect(null, mapDispatchToProps)(Login));

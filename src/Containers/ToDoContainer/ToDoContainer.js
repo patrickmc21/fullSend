@@ -13,19 +13,6 @@ import * as actions from '../../Actions';
 import './ToDoContainer.css';
 
 export class ToDoContainer extends Component {
-  async componentDidMount() {
-    const { user, todos } = this.props;
-    if (todos.length < 1 && user.name) {
-      const todoRides = await this.getToDoRides(user);
-      this.props.addTodos(todoRides);
-    }
-  }
-
-  getToDoRides = async (user) => {
-    const todoIds = await getTodoIds(user.email);
-    const todoRides = await getTrailsById(todoIds);
-    return todoRides.trails;
-  }
 
   createToDoCards = () => {
     const { todos } = this.props;
@@ -52,7 +39,6 @@ export class ToDoContainer extends Component {
 ToDoContainer.propTypes = {
   user: PropTypes.object,
   todos: PropTypes.array,
-  addTodos: PropTypes.func
 };
 
 export const mapStateToProps = (state) => ({
@@ -60,9 +46,5 @@ export const mapStateToProps = (state) => ({
   todos: state.todos
 });
 
-export const mapDispatchToProps = (dispatch) => ({
-  addTodos: todos => dispatch(actions.addTodos(todos))
-});
-
 /* eslint-disable max-len */
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ToDoContainer));
+export default withRouter(connect(mapStateToProps)(ToDoContainer));

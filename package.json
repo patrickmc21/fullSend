@@ -16,7 +16,7 @@
     "redux": "^3.7.2",
     "redux-saga": "^0.16.0"
   },
-  "proxy": "http://localhost:3000",
+  "proxy": "https://git.heroku.com/fullsend.git",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
