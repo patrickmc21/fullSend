@@ -1,6 +1,6 @@
 const updateRide = async (ride) => {
   const { id } = ride;
-  const url = `https://git.heroku.com/fullsend.git/fullsend/rides/${id}`;
+  const url = `/fullsend/rides/${id}`;
   const options = {
     method: 'PUT',
     body: JSON.stringify(ride),

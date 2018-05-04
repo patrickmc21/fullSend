@@ -1,6 +1,6 @@
 const createUserId = async (user) => {
   const { name, email, password } = user;
-  const url = 'https://git.heroku.com/fullsend.git/fullsend/users';
+  const url = '/fullsend/users';
   const options = {
     method: 'POST',
     body: JSON.stringify({

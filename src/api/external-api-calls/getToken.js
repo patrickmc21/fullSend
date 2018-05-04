@@ -1,7 +1,7 @@
 import { clientId, clientSecret } from '../apiKeys/strava-keys';
 
 const getToken = async (temporaryToken) => {
-  const url = 'https://git.heroku.com/fullsend.git/tokenexchange';
+  const url = '/tokenexchange';
   const options = {
     method: 'POST',
     headers: {

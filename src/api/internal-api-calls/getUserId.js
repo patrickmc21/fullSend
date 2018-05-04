@@ -1,6 +1,6 @@
 const getUserId = async (user) => {
   const { email, password } = user;
-  const url = 'https://git.heroku.com/fullsend.git/fullsend/users/signin';
+  const url = '/fullsend/users/signin';
   const options = {
     method: 'POST',
     body: JSON.stringify({
