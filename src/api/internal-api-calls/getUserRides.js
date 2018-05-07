@@ -1,5 +1,5 @@
 const getUserRides = async (userId) => {
-  const url = `https://git.heroku.com/fullsend.com/fullsend/users/rides/${userId}`;
+  const url = `https://fullsend.herokuapp.com/fullsend/users/rides/${userId}`;
   const options = {
     method: 'GET',
     headers: {

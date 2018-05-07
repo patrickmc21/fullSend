@@ -1,7 +1,7 @@
 import { clientId, clientSecret } from '../apiKeys/strava-keys';
 
 const getToken = async (temporaryToken) => {
-  const url = 'https://git.heroku.com/fullsend.com/tokenexchange';
+  const url = 'https://fullsend.herokuapp.com/tokenexchange';
   const options = {
     method: 'POST',
     mode: 'cors',
