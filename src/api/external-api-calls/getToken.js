@@ -24,6 +24,7 @@ const getToken = async (temporaryToken) => {
     const athleteInfo = JSON.parse(data);
     return athleteInfo;
   } catch (error) {
+    console.log(error)
     throw error.message;
   }
 };
