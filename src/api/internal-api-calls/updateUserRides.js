@@ -1,5 +1,5 @@
 const updateUserRides = async (ride, userId) => {
-  const url = 'https://git.heroku.com/fullsend.git/fullsend/users/rides';
+  const url = 'https://git.heroku.com/fullsend.com/fullsend/users/rides';
   const body = Object.assign(ride, {userId: userId});
   const options = {
     method: 'POST',
