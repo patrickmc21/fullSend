@@ -2,6 +2,14 @@
 
 An application used to track a user's mountain bike rides, their stats, their bikes, and their trail to-do list. App is built on the front end using React, Redux, Router, and CSS. API information is pulled from Strava and MTB project. Backend is build using Express and Knex.
 
+App is live on (fullsend.surge.sh)
+
+Log in with your own strava account, or use the test account!
+
+* Test User Strava Login
+  * email: fullsend_app.yahoo.com
+  * password: fullSendtest2018
+
 ## Team
 
 +[Pat McLaughlin](https://github.com/patrickmc21)
