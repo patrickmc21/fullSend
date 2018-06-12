@@ -34,8 +34,8 @@ export class Login extends Component {
 
   handleRedirection = (location) => {
     if (location.search.includes('code')) {
-      const history = location.href;
-      const tempToken = history.substr(history.length - 40);
+      const params = (new URL(document.location)).searchParams;
+      const tempToken = params.get('code');      
       this.setState(
         {
           redirected: true,
